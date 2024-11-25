@@ -738,7 +738,7 @@ G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["5f"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["5f"]["BackgroundTransparency"] = 1;
 G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5f"]["Text"] = [[ALL TEXTURE : OFF]];
+G2L["5f"]["Text"] = [[SOME TEXTURE : OFF]];
 G2L["5f"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
 
 
@@ -1459,9 +1459,9 @@ local script = G2L["60"];
 	button.MouseButton1Click:Connect(function()
 	    isFlyJumpOn = not isFlyJumpOn
 	    if isFlyJumpOn then
-	        button.Text = "ALL TEXTURE : ON"
+	        button.Text = "SOME TEXTURE : ON"
 	    else
-	        button.Text = "ALL TEXTURE : OFF"
+	        button.Text = "SOME TEXTURE : OFF"
 	    end
 	end)
 	
