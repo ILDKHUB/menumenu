@@ -21,7 +21,7 @@ G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2"]["ZIndex"] = 1000000;
 G2L["2"]["Image"] = [[http://www.roblox.com/asset/?id=118116050473564]];
-G2L["2"]["Size"] = UDim2.new(0.14435, 0, 0.13462, 0);
+G2L["2"]["Size"] = UDim2.new(0.11412, 0, 0.16827, 0);
 G2L["2"]["Name"] = [[ic]];
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Position"] = UDim2.new(0.02609, 0, 0.07692, 0);
@@ -65,14 +65,14 @@ G2L["9"]["Name"] = [[togg]];
 
 -- StarterGui.modmenu.ic.ron
 G2L["a"] = Instance.new("Sound", G2L["2"]);
-G2L["a"]["Volume"] = 10;
+G2L["a"]["Volume"] = 2.125;
 G2L["a"]["Name"] = [[ron]];
 G2L["a"]["SoundId"] = [[rbxassetid://17208220181]];
 
 
 -- StarterGui.modmenu.ic.roof
 G2L["b"] = Instance.new("Sound", G2L["2"]);
-G2L["b"]["Volume"] = 10;
+G2L["b"]["Volume"] = 2.125;
 G2L["b"]["Name"] = [[roof]];
 G2L["b"]["SoundId"] = [[rbxassetid://17208372272]];
 
@@ -324,21 +324,21 @@ G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
 
 -- StarterGui.modmenu.menu.fi.fa.click
 G2L["2e"] = Instance.new("Sound", G2L["16"]);
-G2L["2e"]["Volume"] = 10;
+G2L["2e"]["Volume"] = 2.125;
 G2L["2e"]["Name"] = [[click]];
 G2L["2e"]["SoundId"] = [[rbxassetid://17208353912]];
 
 
 -- StarterGui.modmenu.menu.fi.fa.click2
 G2L["2f"] = Instance.new("Sound", G2L["16"]);
-G2L["2f"]["Volume"] = 10;
+G2L["2f"]["Volume"] = 2.125;
 G2L["2f"]["Name"] = [[click2]];
 G2L["2f"]["SoundId"] = [[rbxassetid://17208209318]];
 
 
 -- StarterGui.modmenu.menu.fi.fa.click3
 G2L["30"] = Instance.new("Sound", G2L["16"]);
-G2L["30"]["Volume"] = 10;
+G2L["30"]["Volume"] = 2.125;
 G2L["30"]["Name"] = [[click3]];
 G2L["30"]["SoundId"] = [[rbxassetid://17208295577]];
 
@@ -1247,6 +1247,10 @@ local script = G2L["52"];
 	local Players = game:GetService("Players")
 	local TweenService = game:GetService("TweenService")
 	
+	
+	local tdg = false
+	
+	
 	local espEnabled = false
 	
 	local function createRainbowTween(highlight)
@@ -1290,13 +1294,44 @@ local script = G2L["52"];
 						highlight = Instance.new("Highlight")
 						highlight.Parent = player.Character
 					end
+					
+					
+					
 					highlight.Enabled = true
-					highlight.FillColor = Color3.new(0, 0, 0)
-					highlight.FillTransparency = 1
-					local tween = createRainbowTween(highlight)
-					tween:Play()
+					
+					tdg = true
+	
+	
+					while true do
+						wait()
+	
+						while tdg do
+							wait() 
+							highlight = Instance.new("Highlight")
+							highlight.Parent = player.Character
+	
+	
+	
+							highlight.FillColor = Color3.new(0, 0, 0)
+							highlight.FillTransparency = 1
+							local tween = createRainbowTween(highlight)
+							tween:Play()
+	
+						end
+					end
+	
+	
+	
+	
+					
+					
+					
+					
 				else
 					if highlight then
+						
+						tdg = false
+						
 						highlight.Enabled = false
 					end
 				end
@@ -1332,6 +1367,9 @@ local script = G2L["52"];
 	
 	local button = script.Parent
 	button.MouseButton1Click:Connect(toggleESP)
+	
+	
+	
 	
 end;
 task.spawn(C_52);
