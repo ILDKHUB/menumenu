@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 107 | Scripts: 34 | Modules: 0 | Tags: 0
+-- Instances: 108 | Scripts: 35 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.modmenu
@@ -754,95 +754,102 @@ G2L["61"]["Name"] = [[sound]];
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleTextureScript
 G2L["62"] = Instance.new("LocalScript", G2L["5f"]);
+G2L["62"]["Enabled"] = false;
 G2L["62"]["Name"] = [[ToggleTextureScript]];
+G2L["62"]["Disabled"] = true;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleTextureScript
+G2L["63"] = Instance.new("LocalScript", G2L["5f"]);
+G2L["63"]["Name"] = [[ToggleTextureScript]];
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIStroke
-G2L["63"] = Instance.new("UIStroke", G2L["5e"]);
-G2L["63"]["Transparency"] = 0.9;
-G2L["63"]["Thickness"] = 1.05;
-G2L["63"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["64"] = Instance.new("UIStroke", G2L["5e"]);
+G2L["64"]["Transparency"] = 0.9;
+G2L["64"]["Thickness"] = 1.05;
+G2L["64"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
-G2L["64"] = Instance.new("UIGradient", G2L["5e"]);
-G2L["64"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["65"] = Instance.new("UIGradient", G2L["5e"]);
+G2L["65"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
-G2L["65"] = Instance.new("LocalScript", G2L["64"]);
+G2L["66"] = Instance.new("LocalScript", G2L["65"]);
 
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3
-G2L["66"] = Instance.new("Frame", G2L["33"]);
-G2L["66"]["Visible"] = false;
-G2L["66"]["BorderSizePixel"] = 0;
-G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["66"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["66"]["Name"] = [[tab3]];
-G2L["66"]["BackgroundTransparency"] = 1;
+G2L["67"] = Instance.new("Frame", G2L["33"]);
+G2L["67"]["Visible"] = false;
+G2L["67"]["BorderSizePixel"] = 0;
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["Name"] = [[tab3]];
+G2L["67"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.TextLabel
-G2L["67"] = Instance.new("TextLabel", G2L["66"]);
-G2L["67"]["TextWrapped"] = true;
-G2L["67"]["BorderSizePixel"] = 0;
-G2L["67"]["TextScaled"] = true;
-G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["67"]["TextSize"] = 14;
-G2L["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["67"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["67"]["BackgroundTransparency"] = 1;
-G2L["67"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
-G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["67"]["Text"] = [[- TAB 3 -]];
+G2L["68"] = Instance.new("TextLabel", G2L["67"]);
+G2L["68"]["TextWrapped"] = true;
+G2L["68"]["BorderSizePixel"] = 0;
+G2L["68"]["TextScaled"] = true;
+G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["TextSize"] = 14;
+G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["BackgroundTransparency"] = 1;
+G2L["68"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
+G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["68"]["Text"] = [[- TAB 3 -]];
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame
-G2L["68"] = Instance.new("ScrollingFrame", G2L["66"]);
-G2L["68"]["Active"] = true;
-G2L["68"]["BorderSizePixel"] = 0;
-G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["68"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
-G2L["68"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
-G2L["68"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
-G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["68"]["ScrollBarThickness"] = 2;
-G2L["68"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory
-G2L["69"] = Instance.new("Frame", G2L["68"]);
+G2L["69"] = Instance.new("ScrollingFrame", G2L["67"]);
+G2L["69"]["Active"] = true;
 G2L["69"]["BorderSizePixel"] = 0;
 G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["69"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["69"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
+G2L["69"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
+G2L["69"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
 G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["69"]["Name"] = [[memory]];
+G2L["69"]["ScrollBarThickness"] = 2;
 G2L["69"]["BackgroundTransparency"] = 1;
 
 
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory
+G2L["6a"] = Instance.new("Frame", G2L["69"]);
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["Name"] = [[memory]];
+G2L["6a"]["BackgroundTransparency"] = 1;
+
+
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.UIListLayout
-G2L["6a"] = Instance.new("UIListLayout", G2L["69"]);
-G2L["6a"]["Padding"] = UDim.new(0, 8);
-G2L["6a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["6b"] = Instance.new("UIListLayout", G2L["6a"]);
+G2L["6b"]["Padding"] = UDim.new(0, 8);
+G2L["6b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.modmenu.menu.TextLabel
-G2L["6b"] = Instance.new("TextLabel", G2L["c"]);
-G2L["6b"]["TextWrapped"] = true;
-G2L["6b"]["BorderSizePixel"] = 0;
-G2L["6b"]["TextScaled"] = true;
-G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6b"]["TextSize"] = 14;
-G2L["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6b"]["BackgroundTransparency"] = 1;
-G2L["6b"]["Size"] = UDim2.new(0.39809, 0, 1, 0);
-G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6b"]["Text"] = [[ILDK MENU]];
-G2L["6b"]["Position"] = UDim2.new(0.01433, 0, 0, 0);
+G2L["6c"] = Instance.new("TextLabel", G2L["c"]);
+G2L["6c"]["TextWrapped"] = true;
+G2L["6c"]["BorderSizePixel"] = 0;
+G2L["6c"]["TextScaled"] = true;
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6c"]["TextSize"] = 14;
+G2L["6c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6c"]["BackgroundTransparency"] = 1;
+G2L["6c"]["Size"] = UDim2.new(0.39809, 0, 1, 0);
+G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["Text"] = [[ILDK MENU]];
+G2L["6c"]["Position"] = UDim2.new(0.01433, 0, 0, 0);
 
 
 -- StarterGui.modmenu.ic.UIStroke.UIGradient.LocalScript
@@ -1294,43 +1301,17 @@ local script = G2L["52"];
 						highlight = Instance.new("Highlight")
 						highlight.Parent = player.Character
 					end
-					
-					
-					
+	
 					highlight.Enabled = true
-					
-					tdg = true
 	
 	
-					while true do
-						wait()
-	
-						while tdg do
-							wait() 
-							highlight = Instance.new("Highlight")
-							highlight.Parent = player.Character
-	
-	
-	
-							highlight.FillColor = Color3.new(0, 0, 0)
-							highlight.FillTransparency = 1
-							local tween = createRainbowTween(highlight)
-							tween:Play()
-	
-						end
-					end
-	
-	
-	
-	
-					
-					
-					
-					
+					highlight.FillColor = Color3.new(0, 0, 0)
+					highlight.FillTransparency = 1
+					local tween = createRainbowTween(highlight)
+					tween:Play()
+		
 				else
 					if highlight then
-						
-						tdg = false
 						
 						highlight.Enabled = false
 					end
@@ -1510,47 +1491,39 @@ local script = G2L["61"];
 end;
 task.spawn(C_61);
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleTextureScript
-local function C_62()
-local script = G2L["62"];
+local function C_63()
+local script = G2L["63"];
 	local button = script.Parent
-	local textureId = "rbxassetid://118116050473564"
-	local isTextured = false
+	local isToggled = false
+	local originalTextures = {}
 	
-	local function toggleTexture()
-	    isTextured = not isTextured
-	    for _, instance in game.Workspace:GetChildren() do
-	        if instance:IsA("Part") then
-	            for _, face in Enum.NormalId:GetEnumItems() do
-	                if isTextured then
-	                    local texture = Instance.new("Texture")
-	                    texture.Texture = textureId
-	                    texture.Face = face
-	                    texture.Parent = instance
-	                else
-	                    for _, texture in instance:GetChildren() do
-	                        if texture:IsA("Texture") and texture.Texture == textureId then
-	                            texture:Destroy()
-	                        end
-	                    end
-	                end
+	local function toggleTextures()
+	    isToggled = not isToggled
+	    for _, instance in game:GetDescendants() do
+	        if instance:IsA("Texture") or instance:IsA("Decal") then
+	            if isToggled then
+	                originalTextures[instance] = instance.Texture
+	                instance.Texture = "rbxassetid://118116050473564"
+	            else
+	                instance.Texture = originalTextures[instance] or instance.Texture
 	            end
 	        end
 	    end
 	end
 	
-	button.MouseButton1Click:Connect(toggleTexture)
+	button.MouseButton1Click:Connect(toggleTextures)
 	
 	
 end;
-task.spawn(C_62);
+task.spawn(C_63);
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
-local function C_65()
-local script = G2L["65"];
+local function C_66()
+local script = G2L["66"];
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end;
-task.spawn(C_65);
+task.spawn(C_66);
 
 return G2L["1"], require;
