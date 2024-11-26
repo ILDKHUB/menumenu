@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 140 | Scripts: 50 | Modules: 0 | Tags: 0
+-- Instances: 148 | Scripts: 54 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.modmenu
@@ -790,122 +790,122 @@ G2L["66"]["Text"] = [[- WIRE FRAME  -]];
 G2L["66"]["Position"] = UDim2.new(0, 0, 0.43291, 0);
 
 
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3
-G2L["67"] = Instance.new("Frame", G2L["33"]);
-G2L["67"]["Visible"] = false;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn
+G2L["67"] = Instance.new("Frame", G2L["64"]);
 G2L["67"]["BorderSizePixel"] = 0;
-G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["67"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["67"]["Position"] = UDim2.new(-0, 0, 0, 0);
 G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["67"]["Name"] = [[tab3]];
-G2L["67"]["BackgroundTransparency"] = 1;
+G2L["67"]["Name"] = [[btn]];
+G2L["67"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton
+G2L["68"] = Instance.new("TextButton", G2L["67"]);
+G2L["68"]["TextWrapped"] = true;
+G2L["68"]["BorderSizePixel"] = 0;
+G2L["68"]["TextSize"] = 14;
+G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["TextScaled"] = true;
+G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["68"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["68"]["BackgroundTransparency"] = 1;
+G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["68"]["Text"] = [[GROP WIREFRAME : OFF]];
+G2L["68"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+G2L["69"] = Instance.new("LocalScript", G2L["68"]);
+G2L["69"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+G2L["6a"] = Instance.new("LocalScript", G2L["68"]);
+G2L["6a"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+G2L["6b"] = Instance.new("LocalScript", G2L["68"]);
+G2L["6b"]["Name"] = [[TogglePartOutline]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.UIStroke
+G2L["6c"] = Instance.new("UIStroke", G2L["68"]);
+G2L["6c"]["Transparency"] = 0.9;
+G2L["6c"]["Thickness"] = 1.05;
+G2L["6c"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
+G2L["6d"] = Instance.new("UIGradient", G2L["67"]);
+G2L["6d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["6e"] = Instance.new("LocalScript", G2L["6d"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3
+G2L["6f"] = Instance.new("Frame", G2L["33"]);
+G2L["6f"]["Visible"] = false;
+G2L["6f"]["BorderSizePixel"] = 0;
+G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6f"]["Name"] = [[tab3]];
+G2L["6f"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.TextLabel
-G2L["68"] = Instance.new("TextLabel", G2L["67"]);
-G2L["68"]["TextWrapped"] = true;
-G2L["68"]["BorderSizePixel"] = 0;
-G2L["68"]["TextScaled"] = true;
-G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["68"]["TextSize"] = 14;
-G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["68"]["BackgroundTransparency"] = 1;
-G2L["68"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
-G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["68"]["Text"] = [[- CAMERA -]];
+G2L["70"] = Instance.new("TextLabel", G2L["6f"]);
+G2L["70"]["TextWrapped"] = true;
+G2L["70"]["BorderSizePixel"] = 0;
+G2L["70"]["TextScaled"] = true;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["TextSize"] = 14;
+G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["BackgroundTransparency"] = 1;
+G2L["70"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
+G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["Text"] = [[- CAMERA -]];
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame
-G2L["69"] = Instance.new("ScrollingFrame", G2L["67"]);
-G2L["69"]["Active"] = true;
-G2L["69"]["BorderSizePixel"] = 0;
-G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["69"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
-G2L["69"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
-G2L["69"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
-G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["69"]["ScrollBarThickness"] = 2;
-G2L["69"]["BackgroundTransparency"] = 1;
+G2L["71"] = Instance.new("ScrollingFrame", G2L["6f"]);
+G2L["71"]["Active"] = true;
+G2L["71"]["BorderSizePixel"] = 0;
+G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
+G2L["71"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
+G2L["71"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
+G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["71"]["ScrollBarThickness"] = 2;
+G2L["71"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory
-G2L["6a"] = Instance.new("Frame", G2L["69"]);
-G2L["6a"]["BorderSizePixel"] = 0;
-G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6a"]["Name"] = [[memory]];
-G2L["6a"]["BackgroundTransparency"] = 1;
+G2L["72"] = Instance.new("Frame", G2L["71"]);
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["72"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["Name"] = [[memory]];
+G2L["72"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.UIListLayout
-G2L["6b"] = Instance.new("UIListLayout", G2L["6a"]);
-G2L["6b"]["Padding"] = UDim.new(0, 8);
-G2L["6b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["73"] = Instance.new("UIListLayout", G2L["72"]);
+G2L["73"]["Padding"] = UDim.new(0, 8);
+G2L["73"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn
-G2L["6c"] = Instance.new("Frame", G2L["6a"]);
-G2L["6c"]["BorderSizePixel"] = 0;
-G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6c"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
-G2L["6c"]["Position"] = UDim2.new(-0, 0, 0, 0);
-G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6c"]["Name"] = [[btn]];
-G2L["6c"]["BackgroundTransparency"] = 0.55;
-
-
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton
-G2L["6d"] = Instance.new("TextButton", G2L["6c"]);
-G2L["6d"]["TextWrapped"] = true;
-G2L["6d"]["BorderSizePixel"] = 0;
-G2L["6d"]["TextSize"] = 14;
-G2L["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6d"]["TextScaled"] = true;
-G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["6d"]["BackgroundTransparency"] = 1;
-G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6d"]["Text"] = [[PLACE CAMERA  : OFF]];
-G2L["6d"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
-
-
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
-G2L["6e"] = Instance.new("LocalScript", G2L["6d"]);
-G2L["6e"]["Name"] = [[text]];
-
-
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
-G2L["6f"] = Instance.new("LocalScript", G2L["6d"]);
-G2L["6f"]["Name"] = [[sound]];
-
-
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.ToggleFreecam
-G2L["70"] = Instance.new("LocalScript", G2L["6d"]);
-G2L["70"]["Name"] = [[ToggleFreecam]];
-
-
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIStroke
-G2L["71"] = Instance.new("UIStroke", G2L["6c"]);
-G2L["71"]["Transparency"] = 0.9;
-G2L["71"]["Thickness"] = 1.05;
-G2L["71"]["Color"] = Color3.fromRGB(255, 255, 255);
-
-
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient
-G2L["72"] = Instance.new("UIGradient", G2L["6c"]);
-G2L["72"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
-
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
-G2L["73"] = Instance.new("LocalScript", G2L["72"]);
-
-
-
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn
-G2L["74"] = Instance.new("Frame", G2L["6a"]);
+G2L["74"] = Instance.new("Frame", G2L["72"]);
 G2L["74"]["BorderSizePixel"] = 0;
 G2L["74"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["74"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
@@ -927,7 +927,7 @@ G2L["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["75"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["75"]["BackgroundTransparency"] = 1;
 G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["75"]["Text"] = [[SPIN CAMERA  : OFF]];
+G2L["75"]["Text"] = [[PLACE CAMERA  : OFF]];
 G2L["75"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
 
 
@@ -941,9 +941,9 @@ G2L["77"] = Instance.new("LocalScript", G2L["75"]);
 G2L["77"]["Name"] = [[sound]];
 
 
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.ToggleFreecam
 G2L["78"] = Instance.new("LocalScript", G2L["75"]);
-G2L["78"]["Name"] = [[CameraSpinToggle]];
+G2L["78"]["Name"] = [[ToggleFreecam]];
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIStroke
@@ -964,7 +964,7 @@ G2L["7b"] = Instance.new("LocalScript", G2L["7a"]);
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn
-G2L["7c"] = Instance.new("Frame", G2L["6a"]);
+G2L["7c"] = Instance.new("Frame", G2L["72"]);
 G2L["7c"]["BorderSizePixel"] = 0;
 G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7c"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
@@ -986,7 +986,7 @@ G2L["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["7d"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["7d"]["BackgroundTransparency"] = 1;
 G2L["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7d"]["Text"] = [[SPIN CAMERA V2  : OFF]];
+G2L["7d"]["Text"] = [[SPIN CAMERA  : OFF]];
 G2L["7d"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
 
 
@@ -1023,7 +1023,7 @@ G2L["83"] = Instance.new("LocalScript", G2L["82"]);
 
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn
-G2L["84"] = Instance.new("Frame", G2L["6a"]);
+G2L["84"] = Instance.new("Frame", G2L["72"]);
 G2L["84"]["BorderSizePixel"] = 0;
 G2L["84"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["84"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
@@ -1045,7 +1045,7 @@ G2L["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["85"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["85"]["BackgroundTransparency"] = 1;
 G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["85"]["Text"] = [[FLING CAMERA   : OFF]];
+G2L["85"]["Text"] = [[SPIN CAMERA V2  : OFF]];
 G2L["85"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
 
 
@@ -1081,20 +1081,79 @@ G2L["8b"] = Instance.new("LocalScript", G2L["8a"]);
 
 
 
--- StarterGui.modmenu.menu.TextLabel
-G2L["8c"] = Instance.new("TextLabel", G2L["c"]);
-G2L["8c"]["TextWrapped"] = true;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn
+G2L["8c"] = Instance.new("Frame", G2L["72"]);
 G2L["8c"]["BorderSizePixel"] = 0;
-G2L["8c"]["TextScaled"] = true;
-G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["TextSize"] = 14;
-G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["BackgroundTransparency"] = 1;
-G2L["8c"]["Size"] = UDim2.new(0.39809, 0, 1, 0);
+G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8c"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["8c"]["Position"] = UDim2.new(-0, 0, 0, 0);
 G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Text"] = [[ILDK MENU]];
-G2L["8c"]["Position"] = UDim2.new(0.01433, 0, 0, 0);
+G2L["8c"]["Name"] = [[btn]];
+G2L["8c"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton
+G2L["8d"] = Instance.new("TextButton", G2L["8c"]);
+G2L["8d"]["TextWrapped"] = true;
+G2L["8d"]["BorderSizePixel"] = 0;
+G2L["8d"]["TextSize"] = 14;
+G2L["8d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["TextScaled"] = true;
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["8d"]["BackgroundTransparency"] = 1;
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["Text"] = [[FLING CAMERA   : OFF]];
+G2L["8d"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+G2L["8e"] = Instance.new("LocalScript", G2L["8d"]);
+G2L["8e"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+G2L["8f"] = Instance.new("LocalScript", G2L["8d"]);
+G2L["8f"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+G2L["90"] = Instance.new("LocalScript", G2L["8d"]);
+G2L["90"]["Name"] = [[CameraSpinToggle]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIStroke
+G2L["91"] = Instance.new("UIStroke", G2L["8c"]);
+G2L["91"]["Transparency"] = 0.9;
+G2L["91"]["Thickness"] = 1.05;
+G2L["91"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient
+G2L["92"] = Instance.new("UIGradient", G2L["8c"]);
+G2L["92"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["93"] = Instance.new("LocalScript", G2L["92"]);
+
+
+
+-- StarterGui.modmenu.menu.TextLabel
+G2L["94"] = Instance.new("TextLabel", G2L["c"]);
+G2L["94"]["TextWrapped"] = true;
+G2L["94"]["BorderSizePixel"] = 0;
+G2L["94"]["TextScaled"] = true;
+G2L["94"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["94"]["TextSize"] = 14;
+G2L["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["94"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["94"]["BackgroundTransparency"] = 1;
+G2L["94"]["Size"] = UDim2.new(0.39809, 0, 1, 0);
+G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["94"]["Text"] = [[ILDK MENU]];
+G2L["94"]["Position"] = UDim2.new(0.01433, 0, 0, 0);
 
 
 -- StarterGui.modmenu.ic.UIStroke.UIGradient.LocalScript
@@ -1688,27 +1747,27 @@ local script = G2L["60"];
 	end
 end;
 task.spawn(C_60);
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
-local function C_6e()
-local script = G2L["6e"];
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+local function C_69()
+local script = G2L["69"];
 	local button = script.Parent
 	local isFlyJumpOn = false
 	
 	button.MouseButton1Click:Connect(function()
 	    isFlyJumpOn = not isFlyJumpOn
 	    if isFlyJumpOn then
-	        button.Text = "PLACE CAMERA : ON"
+	        button.Text = "GROP WIREFRAME : ON"
 	    else
-	        button.Text = "PLACE CAMERA : OFF"
+	        button.Text = "GROP WIREFRAME : OFF"
 	    end
 	end)
 	
 	
 end;
-task.spawn(C_6e);
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
-local function C_6f()
-local script = G2L["6f"];
+task.spawn(C_69);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+local function C_6a()
+local script = G2L["6a"];
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
 	
@@ -1727,10 +1786,125 @@ local script = G2L["6f"];
 		
 	end)
 end;
-task.spawn(C_6f);
+task.spawn(C_6a);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+local function C_6b()
+local script = G2L["6b"];
+	local button = script.Parent
+	local outlineVisible = false
+	
+	local function toggleOutline()
+		outlineVisible = not outlineVisible
+		-- Toggle outline for all parts in the Workspace
+		for _, instance in game.Workspace:GetChildren() do
+			if instance:IsA("BasePart") then
+				local selectionBox = instance:FindFirstChild("SelectionBox")
+				if not selectionBox then
+					selectionBox = Instance.new("SelectionBox")
+					selectionBox.Adornee = instance
+					selectionBox.Parent = instance
+				end
+				selectionBox.Color3 = Color3.new(0, 0.0509804, 1) -- Set outline color to white
+				selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+				instance.Transparency = outlineVisible and 1 or 0
+				selectionBox.Visible = outlineVisible
+			elseif instance:IsA("Model") then
+				for _, part in instance:GetDescendants() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(1, 0, 0.0156863) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	
+		-- Toggle outline for all players' characters
+		local Players = game:GetService("Players")
+		for _, player in Players:GetPlayers() do
+			local character = player.Character
+			if character then
+				for _, part in character:GetChildren() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(0.133333, 1, 0) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleOutline)
+	
+end;
+task.spawn(C_6b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_6e()
+local script = G2L["6e"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_6e);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+local function C_76()
+local script = G2L["76"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "PLACE CAMERA : ON"
+	    else
+	        button.Text = "PLACE CAMERA : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_76);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+local function C_77()
+local script = G2L["77"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_77);
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.ToggleFreecam
-local function C_70()
-local script = G2L["70"];
+local function C_78()
+local script = G2L["78"];
 	local Players = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
@@ -1763,76 +1937,6 @@ local script = G2L["70"];
 	
 	
 end;
-task.spawn(C_70);
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
-local function C_73()
-local script = G2L["73"];
-	while true do 
-		wait()
-		script.Parent.Rotation += 2
-	end
-end;
-task.spawn(C_73);
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
-local function C_76()
-local script = G2L["76"];
-	local button = script.Parent
-	local isFlyJumpOn = false
-	
-	button.MouseButton1Click:Connect(function()
-	    isFlyJumpOn = not isFlyJumpOn
-	    if isFlyJumpOn then
-	        button.Text = "SPIN CAMERA : ON"
-	    else
-	        button.Text = "SPIN CAMERA : OFF"
-	    end
-	end)
-	
-	
-end;
-task.spawn(C_76);
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
-local function C_77()
-local script = G2L["77"];
-	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-	
-	local scplay = script.Parent
-	
-	local tgtg = true
-	
-	scplay.MouseButton1Click:Connect(function()
-		if tgtg == true then
-			tgtg = false
-			sound:Play()
-		else
-			tgtg = true
-			sound2:Play()
-		end
-		
-	end)
-end;
-task.spawn(C_77);
--- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
-local function C_78()
-local script = G2L["78"];
-	local player = game.Players.LocalPlayer
-	local camera = workspace.CurrentCamera
-	local button = script.Parent
-	local spinning = false
-	
-	button.MouseButton1Click:Connect(function()
-	    spinning = not spinning
-	end)
-	
-	game:GetService("RunService").RenderStepped:Connect(function()
-	    if spinning then
-	        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(1), 0)
-	    end
-	end)
-	
-	
-end;
 task.spawn(C_78);
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
 local function C_7b()
@@ -1852,9 +1956,9 @@ local script = G2L["7e"];
 	button.MouseButton1Click:Connect(function()
 	    isFlyJumpOn = not isFlyJumpOn
 	    if isFlyJumpOn then
-	        button.Text = "SPIN CAMERA V2 : ON"
+	        button.Text = "SPIN CAMERA : ON"
 	    else
-	        button.Text = "SPIN CAMERA V2 : OFF"
+	        button.Text = "SPIN CAMERA : OFF"
 	    end
 	end)
 	
@@ -1897,7 +2001,7 @@ local script = G2L["80"];
 	
 	game:GetService("RunService").RenderStepped:Connect(function()
 	    if spinning then
-	        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(5), 0)
+	        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(1), 0)
 	    end
 	end)
 	
@@ -1922,9 +2026,9 @@ local script = G2L["86"];
 	button.MouseButton1Click:Connect(function()
 	    isFlyJumpOn = not isFlyJumpOn
 	    if isFlyJumpOn then
-	        button.Text = "FLING CAMERA : ON"
+	        button.Text = "SPIN CAMERA V2 : ON"
 	    else
-	        button.Text = "FLING CAMERA : OFF"
+	        button.Text = "SPIN CAMERA V2 : OFF"
 	    end
 	end)
 	
@@ -1967,7 +2071,7 @@ local script = G2L["88"];
 	
 	game:GetService("RunService").RenderStepped:Connect(function()
 	    if spinning then
-	        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(10000000000000000), 0)
+	        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(5), 0)
 	    end
 	end)
 	
@@ -1983,5 +2087,75 @@ local script = G2L["8b"];
 	end
 end;
 task.spawn(C_8b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+local function C_8e()
+local script = G2L["8e"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "FLING CAMERA : ON"
+	    else
+	        button.Text = "FLING CAMERA : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_8e);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+local function C_8f()
+local script = G2L["8f"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_8f);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+local function C_90()
+local script = G2L["90"];
+	local player = game.Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	local button = script.Parent
+	local spinning = false
+	
+	button.MouseButton1Click:Connect(function()
+	    spinning = not spinning
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+	    if spinning then
+	        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(10000000000000000), 0)
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_90);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_93()
+local script = G2L["93"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_93);
 
 return G2L["1"], require;
