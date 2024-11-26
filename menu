@@ -1,868 +1,1247 @@
--- Gui to Lua
--- Version: 3.2
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
 
 -- Instances:
 
-local modmenu = Instance.new("ScreenGui")
-local ic = Instance.new("ImageButton")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local UICorner = Instance.new("UICorner")
-local menu = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local fi = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
-local fa = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
-local btn = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local UIGradient = Instance.new("UIGradient")
-local UIListLayout = Instance.new("UIListLayout")
-local btn_2 = Instance.new("Frame")
-local TextButton_2 = Instance.new("TextButton")
-local UIGradient_2 = Instance.new("UIGradient")
-local btn_3 = Instance.new("Frame")
-local TextButton_3 = Instance.new("TextButton")
-local UIGradient_3 = Instance.new("UIGradient")
-local tab = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
-local showtab = Instance.new("Frame")
-local tab1 = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local memory = Instance.new("Frame")
-local btn_4 = Instance.new("Frame")
-local TextButton_4 = Instance.new("TextButton")
-local UIGradient_4 = Instance.new("UIGradient")
-local UIListLayout_2 = Instance.new("UIListLayout")
-local btn_5 = Instance.new("Frame")
-local TextButton_5 = Instance.new("TextButton")
-local UIGradient_5 = Instance.new("UIGradient")
-local btn_6 = Instance.new("Frame")
-local TextButton_6 = Instance.new("TextButton")
-local UIGradient_6 = Instance.new("UIGradient")
-local btn_7 = Instance.new("Frame")
-local TextButton_7 = Instance.new("TextButton")
-local UIGradient_7 = Instance.new("UIGradient")
-local btn_8 = Instance.new("Frame")
-local TextButton_8 = Instance.new("TextButton")
-local UIGradient_8 = Instance.new("UIGradient")
-local tab2 = Instance.new("Frame")
-local TextLabel_2 = Instance.new("TextLabel")
-local ScrollingFrame_2 = Instance.new("ScrollingFrame")
-local memory_2 = Instance.new("Frame")
-local UIListLayout_3 = Instance.new("UIListLayout")
-local btn_9 = Instance.new("Frame")
-local TextButton_9 = Instance.new("TextButton")
-local UIGradient_9 = Instance.new("UIGradient")
-local btn_10 = Instance.new("Frame")
-local TextButton_10 = Instance.new("TextButton")
-local UIGradient_10 = Instance.new("UIGradient")
-local btn_11 = Instance.new("Frame")
-local TextButton_11 = Instance.new("TextButton")
-local UIGradient_11 = Instance.new("UIGradient")
-local TextLabel_3 = Instance.new("TextLabel")
-local btn_12 = Instance.new("Frame")
-local TextButton_12 = Instance.new("TextButton")
-local UIGradient_12 = Instance.new("UIGradient")
-local btn_13 = Instance.new("Frame")
-local TextButton_13 = Instance.new("TextButton")
-local UIGradient_13 = Instance.new("UIGradient")
-local btn_14 = Instance.new("Frame")
-local TextButton_14 = Instance.new("TextButton")
-local UIGradient_14 = Instance.new("UIGradient")
-local btn_15 = Instance.new("Frame")
-local TextButton_15 = Instance.new("TextButton")
-local UIGradient_15 = Instance.new("UIGradient")
-local btn_16 = Instance.new("Frame")
-local TextButton_16 = Instance.new("TextButton")
-local UIGradient_16 = Instance.new("UIGradient")
-local tab3 = Instance.new("Frame")
-local TextLabel_4 = Instance.new("TextLabel")
-local ScrollingFrame_3 = Instance.new("ScrollingFrame")
-local memory_3 = Instance.new("Frame")
-local UIListLayout_4 = Instance.new("UIListLayout")
-local btn_17 = Instance.new("Frame")
-local TextButton_17 = Instance.new("TextButton")
-local UIGradient_17 = Instance.new("UIGradient")
-local btn_18 = Instance.new("Frame")
-local TextButton_18 = Instance.new("TextButton")
-local UIGradient_18 = Instance.new("UIGradient")
-local btn_19 = Instance.new("Frame")
-local TextButton_19 = Instance.new("TextButton")
-local UIGradient_19 = Instance.new("UIGradient")
-local btn_20 = Instance.new("Frame")
-local TextButton_20 = Instance.new("TextButton")
-local UIGradient_20 = Instance.new("UIGradient")
-local TextLabel_5 = Instance.new("TextLabel")
-
---Properties:
-
-modmenu.Name = "modmenu"
-modmenu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-ic.Name = "ic"
-ic.Parent = modmenu
-ic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ic.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ic.BorderSizePixel = 0
-ic.Position = UDim2.new(0.0231855977, 0, 0.137780607, 0)
-ic.Size = UDim2.new(0.0996131673, 0, 0.139695734, 0)
-ic.ZIndex = 1000000
-ic.Image = "http://www.roblox.com/asset/?id=118116050473564"
-
-UIAspectRatioConstraint.Parent = ic
-
-UICorner.CornerRadius = UDim.new(0, 100)
-UICorner.Parent = ic
-
-menu.Name = "menu"
-menu.Parent = modmenu
-menu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-menu.BackgroundTransparency = 0.350
-menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
-menu.BorderSizePixel = 0
-menu.Position = UDim2.new(0.136047423, 0, 0.138678312, 0)
-menu.Size = UDim2.new(0.727905154, 0, 0.152243584, 0)
-
-UICorner_2.CornerRadius = UDim.new(0, 0)
-UICorner_2.Parent = menu
-
-fi.Name = "fi"
-fi.Parent = menu
-fi.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-fi.BackgroundTransparency = 0.350
-fi.BorderColor3 = Color3.fromRGB(0, 0, 0)
-fi.BorderSizePixel = 0
-fi.Position = UDim2.new(-0.000183591415, 0, 1.16666591, 0)
-fi.Size = UDim2.new(1.0001837, 0, 3.92857313, 0)
-
-UICorner_3.CornerRadius = UDim.new(0, 0)
-UICorner_3.Parent = fi
-
-fa.Name = "fa"
-fa.Parent = fi
-fa.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-fa.BackgroundTransparency = 0.750
-fa.BorderColor3 = Color3.fromRGB(0, 0, 0)
-fa.BorderSizePixel = 0
-fa.Position = UDim2.new(9.71718919e-08, 0, -0.00267946557, 0)
-fa.Size = UDim2.new(0.433224946, 0, 1.00267947, 0)
-
-UICorner_4.CornerRadius = UDim.new(0, 0)
-UICorner_4.Parent = fa
-
-btn.Name = "btn"
-btn.Parent = fa
-btn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn.BackgroundTransparency = 0.550
-btn.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn.BorderSizePixel = 0
-btn.Size = UDim2.new(1.00131786, 0, 0.154991329, 0)
-
-TextButton.Parent = btn
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton.Size = UDim2.new(1, 0, 1, 0)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "PLAYER"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient.Parent = btn
-
-UIListLayout.Parent = fa
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 5)
-
-btn_2.Name = "btn"
-btn_2.Parent = fa
-btn_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_2.BackgroundTransparency = 0.550
-btn_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_2.BorderSizePixel = 0
-btn_2.Size = UDim2.new(1.00131786, 0, 0.154991329, 0)
-
-TextButton_2.Parent = btn_2
-TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.BackgroundTransparency = 1.000
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_2.Size = UDim2.new(1, 0, 1, 0)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "WORLD"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14.000
-TextButton_2.TextWrapped = true
-
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_2.Parent = btn_2
-
-btn_3.Name = "btn"
-btn_3.Parent = fa
-btn_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_3.BackgroundTransparency = 0.550
-btn_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_3.BorderSizePixel = 0
-btn_3.Size = UDim2.new(1.00131786, 0, 0.154991329, 0)
-
-TextButton_3.Parent = btn_3
-TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.BackgroundTransparency = 1.000
-TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_3.Size = UDim2.new(1, 0, 1, 0)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "CAMERA"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextScaled = true
-TextButton_3.TextSize = 14.000
-TextButton_3.TextWrapped = true
-
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_3.Parent = btn_3
-
-tab.Name = "tab"
-tab.Parent = fi
-tab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-tab.BackgroundTransparency = 1.000
-tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
-tab.BorderSizePixel = 0
-tab.Position = UDim2.new(0.450554281, 0, -0.00267946557, 0)
-tab.Size = UDim2.new(0.549445629, 0, 1.00267947, 0)
-tab.ZIndex = 2
-
-UICorner_5.CornerRadius = UDim.new(0, 0)
-UICorner_5.Parent = tab
-
-showtab.Name = "showtab"
-showtab.Parent = tab
-showtab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-showtab.BackgroundTransparency = 1.000
-showtab.BorderColor3 = Color3.fromRGB(0, 0, 0)
-showtab.BorderSizePixel = 0
-showtab.Size = UDim2.new(1, 0, 1, 0)
-
-tab1.Name = "tab1"
-tab1.Parent = showtab
-tab1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tab1.BackgroundTransparency = 1.000
-tab1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-tab1.BorderSizePixel = 0
-tab1.Size = UDim2.new(1, 0, 1, 0)
-
-TextLabel.Parent = tab1
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0.99999994, 0, 0.0647074878, 0)
-TextLabel.Font = Enum.Font.Unknown
-TextLabel.Text = "- PLAYER -"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-ScrollingFrame.Parent = tab1
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame.BackgroundTransparency = 1.000
-ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0, 0, 0.0647074878, 0)
-ScrollingFrame.Size = UDim2.new(1, 0, 0.935292542, 0)
-ScrollingFrame.ScrollBarThickness = 2
-
-memory.Name = "memory"
-memory.Parent = ScrollingFrame
-memory.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-memory.BackgroundTransparency = 1.000
-memory.BorderColor3 = Color3.fromRGB(0, 0, 0)
-memory.BorderSizePixel = 0
-memory.Size = UDim2.new(1, 0, 1, 0)
-
-btn_4.Name = "btn"
-btn_4.Parent = memory
-btn_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_4.BackgroundTransparency = 0.550
-btn_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_4.BorderSizePixel = 0
-btn_4.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_4.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_4.Parent = btn_4
-TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.BackgroundTransparency = 1.000
-TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_4.Size = UDim2.new(1, 0, 1, 0)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = "FLY JUMP : OFF"
-TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.TextScaled = true
-TextButton_4.TextSize = 14.000
-TextButton_4.TextWrapped = true
-
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_4.Parent = btn_4
-
-UIListLayout_2.Parent = memory
-UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_2.Padding = UDim.new(0, 8)
-
-btn_5.Name = "btn"
-btn_5.Parent = memory
-btn_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_5.BackgroundTransparency = 0.550
-btn_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_5.BorderSizePixel = 0
-btn_5.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_5.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_5.Parent = btn_5
-TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_5.BackgroundTransparency = 1.000
-TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_5.BorderSizePixel = 0
-TextButton_5.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_5.Size = UDim2.new(1, 0, 1, 0)
-TextButton_5.Font = Enum.Font.SourceSans
-TextButton_5.Text = "WALKSPEED : OFF"
-TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_5.TextScaled = true
-TextButton_5.TextSize = 14.000
-TextButton_5.TextWrapped = true
-
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_5.Parent = btn_5
-
-btn_6.Name = "btn"
-btn_6.Parent = memory
-btn_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_6.BackgroundTransparency = 0.550
-btn_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_6.BorderSizePixel = 0
-btn_6.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_6.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_6.Parent = btn_6
-TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_6.BackgroundTransparency = 1.000
-TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_6.BorderSizePixel = 0
-TextButton_6.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_6.Size = UDim2.new(1, 0, 1, 0)
-TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "NOCLIP LEG : OFF"
-TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_6.TextScaled = true
-TextButton_6.TextSize = 14.000
-TextButton_6.TextWrapped = true
-
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_6.Parent = btn_6
-
-btn_7.Name = "btn"
-btn_7.Parent = memory
-btn_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_7.BackgroundTransparency = 0.550
-btn_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_7.BorderSizePixel = 0
-btn_7.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_7.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_7.Parent = btn_7
-TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_7.BackgroundTransparency = 1.000
-TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_7.BorderSizePixel = 0
-TextButton_7.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_7.Size = UDim2.new(1, 0, 1, 0)
-TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = "FLOAT WALK  : OFF"
-TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_7.TextScaled = true
-TextButton_7.TextSize = 14.000
-TextButton_7.TextWrapped = true
-
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_7.Parent = btn_7
-
-btn_8.Name = "btn"
-btn_8.Parent = memory
-btn_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_8.BackgroundTransparency = 0.550
-btn_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_8.BorderSizePixel = 0
-btn_8.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_8.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_8.Parent = btn_8
-TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_8.BackgroundTransparency = 1.000
-TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_8.BorderSizePixel = 0
-TextButton_8.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_8.Size = UDim2.new(1, 0, 1, 0)
-TextButton_8.Font = Enum.Font.SourceSans
-TextButton_8.Text = "SLIDE  : OFF"
-TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_8.TextScaled = true
-TextButton_8.TextSize = 14.000
-TextButton_8.TextWrapped = true
-
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_8.Parent = btn_8
-
-tab2.Name = "tab2"
-tab2.Parent = showtab
-tab2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tab2.BackgroundTransparency = 1.000
-tab2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-tab2.BorderSizePixel = 0
-tab2.Size = UDim2.new(1, 0, 1, 0)
-tab2.Visible = false
-
-TextLabel_2.Parent = tab2
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Size = UDim2.new(0.99999994, 0, 0.0647074878, 0)
-TextLabel_2.Font = Enum.Font.Unknown
-TextLabel_2.Text = "- WORLD -"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
-ScrollingFrame_2.Parent = tab2
-ScrollingFrame_2.Active = true
-ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame_2.BackgroundTransparency = 1.000
-ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame_2.BorderSizePixel = 0
-ScrollingFrame_2.Position = UDim2.new(0, 0, 0.0647074878, 0)
-ScrollingFrame_2.Size = UDim2.new(1, 0, 0.935292542, 0)
-ScrollingFrame_2.ScrollBarThickness = 2
-
-memory_2.Name = "memory"
-memory_2.Parent = ScrollingFrame_2
-memory_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-memory_2.BackgroundTransparency = 1.000
-memory_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-memory_2.BorderSizePixel = 0
-memory_2.Size = UDim2.new(1, 0, 1, 0)
-
-UIListLayout_3.Parent = memory_2
-UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_3.Padding = UDim.new(0, 8)
-
-btn_9.Name = "btn"
-btn_9.Parent = memory_2
-btn_9.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_9.BackgroundTransparency = 0.550
-btn_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_9.BorderSizePixel = 0
-btn_9.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_9.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_9.Parent = btn_9
-TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_9.BackgroundTransparency = 1.000
-TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_9.BorderSizePixel = 0
-TextButton_9.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_9.Size = UDim2.new(1, 0, 1, 0)
-TextButton_9.Font = Enum.Font.SourceSans
-TextButton_9.Text = "ESP ALL PLAYER : OFF"
-TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_9.TextScaled = true
-TextButton_9.TextSize = 14.000
-TextButton_9.TextWrapped = true
-
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_9.Parent = btn_9
-
-btn_10.Name = "btn"
-btn_10.Parent = memory_2
-btn_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_10.BackgroundTransparency = 0.550
-btn_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_10.BorderSizePixel = 0
-btn_10.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_10.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_10.Parent = btn_10
-TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_10.BackgroundTransparency = 1.000
-TextButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_10.BorderSizePixel = 0
-TextButton_10.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_10.Size = UDim2.new(1, 0, 1, 0)
-TextButton_10.Font = Enum.Font.SourceSans
-TextButton_10.Text = "TIME SET : DAY"
-TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_10.TextScaled = true
-TextButton_10.TextSize = 14.000
-TextButton_10.TextWrapped = true
-
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_10.Parent = btn_10
-
-btn_11.Name = "btn"
-btn_11.Parent = memory_2
-btn_11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_11.BackgroundTransparency = 0.550
-btn_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_11.BorderSizePixel = 0
-btn_11.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_11.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_11.Parent = btn_11
-TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_11.BackgroundTransparency = 1.000
-TextButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_11.BorderSizePixel = 0
-TextButton_11.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_11.Size = UDim2.new(1, 0, 1, 0)
-TextButton_11.Font = Enum.Font.SourceSans
-TextButton_11.Text = "SOME TEXTURE : OFF"
-TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_11.TextScaled = true
-TextButton_11.TextSize = 14.000
-TextButton_11.TextWrapped = true
-
-UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_11.Parent = btn_11
-
-TextLabel_3.Parent = memory_2
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0, 0, 0.432906836, 0)
-TextLabel_3.Size = UDim2.new(0.999999881, 0, 0.0454284921, 0)
-TextLabel_3.Font = Enum.Font.Unknown
-TextLabel_3.Text = "- WIRE FRAME  -"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 251, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
-
-btn_12.Name = "btn"
-btn_12.Parent = memory_2
-btn_12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_12.BackgroundTransparency = 0.550
-btn_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_12.BorderSizePixel = 0
-btn_12.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_12.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_12.Parent = btn_12
-TextButton_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_12.BackgroundTransparency = 1.000
-TextButton_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_12.BorderSizePixel = 0
-TextButton_12.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_12.Size = UDim2.new(1, 0, 1, 0)
-TextButton_12.Font = Enum.Font.SourceSans
-TextButton_12.Text = "WHITE WIREFRAME : OFF"
-TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_12.TextScaled = true
-TextButton_12.TextSize = 14.000
-TextButton_12.TextWrapped = true
-
-UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_12.Parent = btn_12
-
-btn_13.Name = "btn"
-btn_13.Parent = memory_2
-btn_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_13.BackgroundTransparency = 0.550
-btn_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_13.BorderSizePixel = 0
-btn_13.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_13.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_13.Parent = btn_13
-TextButton_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_13.BackgroundTransparency = 1.000
-TextButton_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_13.BorderSizePixel = 0
-TextButton_13.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_13.Size = UDim2.new(1, 0, 1, 0)
-TextButton_13.Font = Enum.Font.SourceSans
-TextButton_13.Text = "BLUE WIREFRAME : OFF"
-TextButton_13.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_13.TextScaled = true
-TextButton_13.TextSize = 14.000
-TextButton_13.TextWrapped = true
-
-UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_13.Parent = btn_13
-
-btn_14.Name = "btn"
-btn_14.Parent = memory_2
-btn_14.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_14.BackgroundTransparency = 0.550
-btn_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_14.BorderSizePixel = 0
-btn_14.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_14.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_14.Parent = btn_14
-TextButton_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_14.BackgroundTransparency = 1.000
-TextButton_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_14.BorderSizePixel = 0
-TextButton_14.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_14.Size = UDim2.new(1, 0, 1, 0)
-TextButton_14.Font = Enum.Font.SourceSans
-TextButton_14.Text = "RED WIREFRAME : OFF"
-TextButton_14.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_14.TextScaled = true
-TextButton_14.TextSize = 14.000
-TextButton_14.TextWrapped = true
-
-UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_14.Parent = btn_14
-
-btn_15.Name = "btn"
-btn_15.Parent = memory_2
-btn_15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_15.BackgroundTransparency = 0.550
-btn_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_15.BorderSizePixel = 0
-btn_15.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_15.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_15.Parent = btn_15
-TextButton_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_15.BackgroundTransparency = 1.000
-TextButton_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_15.BorderSizePixel = 0
-TextButton_15.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_15.Size = UDim2.new(1, 0, 1, 0)
-TextButton_15.Font = Enum.Font.SourceSans
-TextButton_15.Text = "GROP WIREFRAME : OFF"
-TextButton_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_15.TextScaled = true
-TextButton_15.TextSize = 14.000
-TextButton_15.TextWrapped = true
-
-UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_15.Parent = btn_15
-
-btn_16.Name = "btn"
-btn_16.Parent = memory_2
-btn_16.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_16.BackgroundTransparency = 0.550
-btn_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_16.BorderSizePixel = 0
-btn_16.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_16.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_16.Parent = btn_16
-TextButton_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_16.BackgroundTransparency = 1.000
-TextButton_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_16.BorderSizePixel = 0
-TextButton_16.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_16.Size = UDim2.new(1, 0, 1, 0)
-TextButton_16.Font = Enum.Font.SourceSans
-TextButton_16.Text = "SMALL WIRE FRAME : OFF"
-TextButton_16.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_16.TextScaled = true
-TextButton_16.TextSize = 14.000
-TextButton_16.TextWrapped = true
-
-UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_16.Parent = btn_16
-
-tab3.Name = "tab3"
-tab3.Parent = showtab
-tab3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tab3.BackgroundTransparency = 1.000
-tab3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-tab3.BorderSizePixel = 0
-tab3.Size = UDim2.new(1, 0, 1, 0)
-tab3.Visible = false
-
-TextLabel_4.Parent = tab3
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Size = UDim2.new(0.99999994, 0, 0.0647074878, 0)
-TextLabel_4.Font = Enum.Font.Unknown
-TextLabel_4.Text = "- CAMERA -"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
-ScrollingFrame_3.Parent = tab3
-ScrollingFrame_3.Active = true
-ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame_3.BackgroundTransparency = 1.000
-ScrollingFrame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame_3.BorderSizePixel = 0
-ScrollingFrame_3.Position = UDim2.new(0, 0, 0.0647074878, 0)
-ScrollingFrame_3.Size = UDim2.new(1, 0, 0.935292542, 0)
-ScrollingFrame_3.ScrollBarThickness = 2
-
-memory_3.Name = "memory"
-memory_3.Parent = ScrollingFrame_3
-memory_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-memory_3.BackgroundTransparency = 1.000
-memory_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-memory_3.BorderSizePixel = 0
-memory_3.Size = UDim2.new(1, 0, 1, 0)
-
-UIListLayout_4.Parent = memory_3
-UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_4.Padding = UDim.new(0, 8)
-
-btn_17.Name = "btn"
-btn_17.Parent = memory_3
-btn_17.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_17.BackgroundTransparency = 0.550
-btn_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_17.BorderSizePixel = 0
-btn_17.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_17.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_17.Parent = btn_17
-TextButton_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_17.BackgroundTransparency = 1.000
-TextButton_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_17.BorderSizePixel = 0
-TextButton_17.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_17.Size = UDim2.new(1, 0, 1, 0)
-TextButton_17.Font = Enum.Font.SourceSans
-TextButton_17.Text = "PLACE CAMERA  : OFF"
-TextButton_17.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_17.TextScaled = true
-TextButton_17.TextSize = 14.000
-TextButton_17.TextWrapped = true
-
-UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_17.Parent = btn_17
-
-btn_18.Name = "btn"
-btn_18.Parent = memory_3
-btn_18.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_18.BackgroundTransparency = 0.550
-btn_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_18.BorderSizePixel = 0
-btn_18.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_18.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_18.Parent = btn_18
-TextButton_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_18.BackgroundTransparency = 1.000
-TextButton_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_18.BorderSizePixel = 0
-TextButton_18.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_18.Size = UDim2.new(1, 0, 1, 0)
-TextButton_18.Font = Enum.Font.SourceSans
-TextButton_18.Text = "SPIN CAMERA  : OFF"
-TextButton_18.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_18.TextScaled = true
-TextButton_18.TextSize = 14.000
-TextButton_18.TextWrapped = true
-
-UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_18.Parent = btn_18
-
-btn_19.Name = "btn"
-btn_19.Parent = memory_3
-btn_19.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_19.BackgroundTransparency = 0.550
-btn_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_19.BorderSizePixel = 0
-btn_19.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_19.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_19.Parent = btn_19
-TextButton_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_19.BackgroundTransparency = 1.000
-TextButton_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_19.BorderSizePixel = 0
-TextButton_19.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_19.Size = UDim2.new(1, 0, 1, 0)
-TextButton_19.Font = Enum.Font.SourceSans
-TextButton_19.Text = "SPIN CAMERA V2  : OFF"
-TextButton_19.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_19.TextScaled = true
-TextButton_19.TextSize = 14.000
-TextButton_19.TextWrapped = true
-
-UIGradient_19.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_19.Parent = btn_19
-
-btn_20.Name = "btn"
-btn_20.Parent = memory_3
-btn_20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-btn_20.BackgroundTransparency = 0.550
-btn_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
-btn_20.BorderSizePixel = 0
-btn_20.Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
-btn_20.Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-
-TextButton_20.Parent = btn_20
-TextButton_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_20.BackgroundTransparency = 1.000
-TextButton_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_20.BorderSizePixel = 0
-TextButton_20.Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-TextButton_20.Size = UDim2.new(1, 0, 1, 0)
-TextButton_20.Font = Enum.Font.SourceSans
-TextButton_20.Text = "FLING CAMERA   : OFF"
-TextButton_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_20.TextScaled = true
-TextButton_20.TextSize = 14.000
-TextButton_20.TextWrapped = true
-
-UIGradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(0, 26, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_20.Parent = btn_20
-
-TextLabel_5.Parent = menu
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(0.0143312104, 0, 0, 0)
-TextLabel_5.Size = UDim2.new(0.39808917, 0, 1, 0)
-TextLabel_5.Font = Enum.Font.Unknown
-TextLabel_5.Text = "ILDK MENU"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
-TextLabel_5.TextWrapped = true
-
--- Scripts:
-
-local function DNOJEN_fake_script() -- ic.nove 
-	local script = Instance.new('LocalScript', ic)
+local Converted = {
+	["_modmenu"] = Instance.new("ScreenGui");
+	["_ic"] = Instance.new("ImageButton");
+	["_UIAspectRatioConstraint"] = Instance.new("UIAspectRatioConstraint");
+	["_UICorner"] = Instance.new("UICorner");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_UIGradient"] = Instance.new("UIGradient");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_nove"] = Instance.new("LocalScript");
+	["_togg"] = Instance.new("LocalScript");
+	["_ron"] = Instance.new("Sound");
+	["_roof"] = Instance.new("Sound");
+	["_menu"] = Instance.new("Frame");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_UIGradient1"] = Instance.new("UIGradient");
+	["_LocalScript1"] = Instance.new("LocalScript");
+	["_fi"] = Instance.new("Frame");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_UIStroke2"] = Instance.new("UIStroke");
+	["_UIGradient2"] = Instance.new("UIGradient");
+	["_LocalScript2"] = Instance.new("LocalScript");
+	["_fa"] = Instance.new("Frame");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_btn"] = Instance.new("Frame");
+	["_TextButton"] = Instance.new("TextButton");
+	["_aim"] = Instance.new("LocalScript");
+	["_chngetan"] = Instance.new("LocalScript");
+	["_UIStroke3"] = Instance.new("UIStroke");
+	["_UIGradient3"] = Instance.new("UIGradient");
+	["_LocalScript3"] = Instance.new("LocalScript");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["_btn1"] = Instance.new("Frame");
+	["_TextButton1"] = Instance.new("TextButton");
+	["_chngetan1"] = Instance.new("LocalScript");
+	["_aim1"] = Instance.new("LocalScript");
+	["_UIStroke4"] = Instance.new("UIStroke");
+	["_UIGradient4"] = Instance.new("UIGradient");
+	["_LocalScript4"] = Instance.new("LocalScript");
+	["_btn2"] = Instance.new("Frame");
+	["_TextButton2"] = Instance.new("TextButton");
+	["_chngetan2"] = Instance.new("LocalScript");
+	["_aim2"] = Instance.new("LocalScript");
+	["_UIStroke5"] = Instance.new("UIStroke");
+	["_UIGradient5"] = Instance.new("UIGradient");
+	["_LocalScript5"] = Instance.new("LocalScript");
+	["_click"] = Instance.new("Sound");
+	["_click2"] = Instance.new("Sound");
+	["_click3"] = Instance.new("Sound");
+	["_tab"] = Instance.new("Frame");
+	["_UICorner4"] = Instance.new("UICorner");
+	["_showtab"] = Instance.new("Frame");
+	["_tab1"] = Instance.new("Frame");
+	["_TextLabel"] = Instance.new("TextLabel");
+	["_ScrollingFrame"] = Instance.new("ScrollingFrame");
+	["_memory"] = Instance.new("Frame");
+	["_btn3"] = Instance.new("Frame");
+	["_TextButton3"] = Instance.new("TextButton");
+	["_FlyJumpToggle"] = Instance.new("LocalScript");
+	["_text"] = Instance.new("LocalScript");
+	["_sound"] = Instance.new("LocalScript");
+	["_UIStroke6"] = Instance.new("UIStroke");
+	["_UIGradient6"] = Instance.new("UIGradient");
+	["_LocalScript6"] = Instance.new("LocalScript");
+	["_UIListLayout1"] = Instance.new("UIListLayout");
+	["_btn4"] = Instance.new("Frame");
+	["_TextButton4"] = Instance.new("TextButton");
+	["_text1"] = Instance.new("LocalScript");
+	["_SetPlayerSpeedOnClick"] = Instance.new("LocalScript");
+	["_sound1"] = Instance.new("LocalScript");
+	["_UIStroke7"] = Instance.new("UIStroke");
+	["_UIGradient7"] = Instance.new("UIGradient");
+	["_LocalScript7"] = Instance.new("LocalScript");
+	["_btn5"] = Instance.new("Frame");
+	["_TextButton5"] = Instance.new("TextButton");
+	["_text2"] = Instance.new("LocalScript");
+	["_sound2"] = Instance.new("LocalScript");
+	["_ToggleHipHeight"] = Instance.new("LocalScript");
+	["_UIStroke8"] = Instance.new("UIStroke");
+	["_UIGradient8"] = Instance.new("UIGradient");
+	["_LocalScript8"] = Instance.new("LocalScript");
+	["_btn6"] = Instance.new("Frame");
+	["_TextButton6"] = Instance.new("TextButton");
+	["_text3"] = Instance.new("LocalScript");
+	["_sound3"] = Instance.new("LocalScript");
+	["_ToggleHipHeight1"] = Instance.new("LocalScript");
+	["_UIStroke9"] = Instance.new("UIStroke");
+	["_UIGradient9"] = Instance.new("UIGradient");
+	["_LocalScript9"] = Instance.new("LocalScript");
+	["_btn7"] = Instance.new("Frame");
+	["_TextButton7"] = Instance.new("TextButton");
+	["_text4"] = Instance.new("LocalScript");
+	["_sound4"] = Instance.new("LocalScript");
+	["_ToggleHipHeight2"] = Instance.new("LocalScript");
+	["_UIStroke10"] = Instance.new("UIStroke");
+	["_UIGradient10"] = Instance.new("UIGradient");
+	["_LocalScript10"] = Instance.new("LocalScript");
+	["_tab2"] = Instance.new("Frame");
+	["_TextLabel1"] = Instance.new("TextLabel");
+	["_ScrollingFrame1"] = Instance.new("ScrollingFrame");
+	["_memory1"] = Instance.new("Frame");
+	["_UIListLayout2"] = Instance.new("UIListLayout");
+	["_btn8"] = Instance.new("Frame");
+	["_TextButton8"] = Instance.new("TextButton");
+	["_text5"] = Instance.new("LocalScript");
+	["_sound5"] = Instance.new("LocalScript");
+	["_ToggleESP"] = Instance.new("LocalScript");
+	["_UIStroke11"] = Instance.new("UIStroke");
+	["_UIGradient11"] = Instance.new("UIGradient");
+	["_LocalScript11"] = Instance.new("LocalScript");
+	["_btn9"] = Instance.new("Frame");
+	["_TextButton9"] = Instance.new("TextButton");
+	["_text6"] = Instance.new("LocalScript");
+	["_sound6"] = Instance.new("LocalScript");
+	["_ToggleDayNight"] = Instance.new("LocalScript");
+	["_UIStroke12"] = Instance.new("UIStroke");
+	["_UIGradient12"] = Instance.new("UIGradient");
+	["_LocalScript12"] = Instance.new("LocalScript");
+	["_btn10"] = Instance.new("Frame");
+	["_TextButton10"] = Instance.new("TextButton");
+	["_text7"] = Instance.new("LocalScript");
+	["_sound7"] = Instance.new("LocalScript");
+	["_ToggleTextureScript"] = Instance.new("LocalScript");
+	["_ToggleTextureScript1"] = Instance.new("LocalScript");
+	["_UIStroke13"] = Instance.new("UIStroke");
+	["_UIGradient13"] = Instance.new("UIGradient");
+	["_LocalScript13"] = Instance.new("LocalScript");
+	["_TextLabel2"] = Instance.new("TextLabel");
+	["_btn11"] = Instance.new("Frame");
+	["_TextButton11"] = Instance.new("TextButton");
+	["_text8"] = Instance.new("LocalScript");
+	["_sound8"] = Instance.new("LocalScript");
+	["_TogglePartOutline"] = Instance.new("LocalScript");
+	["_UIStroke14"] = Instance.new("UIStroke");
+	["_UIGradient14"] = Instance.new("UIGradient");
+	["_LocalScript14"] = Instance.new("LocalScript");
+	["_btn12"] = Instance.new("Frame");
+	["_TextButton12"] = Instance.new("TextButton");
+	["_text9"] = Instance.new("LocalScript");
+	["_sound9"] = Instance.new("LocalScript");
+	["_TogglePartOutline1"] = Instance.new("LocalScript");
+	["_UIStroke15"] = Instance.new("UIStroke");
+	["_UIGradient15"] = Instance.new("UIGradient");
+	["_LocalScript15"] = Instance.new("LocalScript");
+	["_btn13"] = Instance.new("Frame");
+	["_TextButton13"] = Instance.new("TextButton");
+	["_text10"] = Instance.new("LocalScript");
+	["_sound10"] = Instance.new("LocalScript");
+	["_TogglePartOutline2"] = Instance.new("LocalScript");
+	["_UIStroke16"] = Instance.new("UIStroke");
+	["_UIGradient16"] = Instance.new("UIGradient");
+	["_LocalScript16"] = Instance.new("LocalScript");
+	["_btn14"] = Instance.new("Frame");
+	["_TextButton14"] = Instance.new("TextButton");
+	["_text11"] = Instance.new("LocalScript");
+	["_sound11"] = Instance.new("LocalScript");
+	["_TogglePartOutline3"] = Instance.new("LocalScript");
+	["_UIStroke17"] = Instance.new("UIStroke");
+	["_UIGradient17"] = Instance.new("UIGradient");
+	["_LocalScript17"] = Instance.new("LocalScript");
+	["_btn15"] = Instance.new("Frame");
+	["_TextButton15"] = Instance.new("TextButton");
+	["_text12"] = Instance.new("LocalScript");
+	["_sound12"] = Instance.new("LocalScript");
+	["_TogglePartOutline4"] = Instance.new("LocalScript");
+	["_UIStroke18"] = Instance.new("UIStroke");
+	["_UIGradient18"] = Instance.new("UIGradient");
+	["_LocalScript18"] = Instance.new("LocalScript");
+	["_tab3"] = Instance.new("Frame");
+	["_TextLabel3"] = Instance.new("TextLabel");
+	["_ScrollingFrame2"] = Instance.new("ScrollingFrame");
+	["_memory2"] = Instance.new("Frame");
+	["_UIListLayout3"] = Instance.new("UIListLayout");
+	["_btn16"] = Instance.new("Frame");
+	["_TextButton16"] = Instance.new("TextButton");
+	["_text13"] = Instance.new("LocalScript");
+	["_sound13"] = Instance.new("LocalScript");
+	["_ToggleFreecam"] = Instance.new("LocalScript");
+	["_UIStroke19"] = Instance.new("UIStroke");
+	["_UIGradient19"] = Instance.new("UIGradient");
+	["_LocalScript19"] = Instance.new("LocalScript");
+	["_btn17"] = Instance.new("Frame");
+	["_TextButton17"] = Instance.new("TextButton");
+	["_text14"] = Instance.new("LocalScript");
+	["_sound14"] = Instance.new("LocalScript");
+	["_CameraSpinToggle"] = Instance.new("LocalScript");
+	["_UIStroke20"] = Instance.new("UIStroke");
+	["_UIGradient20"] = Instance.new("UIGradient");
+	["_LocalScript20"] = Instance.new("LocalScript");
+	["_btn18"] = Instance.new("Frame");
+	["_TextButton18"] = Instance.new("TextButton");
+	["_text15"] = Instance.new("LocalScript");
+	["_sound15"] = Instance.new("LocalScript");
+	["_CameraSpinToggle1"] = Instance.new("LocalScript");
+	["_UIStroke21"] = Instance.new("UIStroke");
+	["_UIGradient21"] = Instance.new("UIGradient");
+	["_LocalScript21"] = Instance.new("LocalScript");
+	["_btn19"] = Instance.new("Frame");
+	["_TextButton19"] = Instance.new("TextButton");
+	["_text16"] = Instance.new("LocalScript");
+	["_sound16"] = Instance.new("LocalScript");
+	["_CameraSpinToggle2"] = Instance.new("LocalScript");
+	["_UIStroke22"] = Instance.new("UIStroke");
+	["_UIGradient22"] = Instance.new("UIGradient");
+	["_LocalScript22"] = Instance.new("LocalScript");
+	["_TextLabel4"] = Instance.new("TextLabel");
+}
+
+-- Properties:
+
+Converted["_modmenu"].Name = "modmenu"
+Converted["_modmenu"].Parent = game:GetService("CoreGui")
+
+Converted["_ic"].Image = "http://www.roblox.com/asset/?id=118116050473564"
+Converted["_ic"].ImageContent = Content
+Converted["_ic"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ic"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ic"].BorderSizePixel = 0
+Converted["_ic"].Position = UDim2.new(0.0231855977, 0, 0.137780607, 0)
+Converted["_ic"].Size = UDim2.new(0.0996131673, 0, 0.139695734, 0)
+Converted["_ic"].ZIndex = 1000000
+Converted["_ic"].Name = "ic"
+Converted["_ic"].Parent = Converted["_modmenu"]
+
+Converted["_UIAspectRatioConstraint"].Parent = Converted["_ic"]
+
+Converted["_UICorner"].CornerRadius = UDim.new(0, 100)
+Converted["_UICorner"].Parent = Converted["_ic"]
+
+Converted["_UIStroke"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke"].Thickness = 2.200000047683716
+Converted["_UIStroke"].Parent = Converted["_ic"]
+
+Converted["_UIGradient"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient"].Parent = Converted["_UIStroke"]
+
+Converted["_ron"].SoundId = "rbxassetid://17208220181"
+Converted["_ron"].Volume = 1.1490000486373901
+Converted["_ron"].Name = "ron"
+Converted["_ron"].Parent = Converted["_ic"]
+
+Converted["_roof"].SoundId = "rbxassetid://17208372272"
+Converted["_roof"].Volume = 1.1490000486373901
+Converted["_roof"].Name = "roof"
+Converted["_roof"].Parent = Converted["_ic"]
+
+Converted["_menu"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_menu"].BackgroundTransparency = 0.3499999940395355
+Converted["_menu"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_menu"].BorderSizePixel = 0
+Converted["_menu"].Position = UDim2.new(0.136047423, 0, 0.138678312, 0)
+Converted["_menu"].Size = UDim2.new(0.727905154, 0, 0.152243584, 0)
+Converted["_menu"].Name = "menu"
+Converted["_menu"].Parent = Converted["_modmenu"]
+
+Converted["_UICorner1"].CornerRadius = UDim.new(0, 0)
+Converted["_UICorner1"].Parent = Converted["_menu"]
+
+Converted["_UIStroke1"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke1"].Thickness = 1.0499999523162842
+Converted["_UIStroke1"].Parent = Converted["_menu"]
+
+Converted["_UIGradient1"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient1"].Parent = Converted["_UIStroke1"]
+
+Converted["_fi"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_fi"].BackgroundTransparency = 0.3499999940395355
+Converted["_fi"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_fi"].BorderSizePixel = 0
+Converted["_fi"].Position = UDim2.new(-0.000183591415, 0, 1.16666591, 0)
+Converted["_fi"].Size = UDim2.new(1.0001837, 0, 3.92857313, 0)
+Converted["_fi"].Name = "fi"
+Converted["_fi"].Parent = Converted["_menu"]
+
+Converted["_UICorner2"].CornerRadius = UDim.new(0, 0)
+Converted["_UICorner2"].Parent = Converted["_fi"]
+
+Converted["_UIStroke2"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke2"].Thickness = 1.0499999523162842
+Converted["_UIStroke2"].Parent = Converted["_fi"]
+
+Converted["_UIGradient2"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient2"].Parent = Converted["_UIStroke2"]
+
+Converted["_fa"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_fa"].BackgroundTransparency = 0.75
+Converted["_fa"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_fa"].BorderSizePixel = 0
+Converted["_fa"].Position = UDim2.new(9.71718919e-08, 0, -0.00267946557, 0)
+Converted["_fa"].Size = UDim2.new(0.433224946, 0, 1.00267947, 0)
+Converted["_fa"].Name = "fa"
+Converted["_fa"].Parent = Converted["_fi"]
+
+Converted["_UICorner3"].CornerRadius = UDim.new(0, 0)
+Converted["_UICorner3"].Parent = Converted["_fa"]
+
+Converted["_btn"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn"].BackgroundTransparency = 0.550000011920929
+Converted["_btn"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn"].BorderSizePixel = 0
+Converted["_btn"].Size = UDim2.new(1.00131786, 0, 0.154991329, 0)
+Converted["_btn"].Name = "btn"
+Converted["_btn"].Parent = Converted["_fa"]
+
+Converted["_TextButton"].Font = Enum.Font.SourceSans
+Converted["_TextButton"].Text = "PLAYER"
+Converted["_TextButton"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton"].TextScaled = true
+Converted["_TextButton"].TextSize = 14
+Converted["_TextButton"].TextWrapped = true
+Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton"].BackgroundTransparency = 1
+Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].BorderSizePixel = 0
+Converted["_TextButton"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton"].Parent = Converted["_btn"]
+
+Converted["_UIStroke3"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke3"].Thickness = 1.0499999523162842
+Converted["_UIStroke3"].Parent = Converted["_btn"]
+
+Converted["_UIGradient3"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient3"].Parent = Converted["_btn"]
+
+Converted["_UIListLayout"].Padding = UDim.new(0, 5)
+Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout"].Parent = Converted["_fa"]
+
+Converted["_btn1"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn1"].BackgroundTransparency = 0.550000011920929
+Converted["_btn1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn1"].BorderSizePixel = 0
+Converted["_btn1"].Size = UDim2.new(1.00131786, 0, 0.154991329, 0)
+Converted["_btn1"].Name = "btn"
+Converted["_btn1"].Parent = Converted["_fa"]
+
+Converted["_TextButton1"].Font = Enum.Font.SourceSans
+Converted["_TextButton1"].Text = "WORLD"
+Converted["_TextButton1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton1"].TextScaled = true
+Converted["_TextButton1"].TextSize = 14
+Converted["_TextButton1"].TextWrapped = true
+Converted["_TextButton1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton1"].BackgroundTransparency = 1
+Converted["_TextButton1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton1"].BorderSizePixel = 0
+Converted["_TextButton1"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton1"].Parent = Converted["_btn1"]
+
+Converted["_UIStroke4"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke4"].Thickness = 1.0499999523162842
+Converted["_UIStroke4"].Parent = Converted["_btn1"]
+
+Converted["_UIGradient4"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient4"].Parent = Converted["_btn1"]
+
+Converted["_btn2"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn2"].BackgroundTransparency = 0.550000011920929
+Converted["_btn2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn2"].BorderSizePixel = 0
+Converted["_btn2"].Size = UDim2.new(1.00131786, 0, 0.154991329, 0)
+Converted["_btn2"].Name = "btn"
+Converted["_btn2"].Parent = Converted["_fa"]
+
+Converted["_TextButton2"].Font = Enum.Font.SourceSans
+Converted["_TextButton2"].Text = "CAMERA"
+Converted["_TextButton2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton2"].TextScaled = true
+Converted["_TextButton2"].TextSize = 14
+Converted["_TextButton2"].TextWrapped = true
+Converted["_TextButton2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton2"].BackgroundTransparency = 1
+Converted["_TextButton2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton2"].BorderSizePixel = 0
+Converted["_TextButton2"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton2"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton2"].Parent = Converted["_btn2"]
+
+Converted["_UIStroke5"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke5"].Thickness = 1.0499999523162842
+Converted["_UIStroke5"].Parent = Converted["_btn2"]
+
+Converted["_UIGradient5"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient5"].Parent = Converted["_btn2"]
+
+Converted["_click"].SoundId = "rbxassetid://17208353912"
+Converted["_click"].Volume = 1.3322499990463257
+Converted["_click"].Name = "click"
+Converted["_click"].Parent = Converted["_fa"]
+
+Converted["_click2"].SoundId = "rbxassetid://17208209318"
+Converted["_click2"].Volume = 1.3322499990463257
+Converted["_click2"].Name = "click2"
+Converted["_click2"].Parent = Converted["_fa"]
+
+Converted["_click3"].SoundId = "rbxassetid://17208295577"
+Converted["_click3"].Volume = 1.3322499990463257
+Converted["_click3"].Name = "click3"
+Converted["_click3"].Parent = Converted["_fa"]
+
+Converted["_tab"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab"].BackgroundTransparency = 1
+Converted["_tab"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab"].BorderSizePixel = 0
+Converted["_tab"].Position = UDim2.new(0.450554281, 0, -0.00267946557, 0)
+Converted["_tab"].Size = UDim2.new(0.549445629, 0, 1.00267947, 0)
+Converted["_tab"].ZIndex = 2
+Converted["_tab"].Name = "tab"
+Converted["_tab"].Parent = Converted["_fi"]
+
+Converted["_UICorner4"].CornerRadius = UDim.new(0, 0)
+Converted["_UICorner4"].Parent = Converted["_tab"]
+
+Converted["_showtab"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_showtab"].BackgroundTransparency = 1
+Converted["_showtab"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_showtab"].BorderSizePixel = 0
+Converted["_showtab"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_showtab"].Name = "showtab"
+Converted["_showtab"].Parent = Converted["_tab"]
+
+Converted["_tab1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_tab1"].BackgroundTransparency = 1
+Converted["_tab1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab1"].BorderSizePixel = 0
+Converted["_tab1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_tab1"].Name = "tab1"
+Converted["_tab1"].Parent = Converted["_showtab"]
+
+Converted["_TextLabel"].Font = Enum.Font.Unknown
+Converted["_TextLabel"].Text = "- PLAYER -"
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].TextScaled = true
+Converted["_TextLabel"].TextSize = 14
+Converted["_TextLabel"].TextWrapped = true
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].BackgroundTransparency = 1
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Size = UDim2.new(0.99999994, 0, 0.0647074878, 0)
+Converted["_TextLabel"].Parent = Converted["_tab1"]
+
+Converted["_ScrollingFrame"].ScrollBarImageColor3 = Color3.fromRGB(0, 221.00001722574234, 255)
+Converted["_ScrollingFrame"].ScrollBarThickness = 2
+Converted["_ScrollingFrame"].Active = true
+Converted["_ScrollingFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ScrollingFrame"].BackgroundTransparency = 1
+Converted["_ScrollingFrame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ScrollingFrame"].BorderSizePixel = 0
+Converted["_ScrollingFrame"].Position = UDim2.new(0, 0, 0.0647074878, 0)
+Converted["_ScrollingFrame"].Size = UDim2.new(1, 0, 0.935292542, 0)
+Converted["_ScrollingFrame"].Parent = Converted["_tab1"]
+
+Converted["_memory"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_memory"].BackgroundTransparency = 1
+Converted["_memory"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_memory"].BorderSizePixel = 0
+Converted["_memory"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_memory"].Name = "memory"
+Converted["_memory"].Parent = Converted["_ScrollingFrame"]
+
+Converted["_btn3"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn3"].BackgroundTransparency = 0.550000011920929
+Converted["_btn3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn3"].BorderSizePixel = 0
+Converted["_btn3"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn3"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn3"].Name = "btn"
+Converted["_btn3"].Parent = Converted["_memory"]
+
+Converted["_TextButton3"].Font = Enum.Font.SourceSans
+Converted["_TextButton3"].Text = "FLY JUMP : OFF"
+Converted["_TextButton3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton3"].TextScaled = true
+Converted["_TextButton3"].TextSize = 14
+Converted["_TextButton3"].TextWrapped = true
+Converted["_TextButton3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton3"].BackgroundTransparency = 1
+Converted["_TextButton3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton3"].BorderSizePixel = 0
+Converted["_TextButton3"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton3"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton3"].Parent = Converted["_btn3"]
+
+Converted["_UIStroke6"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke6"].Thickness = 1.0499999523162842
+Converted["_UIStroke6"].Parent = Converted["_btn3"]
+
+Converted["_UIGradient6"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient6"].Parent = Converted["_btn3"]
+
+Converted["_UIListLayout1"].Padding = UDim.new(0, 8)
+Converted["_UIListLayout1"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout1"].Parent = Converted["_memory"]
+
+Converted["_btn4"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn4"].BackgroundTransparency = 0.550000011920929
+Converted["_btn4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn4"].BorderSizePixel = 0
+Converted["_btn4"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn4"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn4"].Name = "btn"
+Converted["_btn4"].Parent = Converted["_memory"]
+
+Converted["_TextButton4"].Font = Enum.Font.SourceSans
+Converted["_TextButton4"].Text = "WALKSPEED : OFF"
+Converted["_TextButton4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton4"].TextScaled = true
+Converted["_TextButton4"].TextSize = 14
+Converted["_TextButton4"].TextWrapped = true
+Converted["_TextButton4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton4"].BackgroundTransparency = 1
+Converted["_TextButton4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton4"].BorderSizePixel = 0
+Converted["_TextButton4"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton4"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton4"].Parent = Converted["_btn4"]
+
+Converted["_UIStroke7"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke7"].Thickness = 1.0499999523162842
+Converted["_UIStroke7"].Parent = Converted["_btn4"]
+
+Converted["_UIGradient7"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient7"].Parent = Converted["_btn4"]
+
+Converted["_btn5"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn5"].BackgroundTransparency = 0.550000011920929
+Converted["_btn5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn5"].BorderSizePixel = 0
+Converted["_btn5"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn5"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn5"].Name = "btn"
+Converted["_btn5"].Parent = Converted["_memory"]
+
+Converted["_TextButton5"].Font = Enum.Font.SourceSans
+Converted["_TextButton5"].Text = "NOCLIP LEG : OFF"
+Converted["_TextButton5"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton5"].TextScaled = true
+Converted["_TextButton5"].TextSize = 14
+Converted["_TextButton5"].TextWrapped = true
+Converted["_TextButton5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton5"].BackgroundTransparency = 1
+Converted["_TextButton5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton5"].BorderSizePixel = 0
+Converted["_TextButton5"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton5"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton5"].Parent = Converted["_btn5"]
+
+Converted["_UIStroke8"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke8"].Thickness = 1.0499999523162842
+Converted["_UIStroke8"].Parent = Converted["_btn5"]
+
+Converted["_UIGradient8"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient8"].Parent = Converted["_btn5"]
+
+Converted["_btn6"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn6"].BackgroundTransparency = 0.550000011920929
+Converted["_btn6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn6"].BorderSizePixel = 0
+Converted["_btn6"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn6"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn6"].Name = "btn"
+Converted["_btn6"].Parent = Converted["_memory"]
+
+Converted["_TextButton6"].Font = Enum.Font.SourceSans
+Converted["_TextButton6"].Text = "FLOAT WALK  : OFF"
+Converted["_TextButton6"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton6"].TextScaled = true
+Converted["_TextButton6"].TextSize = 14
+Converted["_TextButton6"].TextWrapped = true
+Converted["_TextButton6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton6"].BackgroundTransparency = 1
+Converted["_TextButton6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton6"].BorderSizePixel = 0
+Converted["_TextButton6"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton6"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton6"].Parent = Converted["_btn6"]
+
+Converted["_UIStroke9"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke9"].Thickness = 1.0499999523162842
+Converted["_UIStroke9"].Parent = Converted["_btn6"]
+
+Converted["_UIGradient9"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient9"].Parent = Converted["_btn6"]
+
+Converted["_btn7"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn7"].BackgroundTransparency = 0.550000011920929
+Converted["_btn7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn7"].BorderSizePixel = 0
+Converted["_btn7"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn7"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn7"].Name = "btn"
+Converted["_btn7"].Parent = Converted["_memory"]
+
+Converted["_TextButton7"].Font = Enum.Font.SourceSans
+Converted["_TextButton7"].Text = "SLIDE  : OFF"
+Converted["_TextButton7"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton7"].TextScaled = true
+Converted["_TextButton7"].TextSize = 14
+Converted["_TextButton7"].TextWrapped = true
+Converted["_TextButton7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton7"].BackgroundTransparency = 1
+Converted["_TextButton7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton7"].BorderSizePixel = 0
+Converted["_TextButton7"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton7"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton7"].Parent = Converted["_btn7"]
+
+Converted["_UIStroke10"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke10"].Thickness = 1.0499999523162842
+Converted["_UIStroke10"].Parent = Converted["_btn7"]
+
+Converted["_UIGradient10"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient10"].Parent = Converted["_btn7"]
+
+Converted["_tab2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_tab2"].BackgroundTransparency = 1
+Converted["_tab2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab2"].BorderSizePixel = 0
+Converted["_tab2"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_tab2"].Visible = false
+Converted["_tab2"].Name = "tab2"
+Converted["_tab2"].Parent = Converted["_showtab"]
+
+Converted["_TextLabel1"].Font = Enum.Font.Unknown
+Converted["_TextLabel1"].Text = "- WORLD -"
+Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel1"].TextScaled = true
+Converted["_TextLabel1"].TextSize = 14
+Converted["_TextLabel1"].TextWrapped = true
+Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel1"].BackgroundTransparency = 1
+Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel1"].BorderSizePixel = 0
+Converted["_TextLabel1"].Size = UDim2.new(0.99999994, 0, 0.0647074878, 0)
+Converted["_TextLabel1"].Parent = Converted["_tab2"]
+
+Converted["_ScrollingFrame1"].ScrollBarImageColor3 = Color3.fromRGB(0, 221.00001722574234, 255)
+Converted["_ScrollingFrame1"].ScrollBarThickness = 2
+Converted["_ScrollingFrame1"].Active = true
+Converted["_ScrollingFrame1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ScrollingFrame1"].BackgroundTransparency = 1
+Converted["_ScrollingFrame1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ScrollingFrame1"].BorderSizePixel = 0
+Converted["_ScrollingFrame1"].Position = UDim2.new(0, 0, 0.0647074878, 0)
+Converted["_ScrollingFrame1"].Size = UDim2.new(1, 0, 0.935292542, 0)
+Converted["_ScrollingFrame1"].Parent = Converted["_tab2"]
+
+Converted["_memory1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_memory1"].BackgroundTransparency = 1
+Converted["_memory1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_memory1"].BorderSizePixel = 0
+Converted["_memory1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_memory1"].Name = "memory"
+Converted["_memory1"].Parent = Converted["_ScrollingFrame1"]
+
+Converted["_UIListLayout2"].Padding = UDim.new(0, 8)
+Converted["_UIListLayout2"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout2"].Parent = Converted["_memory1"]
+
+Converted["_btn8"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn8"].BackgroundTransparency = 0.550000011920929
+Converted["_btn8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn8"].BorderSizePixel = 0
+Converted["_btn8"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn8"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn8"].Name = "btn"
+Converted["_btn8"].Parent = Converted["_memory1"]
+
+Converted["_TextButton8"].Font = Enum.Font.SourceSans
+Converted["_TextButton8"].Text = "ESP ALL PLAYER : OFF"
+Converted["_TextButton8"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton8"].TextScaled = true
+Converted["_TextButton8"].TextSize = 14
+Converted["_TextButton8"].TextWrapped = true
+Converted["_TextButton8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton8"].BackgroundTransparency = 1
+Converted["_TextButton8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton8"].BorderSizePixel = 0
+Converted["_TextButton8"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton8"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton8"].Parent = Converted["_btn8"]
+
+Converted["_UIStroke11"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke11"].Thickness = 1.0499999523162842
+Converted["_UIStroke11"].Parent = Converted["_btn8"]
+
+Converted["_UIGradient11"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient11"].Parent = Converted["_btn8"]
+
+Converted["_btn9"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn9"].BackgroundTransparency = 0.550000011920929
+Converted["_btn9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn9"].BorderSizePixel = 0
+Converted["_btn9"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn9"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn9"].Name = "btn"
+Converted["_btn9"].Parent = Converted["_memory1"]
+
+Converted["_TextButton9"].Font = Enum.Font.SourceSans
+Converted["_TextButton9"].Text = "TIME SET : DAY"
+Converted["_TextButton9"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton9"].TextScaled = true
+Converted["_TextButton9"].TextSize = 14
+Converted["_TextButton9"].TextWrapped = true
+Converted["_TextButton9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton9"].BackgroundTransparency = 1
+Converted["_TextButton9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton9"].BorderSizePixel = 0
+Converted["_TextButton9"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton9"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton9"].Parent = Converted["_btn9"]
+
+Converted["_UIStroke12"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke12"].Thickness = 1.0499999523162842
+Converted["_UIStroke12"].Parent = Converted["_btn9"]
+
+Converted["_UIGradient12"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient12"].Parent = Converted["_btn9"]
+
+Converted["_btn10"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn10"].BackgroundTransparency = 0.550000011920929
+Converted["_btn10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn10"].BorderSizePixel = 0
+Converted["_btn10"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn10"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn10"].Name = "btn"
+Converted["_btn10"].Parent = Converted["_memory1"]
+
+Converted["_TextButton10"].Font = Enum.Font.SourceSans
+Converted["_TextButton10"].Text = "SOME TEXTURE : OFF"
+Converted["_TextButton10"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton10"].TextScaled = true
+Converted["_TextButton10"].TextSize = 14
+Converted["_TextButton10"].TextWrapped = true
+Converted["_TextButton10"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton10"].BackgroundTransparency = 1
+Converted["_TextButton10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton10"].BorderSizePixel = 0
+Converted["_TextButton10"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton10"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton10"].Parent = Converted["_btn10"]
+
+Converted["_UIStroke13"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke13"].Thickness = 1.0499999523162842
+Converted["_UIStroke13"].Parent = Converted["_btn10"]
+
+Converted["_UIGradient13"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient13"].Parent = Converted["_btn10"]
+
+Converted["_TextLabel2"].Font = Enum.Font.Unknown
+Converted["_TextLabel2"].Text = "- WIRE FRAME  -"
+Converted["_TextLabel2"].TextColor3 = Color3.fromRGB(0, 251.000015437603, 255)
+Converted["_TextLabel2"].TextScaled = true
+Converted["_TextLabel2"].TextSize = 14
+Converted["_TextLabel2"].TextWrapped = true
+Converted["_TextLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel2"].BackgroundTransparency = 1
+Converted["_TextLabel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel2"].BorderSizePixel = 0
+Converted["_TextLabel2"].Position = UDim2.new(0, 0, 0.432906836, 0)
+Converted["_TextLabel2"].Size = UDim2.new(0.999999881, 0, 0.0454284921, 0)
+Converted["_TextLabel2"].Parent = Converted["_memory1"]
+
+Converted["_btn11"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn11"].BackgroundTransparency = 0.550000011920929
+Converted["_btn11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn11"].BorderSizePixel = 0
+Converted["_btn11"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn11"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn11"].Name = "btn"
+Converted["_btn11"].Parent = Converted["_memory1"]
+
+Converted["_TextButton11"].Font = Enum.Font.SourceSans
+Converted["_TextButton11"].Text = "WHITE WIREFRAME : OFF"
+Converted["_TextButton11"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton11"].TextScaled = true
+Converted["_TextButton11"].TextSize = 14
+Converted["_TextButton11"].TextWrapped = true
+Converted["_TextButton11"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton11"].BackgroundTransparency = 1
+Converted["_TextButton11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton11"].BorderSizePixel = 0
+Converted["_TextButton11"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton11"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton11"].Parent = Converted["_btn11"]
+
+Converted["_UIStroke14"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke14"].Thickness = 1.0499999523162842
+Converted["_UIStroke14"].Parent = Converted["_btn11"]
+
+Converted["_UIGradient14"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient14"].Parent = Converted["_btn11"]
+
+Converted["_btn12"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn12"].BackgroundTransparency = 0.550000011920929
+Converted["_btn12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn12"].BorderSizePixel = 0
+Converted["_btn12"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn12"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn12"].Name = "btn"
+Converted["_btn12"].Parent = Converted["_memory1"]
+
+Converted["_TextButton12"].Font = Enum.Font.SourceSans
+Converted["_TextButton12"].Text = "BLUE WIREFRAME : OFF"
+Converted["_TextButton12"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton12"].TextScaled = true
+Converted["_TextButton12"].TextSize = 14
+Converted["_TextButton12"].TextWrapped = true
+Converted["_TextButton12"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton12"].BackgroundTransparency = 1
+Converted["_TextButton12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton12"].BorderSizePixel = 0
+Converted["_TextButton12"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton12"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton12"].Parent = Converted["_btn12"]
+
+Converted["_UIStroke15"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke15"].Thickness = 1.0499999523162842
+Converted["_UIStroke15"].Parent = Converted["_TextButton12"]
+
+Converted["_UIGradient15"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient15"].Parent = Converted["_btn12"]
+
+Converted["_btn13"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn13"].BackgroundTransparency = 0.550000011920929
+Converted["_btn13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn13"].BorderSizePixel = 0
+Converted["_btn13"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn13"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn13"].Name = "btn"
+Converted["_btn13"].Parent = Converted["_memory1"]
+
+Converted["_TextButton13"].Font = Enum.Font.SourceSans
+Converted["_TextButton13"].Text = "RED WIREFRAME : OFF"
+Converted["_TextButton13"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton13"].TextScaled = true
+Converted["_TextButton13"].TextSize = 14
+Converted["_TextButton13"].TextWrapped = true
+Converted["_TextButton13"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton13"].BackgroundTransparency = 1
+Converted["_TextButton13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton13"].BorderSizePixel = 0
+Converted["_TextButton13"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton13"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton13"].Parent = Converted["_btn13"]
+
+Converted["_UIStroke16"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke16"].Thickness = 1.0499999523162842
+Converted["_UIStroke16"].Parent = Converted["_TextButton13"]
+
+Converted["_UIGradient16"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient16"].Parent = Converted["_btn13"]
+
+Converted["_btn14"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn14"].BackgroundTransparency = 0.550000011920929
+Converted["_btn14"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn14"].BorderSizePixel = 0
+Converted["_btn14"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn14"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn14"].Name = "btn"
+Converted["_btn14"].Parent = Converted["_memory1"]
+
+Converted["_TextButton14"].Font = Enum.Font.SourceSans
+Converted["_TextButton14"].Text = "GROP WIREFRAME : OFF"
+Converted["_TextButton14"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton14"].TextScaled = true
+Converted["_TextButton14"].TextSize = 14
+Converted["_TextButton14"].TextWrapped = true
+Converted["_TextButton14"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton14"].BackgroundTransparency = 1
+Converted["_TextButton14"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton14"].BorderSizePixel = 0
+Converted["_TextButton14"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton14"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton14"].Parent = Converted["_btn14"]
+
+Converted["_UIStroke17"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke17"].Thickness = 1.0499999523162842
+Converted["_UIStroke17"].Parent = Converted["_TextButton14"]
+
+Converted["_UIGradient17"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient17"].Parent = Converted["_btn14"]
+
+Converted["_btn15"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn15"].BackgroundTransparency = 0.550000011920929
+Converted["_btn15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn15"].BorderSizePixel = 0
+Converted["_btn15"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn15"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn15"].Name = "btn"
+Converted["_btn15"].Parent = Converted["_memory1"]
+
+Converted["_TextButton15"].Font = Enum.Font.SourceSans
+Converted["_TextButton15"].Text = "SMALL WIRE FRAME : OFF"
+Converted["_TextButton15"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton15"].TextScaled = true
+Converted["_TextButton15"].TextSize = 14
+Converted["_TextButton15"].TextWrapped = true
+Converted["_TextButton15"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton15"].BackgroundTransparency = 1
+Converted["_TextButton15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton15"].BorderSizePixel = 0
+Converted["_TextButton15"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton15"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton15"].Parent = Converted["_btn15"]
+
+Converted["_UIStroke18"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke18"].Thickness = 1.0499999523162842
+Converted["_UIStroke18"].Parent = Converted["_TextButton15"]
+
+Converted["_UIGradient18"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient18"].Parent = Converted["_btn15"]
+
+Converted["_tab3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_tab3"].BackgroundTransparency = 1
+Converted["_tab3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab3"].BorderSizePixel = 0
+Converted["_tab3"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_tab3"].Visible = false
+Converted["_tab3"].Name = "tab3"
+Converted["_tab3"].Parent = Converted["_showtab"]
+
+Converted["_TextLabel3"].Font = Enum.Font.Unknown
+Converted["_TextLabel3"].Text = "- CAMERA -"
+Converted["_TextLabel3"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel3"].TextScaled = true
+Converted["_TextLabel3"].TextSize = 14
+Converted["_TextLabel3"].TextWrapped = true
+Converted["_TextLabel3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel3"].BackgroundTransparency = 1
+Converted["_TextLabel3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel3"].BorderSizePixel = 0
+Converted["_TextLabel3"].Size = UDim2.new(0.99999994, 0, 0.0647074878, 0)
+Converted["_TextLabel3"].Parent = Converted["_tab3"]
+
+Converted["_ScrollingFrame2"].ScrollBarImageColor3 = Color3.fromRGB(0, 221.00001722574234, 255)
+Converted["_ScrollingFrame2"].ScrollBarThickness = 2
+Converted["_ScrollingFrame2"].Active = true
+Converted["_ScrollingFrame2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_ScrollingFrame2"].BackgroundTransparency = 1
+Converted["_ScrollingFrame2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_ScrollingFrame2"].BorderSizePixel = 0
+Converted["_ScrollingFrame2"].Position = UDim2.new(0, 0, 0.0647074878, 0)
+Converted["_ScrollingFrame2"].Size = UDim2.new(1, 0, 0.935292542, 0)
+Converted["_ScrollingFrame2"].Parent = Converted["_tab3"]
+
+Converted["_memory2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_memory2"].BackgroundTransparency = 1
+Converted["_memory2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_memory2"].BorderSizePixel = 0
+Converted["_memory2"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_memory2"].Name = "memory"
+Converted["_memory2"].Parent = Converted["_ScrollingFrame2"]
+
+Converted["_UIListLayout3"].Padding = UDim.new(0, 8)
+Converted["_UIListLayout3"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout3"].Parent = Converted["_memory2"]
+
+Converted["_btn16"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn16"].BackgroundTransparency = 0.550000011920929
+Converted["_btn16"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn16"].BorderSizePixel = 0
+Converted["_btn16"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn16"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn16"].Name = "btn"
+Converted["_btn16"].Parent = Converted["_memory2"]
+
+Converted["_TextButton16"].Font = Enum.Font.SourceSans
+Converted["_TextButton16"].Text = "PLACE CAMERA  : OFF"
+Converted["_TextButton16"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton16"].TextScaled = true
+Converted["_TextButton16"].TextSize = 14
+Converted["_TextButton16"].TextWrapped = true
+Converted["_TextButton16"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton16"].BackgroundTransparency = 1
+Converted["_TextButton16"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton16"].BorderSizePixel = 0
+Converted["_TextButton16"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton16"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton16"].Parent = Converted["_btn16"]
+
+Converted["_UIStroke19"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke19"].Thickness = 1.0499999523162842
+Converted["_UIStroke19"].Parent = Converted["_btn16"]
+
+Converted["_UIGradient19"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient19"].Parent = Converted["_btn16"]
+
+Converted["_btn17"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn17"].BackgroundTransparency = 0.550000011920929
+Converted["_btn17"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn17"].BorderSizePixel = 0
+Converted["_btn17"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn17"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn17"].Name = "btn"
+Converted["_btn17"].Parent = Converted["_memory2"]
+
+Converted["_TextButton17"].Font = Enum.Font.SourceSans
+Converted["_TextButton17"].Text = "SPIN CAMERA  : OFF"
+Converted["_TextButton17"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton17"].TextScaled = true
+Converted["_TextButton17"].TextSize = 14
+Converted["_TextButton17"].TextWrapped = true
+Converted["_TextButton17"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton17"].BackgroundTransparency = 1
+Converted["_TextButton17"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton17"].BorderSizePixel = 0
+Converted["_TextButton17"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton17"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton17"].Parent = Converted["_btn17"]
+
+Converted["_UIStroke20"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke20"].Thickness = 1.0499999523162842
+Converted["_UIStroke20"].Parent = Converted["_btn17"]
+
+Converted["_UIGradient20"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient20"].Parent = Converted["_btn17"]
+
+Converted["_btn18"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn18"].BackgroundTransparency = 0.550000011920929
+Converted["_btn18"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn18"].BorderSizePixel = 0
+Converted["_btn18"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn18"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn18"].Name = "btn"
+Converted["_btn18"].Parent = Converted["_memory2"]
+
+Converted["_TextButton18"].Font = Enum.Font.SourceSans
+Converted["_TextButton18"].Text = "SPIN CAMERA V2  : OFF"
+Converted["_TextButton18"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton18"].TextScaled = true
+Converted["_TextButton18"].TextSize = 14
+Converted["_TextButton18"].TextWrapped = true
+Converted["_TextButton18"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton18"].BackgroundTransparency = 1
+Converted["_TextButton18"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton18"].BorderSizePixel = 0
+Converted["_TextButton18"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton18"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton18"].Parent = Converted["_btn18"]
+
+Converted["_UIStroke21"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke21"].Thickness = 1.0499999523162842
+Converted["_UIStroke21"].Parent = Converted["_btn18"]
+
+Converted["_UIGradient21"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient21"].Parent = Converted["_btn18"]
+
+Converted["_btn19"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn19"].BackgroundTransparency = 0.550000011920929
+Converted["_btn19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_btn19"].BorderSizePixel = 0
+Converted["_btn19"].Position = UDim2.new(-1.94438414e-07, 0, 0, 0)
+Converted["_btn19"].Size = UDim2.new(0.999999881, 0, 0.0614620782, 0)
+Converted["_btn19"].Name = "btn"
+Converted["_btn19"].Parent = Converted["_memory2"]
+
+Converted["_TextButton19"].Font = Enum.Font.SourceSans
+Converted["_TextButton19"].Text = "FLING CAMERA   : OFF"
+Converted["_TextButton19"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton19"].TextScaled = true
+Converted["_TextButton19"].TextSize = 14
+Converted["_TextButton19"].TextWrapped = true
+Converted["_TextButton19"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton19"].BackgroundTransparency = 1
+Converted["_TextButton19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton19"].BorderSizePixel = 0
+Converted["_TextButton19"].Position = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
+Converted["_TextButton19"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_TextButton19"].Parent = Converted["_btn19"]
+
+Converted["_UIStroke22"].Color = Color3.fromRGB(255, 255, 255)
+Converted["_UIStroke22"].Thickness = 1.0499999523162842
+Converted["_UIStroke22"].Parent = Converted["_btn19"]
+
+Converted["_UIGradient22"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+	ColorSequenceKeypoint.new(0.4896194040775299, Color3.fromRGB(0, 26.000000350177288, 255)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+}
+Converted["_UIGradient22"].Parent = Converted["_btn19"]
+
+Converted["_TextLabel4"].Font = Enum.Font.Unknown
+Converted["_TextLabel4"].Text = "ILDK MENU"
+Converted["_TextLabel4"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel4"].TextScaled = true
+Converted["_TextLabel4"].TextSize = 14
+Converted["_TextLabel4"].TextWrapped = true
+Converted["_TextLabel4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel4"].BackgroundTransparency = 1
+Converted["_TextLabel4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel4"].BorderSizePixel = 0
+Converted["_TextLabel4"].Position = UDim2.new(0.0143312104, 0, 0, 0)
+Converted["_TextLabel4"].Size = UDim2.new(0.39808917, 0, 1, 0)
+Converted["_TextLabel4"].Parent = Converted["_menu"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+
+-- Fake Local Scripts:
+
+local function HFLW_fake_script() -- Fake Script: StarterGui.modmenu.ic.UIStroke.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end
+local function XTYQNFO_fake_script() -- Fake Script: StarterGui.modmenu.ic.nove
+    local script = Instance.new("LocalScript")
+    script.Name = "nove"
+    script.Parent = Converted["_ic"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(DNOJEN_fake_script)()
-local function BDUKBO_fake_script() -- ic.togg 
-	local script = Instance.new('LocalScript', ic)
+local function XBWEATD_fake_script() -- Fake Script: StarterGui.modmenu.ic.togg
+    local script = Instance.new("LocalScript")
+    script.Name = "togg"
+    script.Parent = Converted["_ic"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local clik = script.Parent
 	local tgui = script.Parent.Parent.menu
@@ -888,9 +1267,54 @@ local function BDUKBO_fake_script() -- ic.togg
 		end
 	end)
 end
-coroutine.wrap(BDUKBO_fake_script)()
-local function RHXMP_fake_script() -- TextButton.aim 
-	local script = Instance.new('LocalScript', TextButton)
+local function CIEY_fake_script() -- Fake Script: StarterGui.modmenu.menu.UIStroke.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient1"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end
+local function SVXJ_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.UIStroke.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient2"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end
+local function HPQTGZ_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+    local script = Instance.new("LocalScript")
+    script.Name = "aim"
+    script.Parent = Converted["_TextButton"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local cik = script.Parent
 	local tabaim = script.Parent.Parent.Parent.Parent.tab
@@ -903,9 +1327,18 @@ local function RHXMP_fake_script() -- TextButton.aim
 		tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
 	end)
 end
-coroutine.wrap(RHXMP_fake_script)()
-local function NDPF_fake_script() -- TextButton.chngetan 
-	local script = Instance.new('LocalScript', TextButton)
+local function NSWMUDE_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+    local script = Instance.new("LocalScript")
+    script.Name = "chngetan"
+    script.Parent = Converted["_TextButton"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local cik = script.Parent
 	local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
@@ -921,18 +1354,36 @@ local function NDPF_fake_script() -- TextButton.chngetan
 		tab3.Visible = f
 	end)
 end
-coroutine.wrap(NDPF_fake_script)()
-local function XEXBAW_fake_script() -- UIGradient.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient)
+local function ODXP_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient3"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(XEXBAW_fake_script)()
-local function DIYNFO_fake_script() -- TextButton_2.chngetan 
-	local script = Instance.new('LocalScript', TextButton_2)
+local function MCET_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+    local script = Instance.new("LocalScript")
+    script.Name = "chngetan"
+    script.Parent = Converted["_TextButton1"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local cik = script.Parent
 	local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
@@ -948,9 +1399,18 @@ local function DIYNFO_fake_script() -- TextButton_2.chngetan
 		tab3.Visible = f
 	end)
 end
-coroutine.wrap(DIYNFO_fake_script)()
-local function MHFEYY_fake_script() -- TextButton_2.aim 
-	local script = Instance.new('LocalScript', TextButton_2)
+local function SPBYH_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+    local script = Instance.new("LocalScript")
+    script.Name = "aim"
+    script.Parent = Converted["_TextButton1"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local cik = script.Parent
 	local tabaim = script.Parent.Parent.Parent.Parent.tab
@@ -963,18 +1423,36 @@ local function MHFEYY_fake_script() -- TextButton_2.aim
 		tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
 	end)
 end
-coroutine.wrap(MHFEYY_fake_script)()
-local function JEKAKU_fake_script() -- UIGradient_2.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_2)
+local function LPZLRI_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient4"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(JEKAKU_fake_script)()
-local function IUPPU_fake_script() -- TextButton_3.chngetan 
-	local script = Instance.new('LocalScript', TextButton_3)
+local function CVSYO_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+    local script = Instance.new("LocalScript")
+    script.Name = "chngetan"
+    script.Parent = Converted["_TextButton2"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local cik = script.Parent
 	local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
@@ -990,9 +1468,18 @@ local function IUPPU_fake_script() -- TextButton_3.chngetan
 		tab3.Visible = o
 	end)
 end
-coroutine.wrap(IUPPU_fake_script)()
-local function LIXZ_fake_script() -- TextButton_3.aim 
-	local script = Instance.new('LocalScript', TextButton_3)
+local function FWPPA_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+    local script = Instance.new("LocalScript")
+    script.Name = "aim"
+    script.Parent = Converted["_TextButton2"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local cik = script.Parent
 	local tabaim = script.Parent.Parent.Parent.Parent.tab
@@ -1005,18 +1492,36 @@ local function LIXZ_fake_script() -- TextButton_3.aim
 		tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
 	end)
 end
-coroutine.wrap(LIXZ_fake_script)()
-local function TDVQGC_fake_script() -- UIGradient_3.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_3)
+local function CNYHYR_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient5"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(TDVQGC_fake_script)()
-local function DBMB_fake_script() -- TextButton_4.FlyJumpToggle 
-	local script = Instance.new('LocalScript', TextButton_4)
+local function PDAKRV_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.FlyJumpToggle
+    local script = Instance.new("LocalScript")
+    script.Name = "FlyJumpToggle"
+    script.Parent = Converted["_TextButton3"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local UserInputService = game:GetService("UserInputService")
 	local Players = game:GetService("Players")
@@ -1043,9 +1548,18 @@ local function DBMB_fake_script() -- TextButton_4.FlyJumpToggle
 	
 	
 end
-coroutine.wrap(DBMB_fake_script)()
-local function TSVRJPE_fake_script() -- TextButton_4.text 
-	local script = Instance.new('LocalScript', TextButton_4)
+local function UBDNT_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton3"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1061,9 +1575,18 @@ local function TSVRJPE_fake_script() -- TextButton_4.text
 	
 	
 end
-coroutine.wrap(TSVRJPE_fake_script)()
-local function RBGZZKB_fake_script() -- TextButton_4.sound 
-	local script = Instance.new('LocalScript', TextButton_4)
+local function NJQDY_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton3"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1083,18 +1606,36 @@ local function RBGZZKB_fake_script() -- TextButton_4.sound
 		
 	end)
 end
-coroutine.wrap(RBGZZKB_fake_script)()
-local function FBRUVUU_fake_script() -- UIGradient_4.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_4)
+local function DMEIK_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient6"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(FBRUVUU_fake_script)()
-local function HZFD_fake_script() -- TextButton_5.text 
-	local script = Instance.new('LocalScript', TextButton_5)
+local function EVUAN_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton4"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1110,9 +1651,18 @@ local function HZFD_fake_script() -- TextButton_5.text
 	
 	
 end
-coroutine.wrap(HZFD_fake_script)()
-local function AHVQIF_fake_script() -- TextButton_5.SetPlayerSpeedOnClick 
-	local script = Instance.new('LocalScript', TextButton_5)
+local function BNCH_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.SetPlayerSpeedOnClick
+    local script = Instance.new("LocalScript")
+    script.Name = "SetPlayerSpeedOnClick"
+    script.Parent = Converted["_TextButton4"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
@@ -1154,9 +1704,18 @@ local function AHVQIF_fake_script() -- TextButton_5.SetPlayerSpeedOnClick
 	
 	
 end
-coroutine.wrap(AHVQIF_fake_script)()
-local function UDKAA_fake_script() -- TextButton_5.sound 
-	local script = Instance.new('LocalScript', TextButton_5)
+local function OBAVEBG_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton4"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1176,18 +1735,36 @@ local function UDKAA_fake_script() -- TextButton_5.sound
 		
 	end)
 end
-coroutine.wrap(UDKAA_fake_script)()
-local function NTBBJO_fake_script() -- UIGradient_5.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_5)
+local function QSPG_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient7"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(NTBBJO_fake_script)()
-local function JXSJXN_fake_script() -- TextButton_6.text 
-	local script = Instance.new('LocalScript', TextButton_6)
+local function AIIOFO_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton5"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1203,9 +1780,18 @@ local function JXSJXN_fake_script() -- TextButton_6.text
 	
 	
 end
-coroutine.wrap(JXSJXN_fake_script)()
-local function IFZKYZC_fake_script() -- TextButton_6.sound 
-	local script = Instance.new('LocalScript', TextButton_6)
+local function JBIIYQM_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton5"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1225,9 +1811,18 @@ local function IFZKYZC_fake_script() -- TextButton_6.sound
 		
 	end)
 end
-coroutine.wrap(IFZKYZC_fake_script)()
-local function BYFFL_fake_script() -- TextButton_6.ToggleHipHeight 
-	local script = Instance.new('LocalScript', TextButton_6)
+local function GVDGTTX_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.ToggleHipHeight
+    local script = Instance.new("LocalScript")
+    script.Name = "ToggleHipHeight"
+    script.Parent = Converted["_TextButton5"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local Players = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
@@ -1253,18 +1848,36 @@ local function BYFFL_fake_script() -- TextButton_6.ToggleHipHeight
 	
 	
 end
-coroutine.wrap(BYFFL_fake_script)()
-local function FSDUZ_fake_script() -- UIGradient_6.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_6)
+local function ANILA_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient8"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(FSDUZ_fake_script)()
-local function FMSAHI_fake_script() -- TextButton_7.text 
-	local script = Instance.new('LocalScript', TextButton_7)
+local function TPIUEAN_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton6"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1280,9 +1893,18 @@ local function FMSAHI_fake_script() -- TextButton_7.text
 	
 	
 end
-coroutine.wrap(FMSAHI_fake_script)()
-local function UXLCWH_fake_script() -- TextButton_7.sound 
-	local script = Instance.new('LocalScript', TextButton_7)
+local function FBZWS_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton6"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1302,9 +1924,18 @@ local function UXLCWH_fake_script() -- TextButton_7.sound
 		
 	end)
 end
-coroutine.wrap(UXLCWH_fake_script)()
-local function DBJZYKB_fake_script() -- TextButton_7.ToggleHipHeight 
-	local script = Instance.new('LocalScript', TextButton_7)
+local function DRNTVQF_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.ToggleHipHeight
+    local script = Instance.new("LocalScript")
+    script.Name = "ToggleHipHeight"
+    script.Parent = Converted["_TextButton6"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local Players = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
@@ -1330,18 +1961,36 @@ local function DBJZYKB_fake_script() -- TextButton_7.ToggleHipHeight
 	
 	
 end
-coroutine.wrap(DBJZYKB_fake_script)()
-local function ACRHMG_fake_script() -- UIGradient_7.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_7)
+local function UFELZBJ_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient9"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(ACRHMG_fake_script)()
-local function UWUCF_fake_script() -- TextButton_8.text 
-	local script = Instance.new('LocalScript', TextButton_8)
+local function BGNSPXU_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton7"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1357,9 +2006,18 @@ local function UWUCF_fake_script() -- TextButton_8.text
 	
 	
 end
-coroutine.wrap(UWUCF_fake_script)()
-local function KMBZX_fake_script() -- TextButton_8.sound 
-	local script = Instance.new('LocalScript', TextButton_8)
+local function MPDOM_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton7"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1379,9 +2037,18 @@ local function KMBZX_fake_script() -- TextButton_8.sound
 		
 	end)
 end
-coroutine.wrap(KMBZX_fake_script)()
-local function VLFPG_fake_script() -- TextButton_8.ToggleHipHeight 
-	local script = Instance.new('LocalScript', TextButton_8)
+local function YLWTPFT_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.ToggleHipHeight
+    local script = Instance.new("LocalScript")
+    script.Name = "ToggleHipHeight"
+    script.Parent = Converted["_TextButton7"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local Players = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
@@ -1408,18 +2075,36 @@ local function VLFPG_fake_script() -- TextButton_8.ToggleHipHeight
 	
 	
 end
-coroutine.wrap(VLFPG_fake_script)()
-local function JSLJAO_fake_script() -- UIGradient_8.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_8)
+local function QKPGW_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient10"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(JSLJAO_fake_script)()
-local function QNJVEH_fake_script() -- TextButton_9.text 
-	local script = Instance.new('LocalScript', TextButton_9)
+local function XEZBF_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton8"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1435,9 +2120,18 @@ local function QNJVEH_fake_script() -- TextButton_9.text
 	
 	
 end
-coroutine.wrap(QNJVEH_fake_script)()
-local function RNQXTKX_fake_script() -- TextButton_9.sound 
-	local script = Instance.new('LocalScript', TextButton_9)
+local function SOLNC_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton8"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1457,9 +2151,18 @@ local function RNQXTKX_fake_script() -- TextButton_9.sound
 		
 	end)
 end
-coroutine.wrap(RNQXTKX_fake_script)()
-local function BLHF_fake_script() -- TextButton_9.ToggleESP 
-	local script = Instance.new('LocalScript', TextButton_9)
+local function TNBZNDA_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleESP
+    local script = Instance.new("LocalScript")
+    script.Name = "ToggleESP"
+    script.Parent = Converted["_TextButton8"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local Players = game:GetService("Players")
 	local TweenService = game:GetService("TweenService")
@@ -1563,18 +2266,36 @@ local function BLHF_fake_script() -- TextButton_9.ToggleESP
 	
 	
 end
-coroutine.wrap(BLHF_fake_script)()
-local function PHYA_fake_script() -- UIGradient_9.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_9)
+local function XIBZXN_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient11"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(PHYA_fake_script)()
-local function AQFE_fake_script() -- TextButton_10.text 
-	local script = Instance.new('LocalScript', TextButton_10)
+local function CJHBSP_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton9"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1590,9 +2311,18 @@ local function AQFE_fake_script() -- TextButton_10.text
 	
 	
 end
-coroutine.wrap(AQFE_fake_script)()
-local function XVNGNBJ_fake_script() -- TextButton_10.sound 
-	local script = Instance.new('LocalScript', TextButton_10)
+local function QPEEVA_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton9"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1612,9 +2342,18 @@ local function XVNGNBJ_fake_script() -- TextButton_10.sound
 		
 	end)
 end
-coroutine.wrap(XVNGNBJ_fake_script)()
-local function IWNECH_fake_script() -- TextButton_10.ToggleDayNight 
-	local script = Instance.new('LocalScript', TextButton_10)
+local function VDFRDFK_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleDayNight
+    local script = Instance.new("LocalScript")
+    script.Name = "ToggleDayNight"
+    script.Parent = Converted["_TextButton9"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isDay = true
@@ -1650,18 +2389,36 @@ local function IWNECH_fake_script() -- TextButton_10.ToggleDayNight
 	
 	
 end
-coroutine.wrap(IWNECH_fake_script)()
-local function ABZHASA_fake_script() -- UIGradient_10.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_10)
+local function BIZJNER_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient12"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(ABZHASA_fake_script)()
-local function FBGB_fake_script() -- TextButton_11.text 
-	local script = Instance.new('LocalScript', TextButton_11)
+local function IAIRA_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton10"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1677,9 +2434,18 @@ local function FBGB_fake_script() -- TextButton_11.text
 	
 	
 end
-coroutine.wrap(FBGB_fake_script)()
-local function MUZIG_fake_script() -- TextButton_11.sound 
-	local script = Instance.new('LocalScript', TextButton_11)
+local function FJUMOCY_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton10"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1699,10 +2465,61 @@ local function MUZIG_fake_script() -- TextButton_11.sound
 		
 	end)
 end
-coroutine.wrap(MUZIG_fake_script)()
--- TextButton_11.ToggleTextureScript is disabled.
-local function EUJOWKQ_fake_script() -- TextButton_11.ToggleTextureScript 
-	local script = Instance.new('LocalScript', TextButton_11)
+local function PATE_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleTextureScript
+    local script = Instance.new("LocalScript")
+    script.Name = "ToggleTextureScript"
+    script.Parent = Converted["_TextButton10"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local button = script.Parent
+	local textureId = "rbxassetid://118116050473564"
+	local isTextured = false
+	
+	local function toggleTexture()
+	    isTextured = not isTextured
+	    for _, instance in game.Workspace:GetChildren() do
+	        if instance:IsA("Part") then
+	            for _, face in Enum.NormalId:GetEnumItems() do
+	                if isTextured then
+	                    local texture = Instance.new("Texture")
+	                    texture.Texture = textureId
+	                    texture.Face = face
+	                    texture.Parent = instance
+	                else
+	                    for _, texture in instance:GetChildren() do
+	                        if texture:IsA("Texture") and texture.Texture == textureId then
+	                            texture:Destroy()
+	                        end
+	                    end
+	                end
+	            end
+	        end
+	    end
+	end
+	
+	button.MouseButton1Click:Connect(toggleTexture)
+	
+	
+end
+local function YBZGJBZ_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleTextureScript
+    local script = Instance.new("LocalScript")
+    script.Name = "ToggleTextureScript"
+    script.Parent = Converted["_TextButton10"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isToggled = false
@@ -1726,18 +2543,36 @@ local function EUJOWKQ_fake_script() -- TextButton_11.ToggleTextureScript
 	
 	
 end
-coroutine.wrap(EUJOWKQ_fake_script)()
-local function SOSO_fake_script() -- UIGradient_11.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_11)
+local function SPDUQ_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient13"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(SOSO_fake_script)()
-local function LTBN_fake_script() -- TextButton_12.text 
-	local script = Instance.new('LocalScript', TextButton_12)
+local function FZWZPH_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton11"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1753,9 +2588,18 @@ local function LTBN_fake_script() -- TextButton_12.text
 	
 	
 end
-coroutine.wrap(LTBN_fake_script)()
-local function VVAFEL_fake_script() -- TextButton_12.sound 
-	local script = Instance.new('LocalScript', TextButton_12)
+local function GVLM_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton11"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1775,9 +2619,18 @@ local function VVAFEL_fake_script() -- TextButton_12.sound
 		
 	end)
 end
-coroutine.wrap(VVAFEL_fake_script)()
-local function BJLISOC_fake_script() -- TextButton_12.TogglePartOutline 
-	local script = Instance.new('LocalScript', TextButton_12)
+local function BKCROB_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+    local script = Instance.new("LocalScript")
+    script.Name = "TogglePartOutline"
+    script.Parent = Converted["_TextButton11"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local outlineVisible = false
@@ -1841,18 +2694,36 @@ local function BJLISOC_fake_script() -- TextButton_12.TogglePartOutline
 	button.MouseButton1Click:Connect(toggleOutline)
 	
 end
-coroutine.wrap(BJLISOC_fake_script)()
-local function CLBEJP_fake_script() -- UIGradient_12.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_12)
+local function QSWI_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient14"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(CLBEJP_fake_script)()
-local function WNPU_fake_script() -- TextButton_13.text 
-	local script = Instance.new('LocalScript', TextButton_13)
+local function ETJY_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton12"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1868,9 +2739,18 @@ local function WNPU_fake_script() -- TextButton_13.text
 	
 	
 end
-coroutine.wrap(WNPU_fake_script)()
-local function ZVQRY_fake_script() -- TextButton_13.sound 
-	local script = Instance.new('LocalScript', TextButton_13)
+local function MFNWN_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton12"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -1890,9 +2770,18 @@ local function ZVQRY_fake_script() -- TextButton_13.sound
 		
 	end)
 end
-coroutine.wrap(ZVQRY_fake_script)()
-local function UTBE_fake_script() -- TextButton_13.TogglePartOutline 
-	local script = Instance.new('LocalScript', TextButton_13)
+local function HJRZVP_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+    local script = Instance.new("LocalScript")
+    script.Name = "TogglePartOutline"
+    script.Parent = Converted["_TextButton12"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local outlineVisible = false
@@ -1956,18 +2845,36 @@ local function UTBE_fake_script() -- TextButton_13.TogglePartOutline
 	button.MouseButton1Click:Connect(toggleOutline)
 	
 end
-coroutine.wrap(UTBE_fake_script)()
-local function DTSA_fake_script() -- UIGradient_13.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_13)
+local function AHRXJC_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient15"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(DTSA_fake_script)()
-local function VTQWP_fake_script() -- TextButton_14.text 
-	local script = Instance.new('LocalScript', TextButton_14)
+local function FMPNGT_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton13"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -1983,9 +2890,18 @@ local function VTQWP_fake_script() -- TextButton_14.text
 	
 	
 end
-coroutine.wrap(VTQWP_fake_script)()
-local function FBJFPC_fake_script() -- TextButton_14.sound 
-	local script = Instance.new('LocalScript', TextButton_14)
+local function GOWSG_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton13"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -2005,9 +2921,18 @@ local function FBJFPC_fake_script() -- TextButton_14.sound
 		
 	end)
 end
-coroutine.wrap(FBJFPC_fake_script)()
-local function LRXR_fake_script() -- TextButton_14.TogglePartOutline 
-	local script = Instance.new('LocalScript', TextButton_14)
+local function XSETW_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+    local script = Instance.new("LocalScript")
+    script.Name = "TogglePartOutline"
+    script.Parent = Converted["_TextButton13"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local outlineVisible = false
@@ -2071,18 +2996,36 @@ local function LRXR_fake_script() -- TextButton_14.TogglePartOutline
 	button.MouseButton1Click:Connect(toggleOutline)
 	
 end
-coroutine.wrap(LRXR_fake_script)()
-local function VRAFI_fake_script() -- UIGradient_14.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_14)
+local function ZMGRXW_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient16"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(VRAFI_fake_script)()
-local function REII_fake_script() -- TextButton_15.text 
-	local script = Instance.new('LocalScript', TextButton_15)
+local function GOTTZEN_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton14"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -2098,9 +3041,18 @@ local function REII_fake_script() -- TextButton_15.text
 	
 	
 end
-coroutine.wrap(REII_fake_script)()
-local function FRCWC_fake_script() -- TextButton_15.sound 
-	local script = Instance.new('LocalScript', TextButton_15)
+local function ROSFLLI_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton14"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -2120,9 +3072,18 @@ local function FRCWC_fake_script() -- TextButton_15.sound
 		
 	end)
 end
-coroutine.wrap(FRCWC_fake_script)()
-local function QDBJ_fake_script() -- TextButton_15.TogglePartOutline 
-	local script = Instance.new('LocalScript', TextButton_15)
+local function LROCKJF_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+    local script = Instance.new("LocalScript")
+    script.Name = "TogglePartOutline"
+    script.Parent = Converted["_TextButton14"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local outlineVisible = false
@@ -2186,18 +3147,36 @@ local function QDBJ_fake_script() -- TextButton_15.TogglePartOutline
 	button.MouseButton1Click:Connect(toggleOutline)
 	
 end
-coroutine.wrap(QDBJ_fake_script)()
-local function MWBY_fake_script() -- UIGradient_15.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_15)
+local function JHQNY_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient17"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(MWBY_fake_script)()
-local function XVRWR_fake_script() -- TextButton_16.text 
-	local script = Instance.new('LocalScript', TextButton_16)
+local function FGIAWMP_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton15"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -2213,9 +3192,18 @@ local function XVRWR_fake_script() -- TextButton_16.text
 	
 	
 end
-coroutine.wrap(XVRWR_fake_script)()
-local function PVPAI_fake_script() -- TextButton_16.sound 
-	local script = Instance.new('LocalScript', TextButton_16)
+local function YGLQBY_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton15"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -2235,9 +3223,18 @@ local function PVPAI_fake_script() -- TextButton_16.sound
 		
 	end)
 end
-coroutine.wrap(PVPAI_fake_script)()
-local function QZAU_fake_script() -- TextButton_16.TogglePartOutline 
-	local script = Instance.new('LocalScript', TextButton_16)
+local function RPQRXJ_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+    local script = Instance.new("LocalScript")
+    script.Name = "TogglePartOutline"
+    script.Parent = Converted["_TextButton15"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local outlineVisible = false
@@ -2301,18 +3298,36 @@ local function QZAU_fake_script() -- TextButton_16.TogglePartOutline
 	button.MouseButton1Click:Connect(toggleOutline)
 	
 end
-coroutine.wrap(QZAU_fake_script)()
-local function HDSBNTD_fake_script() -- UIGradient_16.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_16)
+local function YPYK_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient18"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(HDSBNTD_fake_script)()
-local function XGNJIA_fake_script() -- TextButton_17.text 
-	local script = Instance.new('LocalScript', TextButton_17)
+local function HSFSQK_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton16"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -2328,9 +3343,18 @@ local function XGNJIA_fake_script() -- TextButton_17.text
 	
 	
 end
-coroutine.wrap(XGNJIA_fake_script)()
-local function ZKPARHP_fake_script() -- TextButton_17.sound 
-	local script = Instance.new('LocalScript', TextButton_17)
+local function CBTLFLW_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton16"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -2350,9 +3374,18 @@ local function ZKPARHP_fake_script() -- TextButton_17.sound
 		
 	end)
 end
-coroutine.wrap(ZKPARHP_fake_script)()
-local function YRRFG_fake_script() -- TextButton_17.ToggleFreecam 
-	local script = Instance.new('LocalScript', TextButton_17)
+local function FSEPPJ_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.ToggleFreecam
+    local script = Instance.new("LocalScript")
+    script.Name = "ToggleFreecam"
+    script.Parent = Converted["_TextButton16"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local Players = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
@@ -2386,18 +3419,36 @@ local function YRRFG_fake_script() -- TextButton_17.ToggleFreecam
 	
 	
 end
-coroutine.wrap(YRRFG_fake_script)()
-local function ZRKPWHM_fake_script() -- UIGradient_17.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_17)
+local function IEJPA_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient19"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(ZRKPWHM_fake_script)()
-local function DGNK_fake_script() -- TextButton_18.text 
-	local script = Instance.new('LocalScript', TextButton_18)
+local function GKSFHD_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton17"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -2413,9 +3464,18 @@ local function DGNK_fake_script() -- TextButton_18.text
 	
 	
 end
-coroutine.wrap(DGNK_fake_script)()
-local function HOBS_fake_script() -- TextButton_18.sound 
-	local script = Instance.new('LocalScript', TextButton_18)
+local function XPEYGR_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton17"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -2435,9 +3495,18 @@ local function HOBS_fake_script() -- TextButton_18.sound
 		
 	end)
 end
-coroutine.wrap(HOBS_fake_script)()
-local function UYTMNI_fake_script() -- TextButton_18.CameraSpinToggle 
-	local script = Instance.new('LocalScript', TextButton_18)
+local function AJJQZL_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+    local script = Instance.new("LocalScript")
+    script.Name = "CameraSpinToggle"
+    script.Parent = Converted["_TextButton17"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local player = game.Players.LocalPlayer
 	local camera = workspace.CurrentCamera
@@ -2456,18 +3525,36 @@ local function UYTMNI_fake_script() -- TextButton_18.CameraSpinToggle
 	
 	
 end
-coroutine.wrap(UYTMNI_fake_script)()
-local function FJNT_fake_script() -- UIGradient_18.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_18)
+local function MWMZJ_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient20"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(FJNT_fake_script)()
-local function OMDJTVG_fake_script() -- TextButton_19.text 
-	local script = Instance.new('LocalScript', TextButton_19)
+local function QYJVCV_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton18"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -2483,9 +3570,18 @@ local function OMDJTVG_fake_script() -- TextButton_19.text
 	
 	
 end
-coroutine.wrap(OMDJTVG_fake_script)()
-local function TNWOJOB_fake_script() -- TextButton_19.sound 
-	local script = Instance.new('LocalScript', TextButton_19)
+local function TKKC_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton18"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -2505,9 +3601,18 @@ local function TNWOJOB_fake_script() -- TextButton_19.sound
 		
 	end)
 end
-coroutine.wrap(TNWOJOB_fake_script)()
-local function QXMBI_fake_script() -- TextButton_19.CameraSpinToggle 
-	local script = Instance.new('LocalScript', TextButton_19)
+local function QPNBWB_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+    local script = Instance.new("LocalScript")
+    script.Name = "CameraSpinToggle"
+    script.Parent = Converted["_TextButton18"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local player = game.Players.LocalPlayer
 	local camera = workspace.CurrentCamera
@@ -2526,18 +3631,36 @@ local function QXMBI_fake_script() -- TextButton_19.CameraSpinToggle
 	
 	
 end
-coroutine.wrap(QXMBI_fake_script)()
-local function TAYWKG_fake_script() -- UIGradient_19.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_19)
+local function YYVPYLX_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient21"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(TAYWKG_fake_script)()
-local function ZOZVYKC_fake_script() -- TextButton_20.text 
-	local script = Instance.new('LocalScript', TextButton_20)
+local function AAZI_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+    local script = Instance.new("LocalScript")
+    script.Name = "text"
+    script.Parent = Converted["_TextButton19"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local button = script.Parent
 	local isFlyJumpOn = false
@@ -2553,9 +3676,18 @@ local function ZOZVYKC_fake_script() -- TextButton_20.text
 	
 	
 end
-coroutine.wrap(ZOZVYKC_fake_script)()
-local function LEUW_fake_script() -- TextButton_20.sound 
-	local script = Instance.new('LocalScript', TextButton_20)
+local function ETYAS_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+    local script = Instance.new("LocalScript")
+    script.Name = "sound"
+    script.Parent = Converted["_TextButton19"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
 	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
@@ -2575,9 +3707,18 @@ local function LEUW_fake_script() -- TextButton_20.sound
 		
 	end)
 end
-coroutine.wrap(LEUW_fake_script)()
-local function GAUBJ_fake_script() -- TextButton_20.CameraSpinToggle 
-	local script = Instance.new('LocalScript', TextButton_20)
+local function GCNA_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+    local script = Instance.new("LocalScript")
+    script.Name = "CameraSpinToggle"
+    script.Parent = Converted["_TextButton19"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	local player = game.Players.LocalPlayer
 	local camera = workspace.CurrentCamera
@@ -2596,13 +3737,105 @@ local function GAUBJ_fake_script() -- TextButton_20.CameraSpinToggle
 	
 	
 end
-coroutine.wrap(GAUBJ_fake_script)()
-local function VNXEEK_fake_script() -- UIGradient_20.LocalScript 
-	local script = Instance.new('LocalScript', UIGradient_20)
+local function PYNYQ_fake_script() -- Fake Script: StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UIGradient22"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
 
 	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end
-coroutine.wrap(VNXEEK_fake_script)()
+
+coroutine.wrap(HFLW_fake_script)()
+coroutine.wrap(XTYQNFO_fake_script)()
+coroutine.wrap(XBWEATD_fake_script)()
+coroutine.wrap(CIEY_fake_script)()
+coroutine.wrap(SVXJ_fake_script)()
+coroutine.wrap(HPQTGZ_fake_script)()
+coroutine.wrap(NSWMUDE_fake_script)()
+coroutine.wrap(ODXP_fake_script)()
+coroutine.wrap(MCET_fake_script)()
+coroutine.wrap(SPBYH_fake_script)()
+coroutine.wrap(LPZLRI_fake_script)()
+coroutine.wrap(CVSYO_fake_script)()
+coroutine.wrap(FWPPA_fake_script)()
+coroutine.wrap(CNYHYR_fake_script)()
+coroutine.wrap(PDAKRV_fake_script)()
+coroutine.wrap(UBDNT_fake_script)()
+coroutine.wrap(NJQDY_fake_script)()
+coroutine.wrap(DMEIK_fake_script)()
+coroutine.wrap(EVUAN_fake_script)()
+coroutine.wrap(BNCH_fake_script)()
+coroutine.wrap(OBAVEBG_fake_script)()
+coroutine.wrap(QSPG_fake_script)()
+coroutine.wrap(AIIOFO_fake_script)()
+coroutine.wrap(JBIIYQM_fake_script)()
+coroutine.wrap(GVDGTTX_fake_script)()
+coroutine.wrap(ANILA_fake_script)()
+coroutine.wrap(TPIUEAN_fake_script)()
+coroutine.wrap(FBZWS_fake_script)()
+coroutine.wrap(DRNTVQF_fake_script)()
+coroutine.wrap(UFELZBJ_fake_script)()
+coroutine.wrap(BGNSPXU_fake_script)()
+coroutine.wrap(MPDOM_fake_script)()
+coroutine.wrap(YLWTPFT_fake_script)()
+coroutine.wrap(QKPGW_fake_script)()
+coroutine.wrap(XEZBF_fake_script)()
+coroutine.wrap(SOLNC_fake_script)()
+coroutine.wrap(TNBZNDA_fake_script)()
+coroutine.wrap(XIBZXN_fake_script)()
+coroutine.wrap(CJHBSP_fake_script)()
+coroutine.wrap(QPEEVA_fake_script)()
+coroutine.wrap(VDFRDFK_fake_script)()
+coroutine.wrap(BIZJNER_fake_script)()
+coroutine.wrap(IAIRA_fake_script)()
+coroutine.wrap(FJUMOCY_fake_script)()
+coroutine.wrap(PATE_fake_script)()
+coroutine.wrap(YBZGJBZ_fake_script)()
+coroutine.wrap(SPDUQ_fake_script)()
+coroutine.wrap(FZWZPH_fake_script)()
+coroutine.wrap(GVLM_fake_script)()
+coroutine.wrap(BKCROB_fake_script)()
+coroutine.wrap(QSWI_fake_script)()
+coroutine.wrap(ETJY_fake_script)()
+coroutine.wrap(MFNWN_fake_script)()
+coroutine.wrap(HJRZVP_fake_script)()
+coroutine.wrap(AHRXJC_fake_script)()
+coroutine.wrap(FMPNGT_fake_script)()
+coroutine.wrap(GOWSG_fake_script)()
+coroutine.wrap(XSETW_fake_script)()
+coroutine.wrap(ZMGRXW_fake_script)()
+coroutine.wrap(GOTTZEN_fake_script)()
+coroutine.wrap(ROSFLLI_fake_script)()
+coroutine.wrap(LROCKJF_fake_script)()
+coroutine.wrap(JHQNY_fake_script)()
+coroutine.wrap(FGIAWMP_fake_script)()
+coroutine.wrap(YGLQBY_fake_script)()
+coroutine.wrap(RPQRXJ_fake_script)()
+coroutine.wrap(YPYK_fake_script)()
+coroutine.wrap(HSFSQK_fake_script)()
+coroutine.wrap(CBTLFLW_fake_script)()
+coroutine.wrap(FSEPPJ_fake_script)()
+coroutine.wrap(IEJPA_fake_script)()
+coroutine.wrap(GKSFHD_fake_script)()
+coroutine.wrap(XPEYGR_fake_script)()
+coroutine.wrap(AJJQZL_fake_script)()
+coroutine.wrap(MWMZJ_fake_script)()
+coroutine.wrap(QYJVCV_fake_script)()
+coroutine.wrap(TKKC_fake_script)()
+coroutine.wrap(QPNBWB_fake_script)()
+coroutine.wrap(YYVPYLX_fake_script)()
+coroutine.wrap(AAZI_fake_script)()
+coroutine.wrap(ETYAS_fake_script)()
+coroutine.wrap(GCNA_fake_script)()
+coroutine.wrap(PYNYQ_fake_script)()
