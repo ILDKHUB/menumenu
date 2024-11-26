@@ -1,3 +1,5 @@
+print("RUN")
+
 local function createGui(parent)
 	--ScreenGui1--
 	local ScreenGui1 = Instance.new("ScreenGui",parent)
