@@ -1,3054 +1,1987 @@
-print("RUN")
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
-local function createGui(parent)
-	--ScreenGui1--
-	local ScreenGui1 = Instance.new("ScreenGui",parent)
-	ScreenGui1["Name"] = "modmenu"
-	----ScreenGui1----
-	--ImageButton2--
-	local ImageButton2 = Instance.new("ImageButton",ScreenGui1)
-	ImageButton2["Size"] = UDim2.new(0.0996131673, 0, 0.139695734, 0)
-	ImageButton2["Image"] = "http://www.roblox.com/asset/?id=118116050473564"
-	ImageButton2["Name"] = "ic"
-	ImageButton2["Position"] = UDim2.new(0.0231855977, 0, 0.137780607, 0)
-	ImageButton2["BorderColor3"] = Color3.new(0, 0, 0)
-	ImageButton2["ZIndex"] = 1000000
-	ImageButton2["BorderSizePixel"] = 0
-	ImageButton2["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----ImageButton2----
-	--UIAspectRatioConstraint3--
-	local UIAspectRatioConstraint3 = Instance.new("UIAspectRatioConstraint",ImageButton2)
-	----UIAspectRatioConstraint3----
-	--UICorner4--
-	local UICorner4 = Instance.new("UICorner",ImageButton2)
-	UICorner4["CornerRadius"] = UDim.new(0, 100)
-	----UICorner4----
-	--UIStroke5--
-	local UIStroke5 = Instance.new("UIStroke",ImageButton2)
-	UIStroke5["Color"] = Color3.new(1, 1, 1)
-	UIStroke5["Thickness"] = 2.200000047683716
-	----UIStroke5----
-	--UIGradient6--
-	local UIGradient6 = Instance.new("UIGradient",UIStroke5)
-	UIGradient6["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient6----
-	--Script7--
-	local Script7 = Instance.new("Script",UIGradient6)
-	----Script7----
-	--Script8--
-	local Script8 = Instance.new("Script",ImageButton2)
-	Script8["Name"] = "nove"
-	----Script8----
-	--Script9--
-	local Script9 = Instance.new("Script",ImageButton2)
-	Script9["Name"] = "togg"
-	----Script9----
-	--Sound10--
-	local Sound10 = Instance.new("Sound",ImageButton2)
-	Sound10["Name"] = "ron"
-	Sound10["Volume"] = 1.1490000486373901
-	----Sound10----
-	--Sound11--
-	local Sound11 = Instance.new("Sound",ImageButton2)
-	Sound11["Name"] = "roof"
-	Sound11["Volume"] = 1.1490000486373901
-	----Sound11----
-	--Frame12--
-	local Frame12 = Instance.new("Frame",ScreenGui1)
-	Frame12["Size"] = UDim2.new(0.727905154, 0, 0.152243584, 0)
-	Frame12["BackgroundTransparency"] = 0.3499999940395355
-	Frame12["Position"] = UDim2.new(0.136047423, 0, 0.138678312, 0)
-	Frame12["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame12["Name"] = "menu"
-	Frame12["BorderSizePixel"] = 0
-	Frame12["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame12----
-	--UICorner13--
-	local UICorner13 = Instance.new("UICorner",Frame12)
-	UICorner13["CornerRadius"] = UDim.new(0, 0)
-	----UICorner13----
-	--UIStroke14--
-	local UIStroke14 = Instance.new("UIStroke",Frame12)
-	UIStroke14["Color"] = Color3.new(1, 1, 1)
-	UIStroke14["Thickness"] = 1.0499999523162842
-	----UIStroke14----
-	--UIGradient15--
-	local UIGradient15 = Instance.new("UIGradient",UIStroke14)
-	UIGradient15["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient15----
-	--Script16--
-	local Script16 = Instance.new("Script",UIGradient15)
-	----Script16----
-	--Frame17--
-	local Frame17 = Instance.new("Frame",Frame12)
-	Frame17["Size"] = UDim2.new(1.0001837, 0, 3.92857313, 0)
-	Frame17["BackgroundTransparency"] = 0.3499999940395355
-	Frame17["Position"] = UDim2.new(-0.000183591415, 0, 1.16666591, 0)
-	Frame17["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame17["Name"] = "fi"
-	Frame17["BorderSizePixel"] = 0
-	Frame17["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame17----
-	--UICorner18--
-	local UICorner18 = Instance.new("UICorner",Frame17)
-	UICorner18["CornerRadius"] = UDim.new(0, 0)
-	----UICorner18----
-	--UIStroke19--
-	local UIStroke19 = Instance.new("UIStroke",Frame17)
-	UIStroke19["Color"] = Color3.new(1, 1, 1)
-	UIStroke19["Thickness"] = 1.0499999523162842
-	----UIStroke19----
-	--UIGradient20--
-	local UIGradient20 = Instance.new("UIGradient",UIStroke19)
-	UIGradient20["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient20----
-	--Script21--
-	local Script21 = Instance.new("Script",UIGradient20)
-	----Script21----
-	--Frame22--
-	local Frame22 = Instance.new("Frame",Frame17)
-	Frame22["Size"] = UDim2.new(0.433224946, 0, 1.00267947, 0)
-	Frame22["BackgroundTransparency"] = 0.75
-	Frame22["Position"] = UDim2.new(9.71718919e-08, 0, -0.00267946557, 0)
-	Frame22["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame22["Name"] = "fa"
-	Frame22["BorderSizePixel"] = 0
-	Frame22["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame22----
-	--UICorner23--
-	local UICorner23 = Instance.new("UICorner",Frame22)
-	UICorner23["CornerRadius"] = UDim.new(0, 0)
-	----UICorner23----
-	--Frame24--
-	local Frame24 = Instance.new("Frame",Frame22)
-	Frame24["BackgroundTransparency"] = 0.550000011920929
-	Frame24["Size"] = UDim2.new(1.00131786, 0, 0.154991329, 0)
-	Frame24["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame24["Name"] = "btn"
-	Frame24["BorderSizePixel"] = 0
-	Frame24["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame24----
-	--TextButton25--
-	local TextButton25 = Instance.new("TextButton",Frame24)
-	TextButton25["TextWrapped"] = true
-	TextButton25["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton25["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton25["Text"] = "PLAYER"
-	TextButton25["TextSize"] = 14
-	TextButton25["Font"] = Enum.Font.SourceSans
-	TextButton25["BackgroundTransparency"] = 1
-	TextButton25["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton25["TextScaled"] = true
-	TextButton25["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton25["BorderSizePixel"] = 0
-	TextButton25["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton25----
-	--Script26--
-	local Script26 = Instance.new("Script",TextButton25)
-	Script26["Name"] = "aim"
-	----Script26----
-	--Script27--
-	local Script27 = Instance.new("Script",TextButton25)
-	Script27["Name"] = "chngetan"
-	----Script27----
-	--UIStroke28--
-	local UIStroke28 = Instance.new("UIStroke",Frame24)
-	UIStroke28["Color"] = Color3.new(1, 1, 1)
-	UIStroke28["Thickness"] = 1.0499999523162842
-	----UIStroke28----
-	--UIGradient29--
-	local UIGradient29 = Instance.new("UIGradient",Frame24)
-	UIGradient29["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient29----
-	--Script30--
-	local Script30 = Instance.new("Script",UIGradient29)
-	----Script30----
-	--UIListLayout31--
-	local UIListLayout31 = Instance.new("UIListLayout",Frame22)
-	UIListLayout31["SortOrder"] = Enum.SortOrder.LayoutOrder
-	UIListLayout31["Padding"] = UDim.new(0, 5)
-	----UIListLayout31----
-	--Frame32--
-	local Frame32 = Instance.new("Frame",Frame22)
-	Frame32["BackgroundTransparency"] = 0.550000011920929
-	Frame32["Size"] = UDim2.new(1.00131786, 0, 0.154991329, 0)
-	Frame32["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame32["Name"] = "btn"
-	Frame32["BorderSizePixel"] = 0
-	Frame32["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame32----
-	--TextButton33--
-	local TextButton33 = Instance.new("TextButton",Frame32)
-	TextButton33["TextWrapped"] = true
-	TextButton33["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton33["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton33["Text"] = "WORLD"
-	TextButton33["TextSize"] = 14
-	TextButton33["Font"] = Enum.Font.SourceSans
-	TextButton33["BackgroundTransparency"] = 1
-	TextButton33["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton33["TextScaled"] = true
-	TextButton33["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton33["BorderSizePixel"] = 0
-	TextButton33["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton33----
-	--Script34--
-	local Script34 = Instance.new("Script",TextButton33)
-	Script34["Name"] = "chngetan"
-	----Script34----
-	--Script35--
-	local Script35 = Instance.new("Script",TextButton33)
-	Script35["Name"] = "aim"
-	----Script35----
-	--UIStroke36--
-	local UIStroke36 = Instance.new("UIStroke",Frame32)
-	UIStroke36["Color"] = Color3.new(1, 1, 1)
-	UIStroke36["Thickness"] = 1.0499999523162842
-	----UIStroke36----
-	--UIGradient37--
-	local UIGradient37 = Instance.new("UIGradient",Frame32)
-	UIGradient37["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient37----
-	--Script38--
-	local Script38 = Instance.new("Script",UIGradient37)
-	----Script38----
-	--Frame39--
-	local Frame39 = Instance.new("Frame",Frame22)
-	Frame39["BackgroundTransparency"] = 0.550000011920929
-	Frame39["Size"] = UDim2.new(1.00131786, 0, 0.154991329, 0)
-	Frame39["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame39["Name"] = "btn"
-	Frame39["BorderSizePixel"] = 0
-	Frame39["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame39----
-	--TextButton40--
-	local TextButton40 = Instance.new("TextButton",Frame39)
-	TextButton40["TextWrapped"] = true
-	TextButton40["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton40["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton40["Text"] = "CAMERA"
-	TextButton40["TextSize"] = 14
-	TextButton40["Font"] = Enum.Font.SourceSans
-	TextButton40["BackgroundTransparency"] = 1
-	TextButton40["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton40["TextScaled"] = true
-	TextButton40["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton40["BorderSizePixel"] = 0
-	TextButton40["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton40----
-	--Script41--
-	local Script41 = Instance.new("Script",TextButton40)
-	Script41["Name"] = "chngetan"
-	----Script41----
-	--Script42--
-	local Script42 = Instance.new("Script",TextButton40)
-	Script42["Name"] = "aim"
-	----Script42----
-	--UIStroke43--
-	local UIStroke43 = Instance.new("UIStroke",Frame39)
-	UIStroke43["Color"] = Color3.new(1, 1, 1)
-	UIStroke43["Thickness"] = 1.0499999523162842
-	----UIStroke43----
-	--UIGradient44--
-	local UIGradient44 = Instance.new("UIGradient",Frame39)
-	UIGradient44["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient44----
-	--Script45--
-	local Script45 = Instance.new("Script",UIGradient44)
-	----Script45----
-	--Sound46--
-	local Sound46 = Instance.new("Sound",Frame22)
-	Sound46["Name"] = "click"
-	Sound46["Volume"] = 1.3322499990463257
-	----Sound46----
-	--Sound47--
-	local Sound47 = Instance.new("Sound",Frame22)
-	Sound47["Name"] = "click2"
-	Sound47["Volume"] = 1.3322499990463257
-	----Sound47----
-	--Sound48--
-	local Sound48 = Instance.new("Sound",Frame22)
-	Sound48["Name"] = "click3"
-	Sound48["Volume"] = 1.3322499990463257
-	----Sound48----
-	--Frame49--
-	local Frame49 = Instance.new("Frame",Frame17)
-	Frame49["Name"] = "tab"
-	Frame49["Size"] = UDim2.new(0.549445629, 0, 1.00267947, 0)
-	Frame49["BackgroundTransparency"] = 1
-	Frame49["Position"] = UDim2.new(0.450554281, 0, -0.00267946557, 0)
-	Frame49["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame49["ZIndex"] = 2
-	Frame49["BorderSizePixel"] = 0
-	Frame49["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame49----
-	--UICorner50--
-	local UICorner50 = Instance.new("UICorner",Frame49)
-	UICorner50["CornerRadius"] = UDim.new(0, 0)
-	----UICorner50----
-	--Frame51--
-	local Frame51 = Instance.new("Frame",Frame49)
-	Frame51["BackgroundTransparency"] = 1
-	Frame51["Size"] = UDim2.new(1, 0, 1, 0)
-	Frame51["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame51["Name"] = "showtab"
-	Frame51["BorderSizePixel"] = 0
-	Frame51["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----Frame51----
-	--Frame52--
-	local Frame52 = Instance.new("Frame",Frame51)
-	Frame52["BackgroundTransparency"] = 1
-	Frame52["Size"] = UDim2.new(1, 0, 1, 0)
-	Frame52["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame52["Name"] = "tab1"
-	Frame52["BorderSizePixel"] = 0
-	Frame52["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----Frame52----
-	--TextLabel53--
-	local TextLabel53 = Instance.new("TextLabel",Frame52)
-	TextLabel53["TextWrapped"] = true
-	TextLabel53["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel53["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel53["Text"] = "- PLAYER -"
-	TextLabel53["Font"] = Enum.Font.Unknown
-	TextLabel53["BackgroundTransparency"] = 1
-	TextLabel53["TextSize"] = 14
-	TextLabel53["TextScaled"] = true
-	TextLabel53["Size"] = UDim2.new(0.99999994, 0, 0.0647074878, 0)
-	TextLabel53["BorderSizePixel"] = 0
-	TextLabel53["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel53----
-	--ScrollingFrame54--
-	local ScrollingFrame54 = Instance.new("ScrollingFrame",Frame52)
-	ScrollingFrame54["ScrollBarImageColor3"] = Color3.new(0, 0.866667, 1)
-	ScrollingFrame54["Active"] = true
-	ScrollingFrame54["BorderColor3"] = Color3.new(0, 0, 0)
-	ScrollingFrame54["ScrollBarThickness"] = 2
-	ScrollingFrame54["BackgroundTransparency"] = 1
-	ScrollingFrame54["Position"] = UDim2.new(0, 0, 0.0647074878, 0)
-	ScrollingFrame54["Size"] = UDim2.new(1, 0, 0.935292542, 0)
-	ScrollingFrame54["BorderSizePixel"] = 0
-	ScrollingFrame54["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----ScrollingFrame54----
-	--Frame55--
-	local Frame55 = Instance.new("Frame",ScrollingFrame54)
-	Frame55["BackgroundTransparency"] = 1
-	Frame55["Size"] = UDim2.new(1, 0, 1, 0)
-	Frame55["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame55["Name"] = "memory"
-	Frame55["BorderSizePixel"] = 0
-	Frame55["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----Frame55----
-	--Frame56--
-	local Frame56 = Instance.new("Frame",Frame55)
-	Frame56["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame56["BackgroundTransparency"] = 0.550000011920929
-	Frame56["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame56["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame56["Name"] = "btn"
-	Frame56["BorderSizePixel"] = 0
-	Frame56["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame56----
-	--TextButton57--
-	local TextButton57 = Instance.new("TextButton",Frame56)
-	TextButton57["TextWrapped"] = true
-	TextButton57["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton57["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton57["Text"] = "FLY JUMP : OFF"
-	TextButton57["TextSize"] = 14
-	TextButton57["Font"] = Enum.Font.SourceSans
-	TextButton57["BackgroundTransparency"] = 1
-	TextButton57["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton57["TextScaled"] = true
-	TextButton57["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton57["BorderSizePixel"] = 0
-	TextButton57["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton57----
-	--Script58--
-	local Script58 = Instance.new("Script",TextButton57)
-	Script58["Name"] = "FlyJumpToggle"
-	----Script58----
-	--Script59--
-	local Script59 = Instance.new("Script",TextButton57)
-	Script59["Name"] = "text"
-	----Script59----
-	--Script60--
-	local Script60 = Instance.new("Script",TextButton57)
-	Script60["Name"] = "sound"
-	----Script60----
-	--UIStroke61--
-	local UIStroke61 = Instance.new("UIStroke",Frame56)
-	UIStroke61["Color"] = Color3.new(1, 1, 1)
-	UIStroke61["Thickness"] = 1.0499999523162842
-	----UIStroke61----
-	--UIGradient62--
-	local UIGradient62 = Instance.new("UIGradient",Frame56)
-	UIGradient62["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient62----
-	--Script63--
-	local Script63 = Instance.new("Script",UIGradient62)
-	----Script63----
-	--UIListLayout64--
-	local UIListLayout64 = Instance.new("UIListLayout",Frame55)
-	UIListLayout64["SortOrder"] = Enum.SortOrder.LayoutOrder
-	UIListLayout64["Padding"] = UDim.new(0, 8)
-	----UIListLayout64----
-	--Frame65--
-	local Frame65 = Instance.new("Frame",Frame55)
-	Frame65["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame65["BackgroundTransparency"] = 0.550000011920929
-	Frame65["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame65["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame65["Name"] = "btn"
-	Frame65["BorderSizePixel"] = 0
-	Frame65["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame65----
-	--TextButton66--
-	local TextButton66 = Instance.new("TextButton",Frame65)
-	TextButton66["TextWrapped"] = true
-	TextButton66["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton66["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton66["Text"] = "WALKSPEED : OFF"
-	TextButton66["TextSize"] = 14
-	TextButton66["Font"] = Enum.Font.SourceSans
-	TextButton66["BackgroundTransparency"] = 1
-	TextButton66["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton66["TextScaled"] = true
-	TextButton66["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton66["BorderSizePixel"] = 0
-	TextButton66["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton66----
-	--Script67--
-	local Script67 = Instance.new("Script",TextButton66)
-	Script67["Name"] = "text"
-	----Script67----
-	--Script68--
-	local Script68 = Instance.new("Script",TextButton66)
-	Script68["Name"] = "SetPlayerSpeedOnClick"
-	----Script68----
-	--Script69--
-	local Script69 = Instance.new("Script",TextButton66)
-	Script69["Name"] = "sound"
-	----Script69----
-	--UIStroke70--
-	local UIStroke70 = Instance.new("UIStroke",Frame65)
-	UIStroke70["Color"] = Color3.new(1, 1, 1)
-	UIStroke70["Thickness"] = 1.0499999523162842
-	----UIStroke70----
-	--UIGradient71--
-	local UIGradient71 = Instance.new("UIGradient",Frame65)
-	UIGradient71["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient71----
-	--Script72--
-	local Script72 = Instance.new("Script",UIGradient71)
-	----Script72----
-	--Frame73--
-	local Frame73 = Instance.new("Frame",Frame55)
-	Frame73["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame73["BackgroundTransparency"] = 0.550000011920929
-	Frame73["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame73["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame73["Name"] = "btn"
-	Frame73["BorderSizePixel"] = 0
-	Frame73["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame73----
-	--TextButton74--
-	local TextButton74 = Instance.new("TextButton",Frame73)
-	TextButton74["TextWrapped"] = true
-	TextButton74["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton74["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton74["Text"] = "NOCLIP LEG : OFF"
-	TextButton74["TextSize"] = 14
-	TextButton74["Font"] = Enum.Font.SourceSans
-	TextButton74["BackgroundTransparency"] = 1
-	TextButton74["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton74["TextScaled"] = true
-	TextButton74["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton74["BorderSizePixel"] = 0
-	TextButton74["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton74----
-	--Script75--
-	local Script75 = Instance.new("Script",TextButton74)
-	Script75["Name"] = "text"
-	----Script75----
-	--Script76--
-	local Script76 = Instance.new("Script",TextButton74)
-	Script76["Name"] = "sound"
-	----Script76----
-	--Script77--
-	local Script77 = Instance.new("Script",TextButton74)
-	Script77["Name"] = "ToggleHipHeight"
-	----Script77----
-	--UIStroke78--
-	local UIStroke78 = Instance.new("UIStroke",Frame73)
-	UIStroke78["Color"] = Color3.new(1, 1, 1)
-	UIStroke78["Thickness"] = 1.0499999523162842
-	----UIStroke78----
-	--UIGradient79--
-	local UIGradient79 = Instance.new("UIGradient",Frame73)
-	UIGradient79["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient79----
-	--Script80--
-	local Script80 = Instance.new("Script",UIGradient79)
-	----Script80----
-	--Frame81--
-	local Frame81 = Instance.new("Frame",Frame55)
-	Frame81["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame81["BackgroundTransparency"] = 0.550000011920929
-	Frame81["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame81["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame81["Name"] = "btn"
-	Frame81["BorderSizePixel"] = 0
-	Frame81["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame81----
-	--TextButton82--
-	local TextButton82 = Instance.new("TextButton",Frame81)
-	TextButton82["TextWrapped"] = true
-	TextButton82["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton82["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton82["Text"] = "FLOAT WALK  : OFF"
-	TextButton82["TextSize"] = 14
-	TextButton82["Font"] = Enum.Font.SourceSans
-	TextButton82["BackgroundTransparency"] = 1
-	TextButton82["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton82["TextScaled"] = true
-	TextButton82["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton82["BorderSizePixel"] = 0
-	TextButton82["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton82----
-	--Script83--
-	local Script83 = Instance.new("Script",TextButton82)
-	Script83["Name"] = "text"
-	----Script83----
-	--Script84--
-	local Script84 = Instance.new("Script",TextButton82)
-	Script84["Name"] = "sound"
-	----Script84----
-	--Script85--
-	local Script85 = Instance.new("Script",TextButton82)
-	Script85["Name"] = "ToggleHipHeight"
-	----Script85----
-	--UIStroke86--
-	local UIStroke86 = Instance.new("UIStroke",Frame81)
-	UIStroke86["Color"] = Color3.new(1, 1, 1)
-	UIStroke86["Thickness"] = 1.0499999523162842
-	----UIStroke86----
-	--UIGradient87--
-	local UIGradient87 = Instance.new("UIGradient",Frame81)
-	UIGradient87["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient87----
-	--Script88--
-	local Script88 = Instance.new("Script",UIGradient87)
-	----Script88----
-	--Frame89--
-	local Frame89 = Instance.new("Frame",Frame55)
-	Frame89["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame89["BackgroundTransparency"] = 0.550000011920929
-	Frame89["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame89["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame89["Name"] = "btn"
-	Frame89["BorderSizePixel"] = 0
-	Frame89["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame89----
-	--TextButton90--
-	local TextButton90 = Instance.new("TextButton",Frame89)
-	TextButton90["TextWrapped"] = true
-	TextButton90["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton90["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton90["Text"] = "SLIDE  : OFF"
-	TextButton90["TextSize"] = 14
-	TextButton90["Font"] = Enum.Font.SourceSans
-	TextButton90["BackgroundTransparency"] = 1
-	TextButton90["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton90["TextScaled"] = true
-	TextButton90["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton90["BorderSizePixel"] = 0
-	TextButton90["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton90----
-	--Script91--
-	local Script91 = Instance.new("Script",TextButton90)
-	Script91["Name"] = "text"
-	----Script91----
-	--Script92--
-	local Script92 = Instance.new("Script",TextButton90)
-	Script92["Name"] = "sound"
-	----Script92----
-	--Script93--
-	local Script93 = Instance.new("Script",TextButton90)
-	Script93["Name"] = "ToggleHipHeight"
-	----Script93----
-	--UIStroke94--
-	local UIStroke94 = Instance.new("UIStroke",Frame89)
-	UIStroke94["Color"] = Color3.new(1, 1, 1)
-	UIStroke94["Thickness"] = 1.0499999523162842
-	----UIStroke94----
-	--UIGradient95--
-	local UIGradient95 = Instance.new("UIGradient",Frame89)
-	UIGradient95["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient95----
-	--Script96--
-	local Script96 = Instance.new("Script",UIGradient95)
-	----Script96----
-	--Frame97--
-	local Frame97 = Instance.new("Frame",Frame51)
-	Frame97["Visible"] = false
-	Frame97["BackgroundTransparency"] = 1
-	Frame97["Size"] = UDim2.new(1, 0, 1, 0)
-	Frame97["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame97["Name"] = "tab2"
-	Frame97["BorderSizePixel"] = 0
-	Frame97["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----Frame97----
-	--TextLabel98--
-	local TextLabel98 = Instance.new("TextLabel",Frame97)
-	TextLabel98["TextWrapped"] = true
-	TextLabel98["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel98["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel98["Text"] = "- WORLD -"
-	TextLabel98["Font"] = Enum.Font.Unknown
-	TextLabel98["BackgroundTransparency"] = 1
-	TextLabel98["TextSize"] = 14
-	TextLabel98["TextScaled"] = true
-	TextLabel98["Size"] = UDim2.new(0.99999994, 0, 0.0647074878, 0)
-	TextLabel98["BorderSizePixel"] = 0
-	TextLabel98["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel98----
-	--ScrollingFrame99--
-	local ScrollingFrame99 = Instance.new("ScrollingFrame",Frame97)
-	ScrollingFrame99["ScrollBarImageColor3"] = Color3.new(0, 0.866667, 1)
-	ScrollingFrame99["Active"] = true
-	ScrollingFrame99["BorderColor3"] = Color3.new(0, 0, 0)
-	ScrollingFrame99["ScrollBarThickness"] = 2
-	ScrollingFrame99["BackgroundTransparency"] = 1
-	ScrollingFrame99["Position"] = UDim2.new(0, 0, 0.0647074878, 0)
-	ScrollingFrame99["Size"] = UDim2.new(1, 0, 0.935292542, 0)
-	ScrollingFrame99["BorderSizePixel"] = 0
-	ScrollingFrame99["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----ScrollingFrame99----
-	--Frame100--
-	local Frame100 = Instance.new("Frame",ScrollingFrame99)
-	Frame100["BackgroundTransparency"] = 1
-	Frame100["Size"] = UDim2.new(1, 0, 1, 0)
-	Frame100["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame100["Name"] = "memory"
-	Frame100["BorderSizePixel"] = 0
-	Frame100["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----Frame100----
-	--UIListLayout101--
-	local UIListLayout101 = Instance.new("UIListLayout",Frame100)
-	UIListLayout101["SortOrder"] = Enum.SortOrder.LayoutOrder
-	UIListLayout101["Padding"] = UDim.new(0, 8)
-	----UIListLayout101----
-	--Frame102--
-	local Frame102 = Instance.new("Frame",Frame100)
-	Frame102["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame102["BackgroundTransparency"] = 0.550000011920929
-	Frame102["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame102["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame102["Name"] = "btn"
-	Frame102["BorderSizePixel"] = 0
-	Frame102["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame102----
-	--TextButton103--
-	local TextButton103 = Instance.new("TextButton",Frame102)
-	TextButton103["TextWrapped"] = true
-	TextButton103["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton103["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton103["Text"] = "ESP ALL PLAYER : OFF"
-	TextButton103["TextSize"] = 14
-	TextButton103["Font"] = Enum.Font.SourceSans
-	TextButton103["BackgroundTransparency"] = 1
-	TextButton103["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton103["TextScaled"] = true
-	TextButton103["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton103["BorderSizePixel"] = 0
-	TextButton103["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton103----
-	--Script104--
-	local Script104 = Instance.new("Script",TextButton103)
-	Script104["Name"] = "text"
-	----Script104----
-	--Script105--
-	local Script105 = Instance.new("Script",TextButton103)
-	Script105["Name"] = "sound"
-	----Script105----
-	--Script106--
-	local Script106 = Instance.new("Script",TextButton103)
-	Script106["Name"] = "ToggleESP"
-	----Script106----
-	--UIStroke107--
-	local UIStroke107 = Instance.new("UIStroke",Frame102)
-	UIStroke107["Color"] = Color3.new(1, 1, 1)
-	UIStroke107["Thickness"] = 1.0499999523162842
-	----UIStroke107----
-	--UIGradient108--
-	local UIGradient108 = Instance.new("UIGradient",Frame102)
-	UIGradient108["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient108----
-	--Script109--
-	local Script109 = Instance.new("Script",UIGradient108)
-	----Script109----
-	--Frame110--
-	local Frame110 = Instance.new("Frame",Frame100)
-	Frame110["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame110["BackgroundTransparency"] = 0.550000011920929
-	Frame110["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame110["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame110["Name"] = "btn"
-	Frame110["BorderSizePixel"] = 0
-	Frame110["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame110----
-	--TextButton111--
-	local TextButton111 = Instance.new("TextButton",Frame110)
-	TextButton111["TextWrapped"] = true
-	TextButton111["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton111["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton111["Text"] = "TIME SET : DAY"
-	TextButton111["TextSize"] = 14
-	TextButton111["Font"] = Enum.Font.SourceSans
-	TextButton111["BackgroundTransparency"] = 1
-	TextButton111["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton111["TextScaled"] = true
-	TextButton111["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton111["BorderSizePixel"] = 0
-	TextButton111["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton111----
-	--Script112--
-	local Script112 = Instance.new("Script",TextButton111)
-	Script112["Name"] = "text"
-	----Script112----
-	--Script113--
-	local Script113 = Instance.new("Script",TextButton111)
-	Script113["Name"] = "sound"
-	----Script113----
-	--Script114--
-	local Script114 = Instance.new("Script",TextButton111)
-	Script114["Name"] = "ToggleDayNight"
-	----Script114----
-	--UIStroke115--
-	local UIStroke115 = Instance.new("UIStroke",Frame110)
-	UIStroke115["Color"] = Color3.new(1, 1, 1)
-	UIStroke115["Thickness"] = 1.0499999523162842
-	----UIStroke115----
-	--UIGradient116--
-	local UIGradient116 = Instance.new("UIGradient",Frame110)
-	UIGradient116["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient116----
-	--Script117--
-	local Script117 = Instance.new("Script",UIGradient116)
-	----Script117----
-	--Frame118--
-	local Frame118 = Instance.new("Frame",Frame100)
-	Frame118["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame118["BackgroundTransparency"] = 0.550000011920929
-	Frame118["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame118["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame118["Name"] = "btn"
-	Frame118["BorderSizePixel"] = 0
-	Frame118["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame118----
-	--TextButton119--
-	local TextButton119 = Instance.new("TextButton",Frame118)
-	TextButton119["TextWrapped"] = true
-	TextButton119["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton119["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton119["Text"] = "SOME TEXTURE : OFF"
-	TextButton119["TextSize"] = 14
-	TextButton119["Font"] = Enum.Font.SourceSans
-	TextButton119["BackgroundTransparency"] = 1
-	TextButton119["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton119["TextScaled"] = true
-	TextButton119["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton119["BorderSizePixel"] = 0
-	TextButton119["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton119----
-	--Script120--
-	local Script120 = Instance.new("Script",TextButton119)
-	Script120["Name"] = "text"
-	----Script120----
-	--Script121--
-	local Script121 = Instance.new("Script",TextButton119)
-	Script121["Name"] = "sound"
-	----Script121----
-	--Script122--
-	local Script122 = Instance.new("Script",TextButton119)
-	Script122["Name"] = "ToggleTextureScript"
-	Script122["Enabled"] = false
-	----Script122----
-	--Script123--
-	local Script123 = Instance.new("Script",TextButton119)
-	Script123["Name"] = "ToggleTextureScript"
-	----Script123----
-	--UIStroke124--
-	local UIStroke124 = Instance.new("UIStroke",Frame118)
-	UIStroke124["Color"] = Color3.new(1, 1, 1)
-	UIStroke124["Thickness"] = 1.0499999523162842
-	----UIStroke124----
-	--UIGradient125--
-	local UIGradient125 = Instance.new("UIGradient",Frame118)
-	UIGradient125["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient125----
-	--Script126--
-	local Script126 = Instance.new("Script",UIGradient125)
-	----Script126----
-	--TextLabel127--
-	local TextLabel127 = Instance.new("TextLabel",Frame100)
-	TextLabel127["TextWrapped"] = true
-	TextLabel127["TextColor3"] = Color3.new(0, 0.984314, 1)
-	TextLabel127["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel127["Text"] = "- WIRE FRAME  -"
-	TextLabel127["TextSize"] = 14
-	TextLabel127["Font"] = Enum.Font.Unknown
-	TextLabel127["BackgroundTransparency"] = 1
-	TextLabel127["Position"] = UDim2.new(0, 0, 0.432906836, 0)
-	TextLabel127["TextScaled"] = true
-	TextLabel127["Size"] = UDim2.new(0.999999881, 0, 0.0454284921, 0)
-	TextLabel127["BorderSizePixel"] = 0
-	TextLabel127["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel127----
-	--Frame128--
-	local Frame128 = Instance.new("Frame",Frame100)
-	Frame128["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame128["BackgroundTransparency"] = 0.550000011920929
-	Frame128["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame128["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame128["Name"] = "btn"
-	Frame128["BorderSizePixel"] = 0
-	Frame128["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame128----
-	--TextButton129--
-	local TextButton129 = Instance.new("TextButton",Frame128)
-	TextButton129["TextWrapped"] = true
-	TextButton129["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton129["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton129["Text"] = "WHITE WIREFRAME : OFF"
-	TextButton129["TextSize"] = 14
-	TextButton129["Font"] = Enum.Font.SourceSans
-	TextButton129["BackgroundTransparency"] = 1
-	TextButton129["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton129["TextScaled"] = true
-	TextButton129["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton129["BorderSizePixel"] = 0
-	TextButton129["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton129----
-	--Script130--
-	local Script130 = Instance.new("Script",TextButton129)
-	Script130["Name"] = "text"
-	----Script130----
-	--Script131--
-	local Script131 = Instance.new("Script",TextButton129)
-	Script131["Name"] = "sound"
-	----Script131----
-	--Script132--
-	local Script132 = Instance.new("Script",TextButton129)
-	Script132["Name"] = "TogglePartOutline"
-	----Script132----
-	--UIStroke133--
-	local UIStroke133 = Instance.new("UIStroke",Frame128)
-	UIStroke133["Color"] = Color3.new(1, 1, 1)
-	UIStroke133["Thickness"] = 1.0499999523162842
-	----UIStroke133----
-	--UIGradient134--
-	local UIGradient134 = Instance.new("UIGradient",Frame128)
-	UIGradient134["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient134----
-	--Script135--
-	local Script135 = Instance.new("Script",UIGradient134)
-	----Script135----
-	--Frame136--
-	local Frame136 = Instance.new("Frame",Frame100)
-	Frame136["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame136["BackgroundTransparency"] = 0.550000011920929
-	Frame136["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame136["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame136["Name"] = "btn"
-	Frame136["BorderSizePixel"] = 0
-	Frame136["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame136----
-	--TextButton137--
-	local TextButton137 = Instance.new("TextButton",Frame136)
-	TextButton137["TextWrapped"] = true
-	TextButton137["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton137["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton137["Text"] = "BLUE WIREFRAME : OFF"
-	TextButton137["TextSize"] = 14
-	TextButton137["Font"] = Enum.Font.SourceSans
-	TextButton137["BackgroundTransparency"] = 1
-	TextButton137["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton137["TextScaled"] = true
-	TextButton137["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton137["BorderSizePixel"] = 0
-	TextButton137["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton137----
-	--Script138--
-	local Script138 = Instance.new("Script",TextButton137)
-	Script138["Name"] = "text"
-	----Script138----
-	--Script139--
-	local Script139 = Instance.new("Script",TextButton137)
-	Script139["Name"] = "sound"
-	----Script139----
-	--Script140--
-	local Script140 = Instance.new("Script",TextButton137)
-	Script140["Name"] = "TogglePartOutline"
-	----Script140----
-	--UIStroke141--
-	local UIStroke141 = Instance.new("UIStroke",TextButton137)
-	UIStroke141["Color"] = Color3.new(1, 1, 1)
-	UIStroke141["Thickness"] = 1.0499999523162842
-	----UIStroke141----
-	--UIGradient142--
-	local UIGradient142 = Instance.new("UIGradient",Frame136)
-	UIGradient142["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient142----
-	--Script143--
-	local Script143 = Instance.new("Script",UIGradient142)
-	----Script143----
-	--Frame144--
-	local Frame144 = Instance.new("Frame",Frame100)
-	Frame144["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame144["BackgroundTransparency"] = 0.550000011920929
-	Frame144["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame144["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame144["Name"] = "btn"
-	Frame144["BorderSizePixel"] = 0
-	Frame144["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame144----
-	--TextButton145--
-	local TextButton145 = Instance.new("TextButton",Frame144)
-	TextButton145["TextWrapped"] = true
-	TextButton145["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton145["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton145["Text"] = "RED WIREFRAME : OFF"
-	TextButton145["TextSize"] = 14
-	TextButton145["Font"] = Enum.Font.SourceSans
-	TextButton145["BackgroundTransparency"] = 1
-	TextButton145["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton145["TextScaled"] = true
-	TextButton145["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton145["BorderSizePixel"] = 0
-	TextButton145["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton145----
-	--Script146--
-	local Script146 = Instance.new("Script",TextButton145)
-	Script146["Name"] = "text"
-	----Script146----
-	--Script147--
-	local Script147 = Instance.new("Script",TextButton145)
-	Script147["Name"] = "sound"
-	----Script147----
-	--Script148--
-	local Script148 = Instance.new("Script",TextButton145)
-	Script148["Name"] = "TogglePartOutline"
-	----Script148----
-	--UIStroke149--
-	local UIStroke149 = Instance.new("UIStroke",TextButton145)
-	UIStroke149["Color"] = Color3.new(1, 1, 1)
-	UIStroke149["Thickness"] = 1.0499999523162842
-	----UIStroke149----
-	--UIGradient150--
-	local UIGradient150 = Instance.new("UIGradient",Frame144)
-	UIGradient150["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient150----
-	--Script151--
-	local Script151 = Instance.new("Script",UIGradient150)
-	----Script151----
-	--Frame152--
-	local Frame152 = Instance.new("Frame",Frame100)
-	Frame152["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame152["BackgroundTransparency"] = 0.550000011920929
-	Frame152["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame152["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame152["Name"] = "btn"
-	Frame152["BorderSizePixel"] = 0
-	Frame152["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame152----
-	--TextButton153--
-	local TextButton153 = Instance.new("TextButton",Frame152)
-	TextButton153["TextWrapped"] = true
-	TextButton153["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton153["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton153["Text"] = "GROP WIREFRAME : OFF"
-	TextButton153["TextSize"] = 14
-	TextButton153["Font"] = Enum.Font.SourceSans
-	TextButton153["BackgroundTransparency"] = 1
-	TextButton153["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton153["TextScaled"] = true
-	TextButton153["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton153["BorderSizePixel"] = 0
-	TextButton153["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton153----
-	--Script154--
-	local Script154 = Instance.new("Script",TextButton153)
-	Script154["Name"] = "text"
-	----Script154----
-	--Script155--
-	local Script155 = Instance.new("Script",TextButton153)
-	Script155["Name"] = "sound"
-	----Script155----
-	--Script156--
-	local Script156 = Instance.new("Script",TextButton153)
-	Script156["Name"] = "TogglePartOutline"
-	----Script156----
-	--UIStroke157--
-	local UIStroke157 = Instance.new("UIStroke",TextButton153)
-	UIStroke157["Color"] = Color3.new(1, 1, 1)
-	UIStroke157["Thickness"] = 1.0499999523162842
-	----UIStroke157----
-	--UIGradient158--
-	local UIGradient158 = Instance.new("UIGradient",Frame152)
-	UIGradient158["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient158----
-	--Script159--
-	local Script159 = Instance.new("Script",UIGradient158)
-	----Script159----
-	--Frame160--
-	local Frame160 = Instance.new("Frame",Frame100)
-	Frame160["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame160["BackgroundTransparency"] = 0.550000011920929
-	Frame160["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame160["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame160["Name"] = "btn"
-	Frame160["BorderSizePixel"] = 0
-	Frame160["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame160----
-	--TextButton161--
-	local TextButton161 = Instance.new("TextButton",Frame160)
-	TextButton161["TextWrapped"] = true
-	TextButton161["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton161["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton161["Text"] = "SMALL WIRE FRAME : OFF"
-	TextButton161["TextSize"] = 14
-	TextButton161["Font"] = Enum.Font.SourceSans
-	TextButton161["BackgroundTransparency"] = 1
-	TextButton161["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton161["TextScaled"] = true
-	TextButton161["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton161["BorderSizePixel"] = 0
-	TextButton161["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton161----
-	--Script162--
-	local Script162 = Instance.new("Script",TextButton161)
-	Script162["Name"] = "text"
-	----Script162----
-	--Script163--
-	local Script163 = Instance.new("Script",TextButton161)
-	Script163["Name"] = "sound"
-	----Script163----
-	--Script164--
-	local Script164 = Instance.new("Script",TextButton161)
-	Script164["Name"] = "TogglePartOutline"
-	----Script164----
-	--UIStroke165--
-	local UIStroke165 = Instance.new("UIStroke",TextButton161)
-	UIStroke165["Color"] = Color3.new(1, 1, 1)
-	UIStroke165["Thickness"] = 1.0499999523162842
-	----UIStroke165----
-	--UIGradient166--
-	local UIGradient166 = Instance.new("UIGradient",Frame160)
-	UIGradient166["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient166----
-	--Script167--
-	local Script167 = Instance.new("Script",UIGradient166)
-	----Script167----
-	--Frame168--
-	local Frame168 = Instance.new("Frame",Frame51)
-	Frame168["Visible"] = false
-	Frame168["BackgroundTransparency"] = 1
-	Frame168["Size"] = UDim2.new(1, 0, 1, 0)
-	Frame168["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame168["Name"] = "tab3"
-	Frame168["BorderSizePixel"] = 0
-	Frame168["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----Frame168----
-	--TextLabel169--
-	local TextLabel169 = Instance.new("TextLabel",Frame168)
-	TextLabel169["TextWrapped"] = true
-	TextLabel169["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel169["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel169["Text"] = "- CAMERA -"
-	TextLabel169["Font"] = Enum.Font.Unknown
-	TextLabel169["BackgroundTransparency"] = 1
-	TextLabel169["TextSize"] = 14
-	TextLabel169["TextScaled"] = true
-	TextLabel169["Size"] = UDim2.new(0.99999994, 0, 0.0647074878, 0)
-	TextLabel169["BorderSizePixel"] = 0
-	TextLabel169["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel169----
-	--ScrollingFrame170--
-	local ScrollingFrame170 = Instance.new("ScrollingFrame",Frame168)
-	ScrollingFrame170["ScrollBarImageColor3"] = Color3.new(0, 0.866667, 1)
-	ScrollingFrame170["Active"] = true
-	ScrollingFrame170["BorderColor3"] = Color3.new(0, 0, 0)
-	ScrollingFrame170["ScrollBarThickness"] = 2
-	ScrollingFrame170["BackgroundTransparency"] = 1
-	ScrollingFrame170["Position"] = UDim2.new(0, 0, 0.0647074878, 0)
-	ScrollingFrame170["Size"] = UDim2.new(1, 0, 0.935292542, 0)
-	ScrollingFrame170["BorderSizePixel"] = 0
-	ScrollingFrame170["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----ScrollingFrame170----
-	--Frame171--
-	local Frame171 = Instance.new("Frame",ScrollingFrame170)
-	Frame171["BackgroundTransparency"] = 1
-	Frame171["Size"] = UDim2.new(1, 0, 1, 0)
-	Frame171["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame171["Name"] = "memory"
-	Frame171["BorderSizePixel"] = 0
-	Frame171["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----Frame171----
-	--UIListLayout172--
-	local UIListLayout172 = Instance.new("UIListLayout",Frame171)
-	UIListLayout172["SortOrder"] = Enum.SortOrder.LayoutOrder
-	UIListLayout172["Padding"] = UDim.new(0, 8)
-	----UIListLayout172----
-	--Frame173--
-	local Frame173 = Instance.new("Frame",Frame171)
-	Frame173["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame173["BackgroundTransparency"] = 0.550000011920929
-	Frame173["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame173["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame173["Name"] = "btn"
-	Frame173["BorderSizePixel"] = 0
-	Frame173["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame173----
-	--TextButton174--
-	local TextButton174 = Instance.new("TextButton",Frame173)
-	TextButton174["TextWrapped"] = true
-	TextButton174["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton174["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton174["Text"] = "PLACE CAMERA  : OFF"
-	TextButton174["TextSize"] = 14
-	TextButton174["Font"] = Enum.Font.SourceSans
-	TextButton174["BackgroundTransparency"] = 1
-	TextButton174["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton174["TextScaled"] = true
-	TextButton174["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton174["BorderSizePixel"] = 0
-	TextButton174["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton174----
-	--Script175--
-	local Script175 = Instance.new("Script",TextButton174)
-	Script175["Name"] = "text"
-	----Script175----
-	--Script176--
-	local Script176 = Instance.new("Script",TextButton174)
-	Script176["Name"] = "sound"
-	----Script176----
-	--Script177--
-	local Script177 = Instance.new("Script",TextButton174)
-	Script177["Name"] = "ToggleFreecam"
-	----Script177----
-	--UIStroke178--
-	local UIStroke178 = Instance.new("UIStroke",Frame173)
-	UIStroke178["Color"] = Color3.new(1, 1, 1)
-	UIStroke178["Thickness"] = 1.0499999523162842
-	----UIStroke178----
-	--UIGradient179--
-	local UIGradient179 = Instance.new("UIGradient",Frame173)
-	UIGradient179["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient179----
-	--Script180--
-	local Script180 = Instance.new("Script",UIGradient179)
-	----Script180----
-	--Frame181--
-	local Frame181 = Instance.new("Frame",Frame171)
-	Frame181["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame181["BackgroundTransparency"] = 0.550000011920929
-	Frame181["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame181["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame181["Name"] = "btn"
-	Frame181["BorderSizePixel"] = 0
-	Frame181["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame181----
-	--TextButton182--
-	local TextButton182 = Instance.new("TextButton",Frame181)
-	TextButton182["TextWrapped"] = true
-	TextButton182["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton182["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton182["Text"] = "SPIN CAMERA  : OFF"
-	TextButton182["TextSize"] = 14
-	TextButton182["Font"] = Enum.Font.SourceSans
-	TextButton182["BackgroundTransparency"] = 1
-	TextButton182["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton182["TextScaled"] = true
-	TextButton182["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton182["BorderSizePixel"] = 0
-	TextButton182["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton182----
-	--Script183--
-	local Script183 = Instance.new("Script",TextButton182)
-	Script183["Name"] = "text"
-	----Script183----
-	--Script184--
-	local Script184 = Instance.new("Script",TextButton182)
-	Script184["Name"] = "sound"
-	----Script184----
-	--Script185--
-	local Script185 = Instance.new("Script",TextButton182)
-	Script185["Name"] = "CameraSpinToggle"
-	----Script185----
-	--UIStroke186--
-	local UIStroke186 = Instance.new("UIStroke",Frame181)
-	UIStroke186["Color"] = Color3.new(1, 1, 1)
-	UIStroke186["Thickness"] = 1.0499999523162842
-	----UIStroke186----
-	--UIGradient187--
-	local UIGradient187 = Instance.new("UIGradient",Frame181)
-	UIGradient187["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient187----
-	--Script188--
-	local Script188 = Instance.new("Script",UIGradient187)
-	----Script188----
-	--Frame189--
-	local Frame189 = Instance.new("Frame",Frame171)
-	Frame189["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame189["BackgroundTransparency"] = 0.550000011920929
-	Frame189["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame189["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame189["Name"] = "btn"
-	Frame189["BorderSizePixel"] = 0
-	Frame189["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame189----
-	--TextButton190--
-	local TextButton190 = Instance.new("TextButton",Frame189)
-	TextButton190["TextWrapped"] = true
-	TextButton190["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton190["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton190["Text"] = "SPIN CAMERA V2  : OFF"
-	TextButton190["TextSize"] = 14
-	TextButton190["Font"] = Enum.Font.SourceSans
-	TextButton190["BackgroundTransparency"] = 1
-	TextButton190["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton190["TextScaled"] = true
-	TextButton190["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton190["BorderSizePixel"] = 0
-	TextButton190["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton190----
-	--Script191--
-	local Script191 = Instance.new("Script",TextButton190)
-	Script191["Name"] = "text"
-	----Script191----
-	--Script192--
-	local Script192 = Instance.new("Script",TextButton190)
-	Script192["Name"] = "sound"
-	----Script192----
-	--Script193--
-	local Script193 = Instance.new("Script",TextButton190)
-	Script193["Name"] = "CameraSpinToggle"
-	----Script193----
-	--UIStroke194--
-	local UIStroke194 = Instance.new("UIStroke",Frame189)
-	UIStroke194["Color"] = Color3.new(1, 1, 1)
-	UIStroke194["Thickness"] = 1.0499999523162842
-	----UIStroke194----
-	--UIGradient195--
-	local UIGradient195 = Instance.new("UIGradient",Frame189)
-	UIGradient195["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient195----
-	--Script196--
-	local Script196 = Instance.new("Script",UIGradient195)
-	----Script196----
-	--Frame197--
-	local Frame197 = Instance.new("Frame",Frame171)
-	Frame197["Size"] = UDim2.new(0.999999881, 0, 0.0614620782, 0)
-	Frame197["BackgroundTransparency"] = 0.550000011920929
-	Frame197["Position"] = UDim2.new(-1.94438414e-07, 0, 0, 0)
-	Frame197["BorderColor3"] = Color3.new(0, 0, 0)
-	Frame197["Name"] = "btn"
-	Frame197["BorderSizePixel"] = 0
-	Frame197["BackgroundColor3"] = Color3.new(0, 0, 0)
-	----Frame197----
-	--TextButton198--
-	local TextButton198 = Instance.new("TextButton",Frame197)
-	TextButton198["TextWrapped"] = true
-	TextButton198["TextColor3"] = Color3.new(1, 1, 1)
-	TextButton198["BorderColor3"] = Color3.new(0, 0, 0)
-	TextButton198["Text"] = "FLING CAMERA   : OFF"
-	TextButton198["TextSize"] = 14
-	TextButton198["Font"] = Enum.Font.SourceSans
-	TextButton198["BackgroundTransparency"] = 1
-	TextButton198["Position"] = UDim2.new(0.00368131581, 0, 0.00267226435, 0)
-	TextButton198["TextScaled"] = true
-	TextButton198["Size"] = UDim2.new(1, 0, 1, 0)
-	TextButton198["BorderSizePixel"] = 0
-	TextButton198["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextButton198----
-	--Script199--
-	local Script199 = Instance.new("Script",TextButton198)
-	Script199["Name"] = "text"
-	----Script199----
-	--Script200--
-	local Script200 = Instance.new("Script",TextButton198)
-	Script200["Name"] = "sound"
-	----Script200----
-	--Script201--
-	local Script201 = Instance.new("Script",TextButton198)
-	Script201["Name"] = "CameraSpinToggle"
-	----Script201----
-	--UIStroke202--
-	local UIStroke202 = Instance.new("UIStroke",Frame197)
-	UIStroke202["Color"] = Color3.new(1, 1, 1)
-	UIStroke202["Thickness"] = 1.0499999523162842
-	----UIStroke202----
-	--UIGradient203--
-	local UIGradient203 = Instance.new("UIGradient",Frame197)
-	UIGradient203["Color"] = ColorSequence.new{
-		ColorSequenceKeypoint.new(0,Color3.new(1,1,1)),
-		ColorSequenceKeypoint.new(0.489619,Color3.new(0,0.101961,1)),
-		ColorSequenceKeypoint.new(1,Color3.new(1,1,1))
-	}
-	----UIGradient203----
-	--Script204--
-	local Script204 = Instance.new("Script",UIGradient203)
-	----Script204----
-	--TextLabel205--
-	local TextLabel205 = Instance.new("TextLabel",Frame12)
-	TextLabel205["TextWrapped"] = true
-	TextLabel205["TextColor3"] = Color3.new(1, 1, 1)
-	TextLabel205["BorderColor3"] = Color3.new(0, 0, 0)
-	TextLabel205["Text"] = "ILDK MENU"
-	TextLabel205["TextSize"] = 14
-	TextLabel205["Font"] = Enum.Font.Unknown
-	TextLabel205["BackgroundTransparency"] = 1
-	TextLabel205["Position"] = UDim2.new(0.0143312104, 0, 0, 0)
-	TextLabel205["TextScaled"] = true
-	TextLabel205["Size"] = UDim2.new(0.39808917, 0, 1, 0)
-	TextLabel205["BorderSizePixel"] = 0
-	TextLabel205["BackgroundColor3"] = Color3.new(1, 1, 1)
-	----TextLabel205----
-	spawn(function() --Source for Script7
-		local script = Script7
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
+-- Instances: 140 | Scripts: 50 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.modmenu
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[modmenu]];
+
+
+-- StarterGui.modmenu.ic
+G2L["2"] = Instance.new("ImageButton", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["ZIndex"] = 1000000;
+G2L["2"]["Image"] = [[http://www.roblox.com/asset/?id=118116050473564]];
+G2L["2"]["Size"] = UDim2.new(0.09961, 0, 0.1397, 0);
+G2L["2"]["Name"] = [[ic]];
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.02319, 0, 0.13778, 0);
+
+
+-- StarterGui.modmenu.ic.UIAspectRatioConstraint
+G2L["3"] = Instance.new("UIAspectRatioConstraint", G2L["2"]);
+
+
+
+-- StarterGui.modmenu.ic.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["2"]);
+G2L["4"]["CornerRadius"] = UDim.new(0, 100);
+
+
+-- StarterGui.modmenu.ic.UIStroke
+G2L["5"] = Instance.new("UIStroke", G2L["2"]);
+G2L["5"]["Thickness"] = 2.2;
+G2L["5"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.ic.UIStroke.UIGradient
+G2L["6"] = Instance.new("UIGradient", G2L["5"]);
+G2L["6"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.ic.UIStroke.UIGradient.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- StarterGui.modmenu.ic.nove
+G2L["8"] = Instance.new("LocalScript", G2L["2"]);
+G2L["8"]["Name"] = [[nove]];
+
+
+-- StarterGui.modmenu.ic.togg
+G2L["9"] = Instance.new("LocalScript", G2L["2"]);
+G2L["9"]["Name"] = [[togg]];
+
+
+-- StarterGui.modmenu.ic.ron
+G2L["a"] = Instance.new("Sound", G2L["2"]);
+G2L["a"]["Volume"] = 1.149;
+G2L["a"]["Name"] = [[ron]];
+G2L["a"]["SoundId"] = [[rbxassetid://17208220181]];
+
+
+-- StarterGui.modmenu.ic.roof
+G2L["b"] = Instance.new("Sound", G2L["2"]);
+G2L["b"]["Volume"] = 1.149;
+G2L["b"]["Name"] = [[roof]];
+G2L["b"]["SoundId"] = [[rbxassetid://17208372272]];
+
+
+-- StarterGui.modmenu.menu
+G2L["c"] = Instance.new("Frame", G2L["1"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Size"] = UDim2.new(0.72791, 0, 0.15224, 0);
+G2L["c"]["Position"] = UDim2.new(0.13605, 0, 0.13868, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[menu]];
+G2L["c"]["BackgroundTransparency"] = 0.35;
+
+
+-- StarterGui.modmenu.menu.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+G2L["d"]["CornerRadius"] = UDim.new(0, 0);
+
+
+-- StarterGui.modmenu.menu.UIStroke
+G2L["e"] = Instance.new("UIStroke", G2L["c"]);
+G2L["e"]["Thickness"] = 1.05;
+G2L["e"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.UIStroke.UIGradient
+G2L["f"] = Instance.new("UIGradient", G2L["e"]);
+G2L["f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.UIStroke.UIGradient.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
+
+
+
+-- StarterGui.modmenu.menu.fi
+G2L["11"] = Instance.new("Frame", G2L["c"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Size"] = UDim2.new(1.00018, 0, 3.92857, 0);
+G2L["11"]["Position"] = UDim2.new(-0.00018, 0, 1.16667, 0);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Name"] = [[fi]];
+G2L["11"]["BackgroundTransparency"] = 0.35;
+
+
+-- StarterGui.modmenu.menu.fi.UICorner
+G2L["12"] = Instance.new("UICorner", G2L["11"]);
+G2L["12"]["CornerRadius"] = UDim.new(0, 0);
+
+
+-- StarterGui.modmenu.menu.fi.UIStroke
+G2L["13"] = Instance.new("UIStroke", G2L["11"]);
+G2L["13"]["Thickness"] = 1.05;
+G2L["13"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.UIStroke.UIGradient
+G2L["14"] = Instance.new("UIGradient", G2L["13"]);
+G2L["14"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.UIStroke.UIGradient.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.fa
+G2L["16"] = Instance.new("Frame", G2L["11"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Size"] = UDim2.new(0.43322, 0, 1.00268, 0);
+G2L["16"]["Position"] = UDim2.new(0, 0, -0.00268, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Name"] = [[fa]];
+G2L["16"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.modmenu.menu.fi.fa.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["16"]);
+G2L["17"]["CornerRadius"] = UDim.new(0, 0);
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn
+G2L["18"] = Instance.new("Frame", G2L["16"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Size"] = UDim2.new(1.00132, 0, 0.15499, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Name"] = [[btn]];
+G2L["18"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton
+G2L["19"] = Instance.new("TextButton", G2L["18"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Text"] = [[PLAYER]];
+G2L["19"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+G2L["1a"]["Name"] = [[aim]];
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+G2L["1b"] = Instance.new("LocalScript", G2L["19"]);
+G2L["1b"]["Name"] = [[chngetan]];
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIStroke
+G2L["1c"] = Instance.new("UIStroke", G2L["18"]);
+G2L["1c"]["Transparency"] = 0.9;
+G2L["1c"]["Thickness"] = 1.05;
+G2L["1c"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient
+G2L["1d"] = Instance.new("UIGradient", G2L["18"]);
+G2L["1d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+G2L["1e"] = Instance.new("LocalScript", G2L["1d"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.fa.UIListLayout
+G2L["1f"] = Instance.new("UIListLayout", G2L["16"]);
+G2L["1f"]["Padding"] = UDim.new(0, 5);
+G2L["1f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn
+G2L["20"] = Instance.new("Frame", G2L["16"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Size"] = UDim2.new(1.00132, 0, 0.15499, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Name"] = [[btn]];
+G2L["20"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton
+G2L["21"] = Instance.new("TextButton", G2L["20"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["TextScaled"] = true;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["21"]["BackgroundTransparency"] = 1;
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[WORLD]];
+G2L["21"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+G2L["22"] = Instance.new("LocalScript", G2L["21"]);
+G2L["22"]["Name"] = [[chngetan]];
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+G2L["23"] = Instance.new("LocalScript", G2L["21"]);
+G2L["23"]["Name"] = [[aim]];
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIStroke
+G2L["24"] = Instance.new("UIStroke", G2L["20"]);
+G2L["24"]["Transparency"] = 0.9;
+G2L["24"]["Thickness"] = 1.05;
+G2L["24"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient
+G2L["25"] = Instance.new("UIGradient", G2L["20"]);
+G2L["25"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+G2L["26"] = Instance.new("LocalScript", G2L["25"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn
+G2L["27"] = Instance.new("Frame", G2L["16"]);
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Size"] = UDim2.new(1.00132, 0, 0.15499, 0);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Name"] = [[btn]];
+G2L["27"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton
+G2L["28"] = Instance.new("TextButton", G2L["27"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["28"]["BackgroundTransparency"] = 1;
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[CAMERA]];
+G2L["28"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+G2L["29"] = Instance.new("LocalScript", G2L["28"]);
+G2L["29"]["Name"] = [[chngetan]];
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+G2L["2a"] = Instance.new("LocalScript", G2L["28"]);
+G2L["2a"]["Name"] = [[aim]];
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIStroke
+G2L["2b"] = Instance.new("UIStroke", G2L["27"]);
+G2L["2b"]["Transparency"] = 0.9;
+G2L["2b"]["Thickness"] = 1.05;
+G2L["2b"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient
+G2L["2c"] = Instance.new("UIGradient", G2L["27"]);
+G2L["2c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.fa.click
+G2L["2e"] = Instance.new("Sound", G2L["16"]);
+G2L["2e"]["Volume"] = 1.33225;
+G2L["2e"]["Name"] = [[click]];
+G2L["2e"]["SoundId"] = [[rbxassetid://17208353912]];
+
+
+-- StarterGui.modmenu.menu.fi.fa.click2
+G2L["2f"] = Instance.new("Sound", G2L["16"]);
+G2L["2f"]["Volume"] = 1.33225;
+G2L["2f"]["Name"] = [[click2]];
+G2L["2f"]["SoundId"] = [[rbxassetid://17208209318]];
+
+
+-- StarterGui.modmenu.menu.fi.fa.click3
+G2L["30"] = Instance.new("Sound", G2L["16"]);
+G2L["30"]["Volume"] = 1.33225;
+G2L["30"]["Name"] = [[click3]];
+G2L["30"]["SoundId"] = [[rbxassetid://17208295577]];
+
+
+-- StarterGui.modmenu.menu.fi.tab
+G2L["31"] = Instance.new("Frame", G2L["11"]);
+G2L["31"]["ZIndex"] = 2;
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Size"] = UDim2.new(0.54945, 0, 1.00268, 0);
+G2L["31"]["Position"] = UDim2.new(0.45055, 0, -0.00268, 0);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Name"] = [[tab]];
+G2L["31"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.UICorner
+G2L["32"] = Instance.new("UICorner", G2L["31"]);
+G2L["32"]["CornerRadius"] = UDim.new(0, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab
+G2L["33"] = Instance.new("Frame", G2L["31"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Name"] = [[showtab]];
+G2L["33"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1
+G2L["34"] = Instance.new("Frame", G2L["33"]);
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Name"] = [[tab1]];
+G2L["34"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.TextLabel
+G2L["35"] = Instance.new("TextLabel", G2L["34"]);
+G2L["35"]["TextWrapped"] = true;
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["TextScaled"] = true;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["TextSize"] = 14;
+G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["BackgroundTransparency"] = 1;
+G2L["35"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Text"] = [[- PLAYER -]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame
+G2L["36"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["36"]["Active"] = true;
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
+G2L["36"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
+G2L["36"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["ScrollBarThickness"] = 2;
+G2L["36"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory
+G2L["37"] = Instance.new("Frame", G2L["36"]);
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Name"] = [[memory]];
+G2L["37"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn
+G2L["38"] = Instance.new("Frame", G2L["37"]);
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["38"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Name"] = [[btn]];
+G2L["38"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton
+G2L["39"] = Instance.new("TextButton", G2L["38"]);
+G2L["39"]["TextWrapped"] = true;
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["TextSize"] = 14;
+G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["TextScaled"] = true;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["39"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["39"]["BackgroundTransparency"] = 1;
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["Text"] = [[FLY JUMP : OFF]];
+G2L["39"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.FlyJumpToggle
+G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
+G2L["3a"]["Name"] = [[FlyJumpToggle]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+G2L["3b"] = Instance.new("LocalScript", G2L["39"]);
+G2L["3b"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+G2L["3c"] = Instance.new("LocalScript", G2L["39"]);
+G2L["3c"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIStroke
+G2L["3d"] = Instance.new("UIStroke", G2L["38"]);
+G2L["3d"]["Transparency"] = 0.9;
+G2L["3d"]["Thickness"] = 1.05;
+G2L["3d"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient
+G2L["3e"] = Instance.new("UIGradient", G2L["38"]);
+G2L["3e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["3f"] = Instance.new("LocalScript", G2L["3e"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.UIListLayout
+G2L["40"] = Instance.new("UIListLayout", G2L["37"]);
+G2L["40"]["Padding"] = UDim.new(0, 8);
+G2L["40"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn
+G2L["41"] = Instance.new("Frame", G2L["37"]);
+G2L["41"]["BorderSizePixel"] = 0;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["41"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["Name"] = [[btn]];
+G2L["41"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton
+G2L["42"] = Instance.new("TextButton", G2L["41"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextSize"] = 14;
+G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["TextScaled"] = true;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["42"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["42"]["BackgroundTransparency"] = 1;
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Text"] = [[WALKSPEED : OFF]];
+G2L["42"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+G2L["43"] = Instance.new("LocalScript", G2L["42"]);
+G2L["43"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.SetPlayerSpeedOnClick
+G2L["44"] = Instance.new("LocalScript", G2L["42"]);
+G2L["44"]["Name"] = [[SetPlayerSpeedOnClick]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+G2L["45"] = Instance.new("LocalScript", G2L["42"]);
+G2L["45"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIStroke
+G2L["46"] = Instance.new("UIStroke", G2L["41"]);
+G2L["46"]["Transparency"] = 0.9;
+G2L["46"]["Thickness"] = 1.05;
+G2L["46"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient
+G2L["47"] = Instance.new("UIGradient", G2L["41"]);
+G2L["47"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["48"] = Instance.new("LocalScript", G2L["47"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn
+G2L["49"] = Instance.new("Frame", G2L["37"]);
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["49"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Name"] = [[btn]];
+G2L["49"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton
+G2L["4a"] = Instance.new("TextButton", G2L["49"]);
+G2L["4a"]["TextWrapped"] = true;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextSize"] = 14;
+G2L["4a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["TextScaled"] = true;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["4a"]["BackgroundTransparency"] = 1;
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Text"] = [[NOCLIP LEG : OFF]];
+G2L["4a"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+G2L["4b"] = Instance.new("LocalScript", G2L["4a"]);
+G2L["4b"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+G2L["4c"] = Instance.new("LocalScript", G2L["4a"]);
+G2L["4c"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.ToggleHipHeight
+G2L["4d"] = Instance.new("LocalScript", G2L["4a"]);
+G2L["4d"]["Name"] = [[ToggleHipHeight]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIStroke
+G2L["4e"] = Instance.new("UIStroke", G2L["49"]);
+G2L["4e"]["Transparency"] = 0.9;
+G2L["4e"]["Thickness"] = 1.05;
+G2L["4e"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient
+G2L["4f"] = Instance.new("UIGradient", G2L["49"]);
+G2L["4f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["50"] = Instance.new("LocalScript", G2L["4f"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn
+G2L["51"] = Instance.new("Frame", G2L["37"]);
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["51"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Name"] = [[btn]];
+G2L["51"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton
+G2L["52"] = Instance.new("TextButton", G2L["51"]);
+G2L["52"]["TextWrapped"] = true;
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["TextSize"] = 14;
+G2L["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["TextScaled"] = true;
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["52"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["52"]["BackgroundTransparency"] = 1;
+G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["Text"] = [[FLOAT WALK  : OFF]];
+G2L["52"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+G2L["53"] = Instance.new("LocalScript", G2L["52"]);
+G2L["53"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+G2L["54"] = Instance.new("LocalScript", G2L["52"]);
+G2L["54"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.ToggleHipHeight
+G2L["55"] = Instance.new("LocalScript", G2L["52"]);
+G2L["55"]["Name"] = [[ToggleHipHeight]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIStroke
+G2L["56"] = Instance.new("UIStroke", G2L["51"]);
+G2L["56"]["Transparency"] = 0.9;
+G2L["56"]["Thickness"] = 1.05;
+G2L["56"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient
+G2L["57"] = Instance.new("UIGradient", G2L["51"]);
+G2L["57"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["58"] = Instance.new("LocalScript", G2L["57"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn
+G2L["59"] = Instance.new("Frame", G2L["37"]);
+G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["59"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["Name"] = [[btn]];
+G2L["59"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton
+G2L["5a"] = Instance.new("TextButton", G2L["59"]);
+G2L["5a"]["TextWrapped"] = true;
+G2L["5a"]["BorderSizePixel"] = 0;
+G2L["5a"]["TextSize"] = 14;
+G2L["5a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5a"]["TextScaled"] = true;
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["5a"]["BackgroundTransparency"] = 1;
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Text"] = [[SLIDE  : OFF]];
+G2L["5a"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+G2L["5b"] = Instance.new("LocalScript", G2L["5a"]);
+G2L["5b"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+G2L["5c"] = Instance.new("LocalScript", G2L["5a"]);
+G2L["5c"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.ToggleHipHeight
+G2L["5d"] = Instance.new("LocalScript", G2L["5a"]);
+G2L["5d"]["Name"] = [[ToggleHipHeight]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIStroke
+G2L["5e"] = Instance.new("UIStroke", G2L["59"]);
+G2L["5e"]["Transparency"] = 0.9;
+G2L["5e"]["Thickness"] = 1.05;
+G2L["5e"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient
+G2L["5f"] = Instance.new("UIGradient", G2L["59"]);
+G2L["5f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["60"] = Instance.new("LocalScript", G2L["5f"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2
+G2L["61"] = Instance.new("Frame", G2L["33"]);
+G2L["61"]["Visible"] = false;
+G2L["61"]["BorderSizePixel"] = 0;
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["61"]["Name"] = [[tab2]];
+G2L["61"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.TextLabel
+G2L["62"] = Instance.new("TextLabel", G2L["61"]);
+G2L["62"]["TextWrapped"] = true;
+G2L["62"]["BorderSizePixel"] = 0;
+G2L["62"]["TextScaled"] = true;
+G2L["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["TextSize"] = 14;
+G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["BackgroundTransparency"] = 1;
+G2L["62"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
+G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["62"]["Text"] = [[- WORLD -]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame
+G2L["63"] = Instance.new("ScrollingFrame", G2L["61"]);
+G2L["63"]["Active"] = true;
+G2L["63"]["BorderSizePixel"] = 0;
+G2L["63"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["63"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
+G2L["63"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
+G2L["63"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
+G2L["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["63"]["ScrollBarThickness"] = 2;
+G2L["63"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory
+G2L["64"] = Instance.new("Frame", G2L["63"]);
+G2L["64"]["BorderSizePixel"] = 0;
+G2L["64"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["64"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["64"]["Name"] = [[memory]];
+G2L["64"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.UIListLayout
+G2L["65"] = Instance.new("UIListLayout", G2L["64"]);
+G2L["65"]["Padding"] = UDim.new(0, 8);
+G2L["65"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.TextLabel
+G2L["66"] = Instance.new("TextLabel", G2L["64"]);
+G2L["66"]["TextWrapped"] = true;
+G2L["66"]["BorderSizePixel"] = 0;
+G2L["66"]["TextScaled"] = true;
+G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["TextSize"] = 14;
+G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["66"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
+G2L["66"]["BackgroundTransparency"] = 1;
+G2L["66"]["Size"] = UDim2.new(1, 0, 0.04543, 0);
+G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["Text"] = [[- WIRE FRAME  -]];
+G2L["66"]["Position"] = UDim2.new(0, 0, 0.43291, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3
+G2L["67"] = Instance.new("Frame", G2L["33"]);
+G2L["67"]["Visible"] = false;
+G2L["67"]["BorderSizePixel"] = 0;
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["67"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["Name"] = [[tab3]];
+G2L["67"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.TextLabel
+G2L["68"] = Instance.new("TextLabel", G2L["67"]);
+G2L["68"]["TextWrapped"] = true;
+G2L["68"]["BorderSizePixel"] = 0;
+G2L["68"]["TextScaled"] = true;
+G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["TextSize"] = 14;
+G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["68"]["BackgroundTransparency"] = 1;
+G2L["68"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
+G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["68"]["Text"] = [[- CAMERA -]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame
+G2L["69"] = Instance.new("ScrollingFrame", G2L["67"]);
+G2L["69"]["Active"] = true;
+G2L["69"]["BorderSizePixel"] = 0;
+G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["69"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
+G2L["69"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
+G2L["69"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
+G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["69"]["ScrollBarThickness"] = 2;
+G2L["69"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory
+G2L["6a"] = Instance.new("Frame", G2L["69"]);
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["Name"] = [[memory]];
+G2L["6a"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.UIListLayout
+G2L["6b"] = Instance.new("UIListLayout", G2L["6a"]);
+G2L["6b"]["Padding"] = UDim.new(0, 8);
+G2L["6b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn
+G2L["6c"] = Instance.new("Frame", G2L["6a"]);
+G2L["6c"]["BorderSizePixel"] = 0;
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["6c"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["Name"] = [[btn]];
+G2L["6c"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton
+G2L["6d"] = Instance.new("TextButton", G2L["6c"]);
+G2L["6d"]["TextWrapped"] = true;
+G2L["6d"]["BorderSizePixel"] = 0;
+G2L["6d"]["TextSize"] = 14;
+G2L["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6d"]["TextScaled"] = true;
+G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["6d"]["BackgroundTransparency"] = 1;
+G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6d"]["Text"] = [[PLACE CAMERA  : OFF]];
+G2L["6d"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+G2L["6e"] = Instance.new("LocalScript", G2L["6d"]);
+G2L["6e"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+G2L["6f"] = Instance.new("LocalScript", G2L["6d"]);
+G2L["6f"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.ToggleFreecam
+G2L["70"] = Instance.new("LocalScript", G2L["6d"]);
+G2L["70"]["Name"] = [[ToggleFreecam]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIStroke
+G2L["71"] = Instance.new("UIStroke", G2L["6c"]);
+G2L["71"]["Transparency"] = 0.9;
+G2L["71"]["Thickness"] = 1.05;
+G2L["71"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient
+G2L["72"] = Instance.new("UIGradient", G2L["6c"]);
+G2L["72"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["73"] = Instance.new("LocalScript", G2L["72"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn
+G2L["74"] = Instance.new("Frame", G2L["6a"]);
+G2L["74"]["BorderSizePixel"] = 0;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["74"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Name"] = [[btn]];
+G2L["74"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton
+G2L["75"] = Instance.new("TextButton", G2L["74"]);
+G2L["75"]["TextWrapped"] = true;
+G2L["75"]["BorderSizePixel"] = 0;
+G2L["75"]["TextSize"] = 14;
+G2L["75"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["75"]["TextScaled"] = true;
+G2L["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["75"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["75"]["BackgroundTransparency"] = 1;
+G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["75"]["Text"] = [[SPIN CAMERA  : OFF]];
+G2L["75"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+G2L["76"] = Instance.new("LocalScript", G2L["75"]);
+G2L["76"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+G2L["77"] = Instance.new("LocalScript", G2L["75"]);
+G2L["77"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+G2L["78"] = Instance.new("LocalScript", G2L["75"]);
+G2L["78"]["Name"] = [[CameraSpinToggle]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIStroke
+G2L["79"] = Instance.new("UIStroke", G2L["74"]);
+G2L["79"]["Transparency"] = 0.9;
+G2L["79"]["Thickness"] = 1.05;
+G2L["79"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient
+G2L["7a"] = Instance.new("UIGradient", G2L["74"]);
+G2L["7a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["7b"] = Instance.new("LocalScript", G2L["7a"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn
+G2L["7c"] = Instance.new("Frame", G2L["6a"]);
+G2L["7c"]["BorderSizePixel"] = 0;
+G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7c"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["7c"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7c"]["Name"] = [[btn]];
+G2L["7c"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton
+G2L["7d"] = Instance.new("TextButton", G2L["7c"]);
+G2L["7d"]["TextWrapped"] = true;
+G2L["7d"]["BorderSizePixel"] = 0;
+G2L["7d"]["TextSize"] = 14;
+G2L["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7d"]["TextScaled"] = true;
+G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["7d"]["BackgroundTransparency"] = 1;
+G2L["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7d"]["Text"] = [[SPIN CAMERA V2  : OFF]];
+G2L["7d"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+G2L["7e"] = Instance.new("LocalScript", G2L["7d"]);
+G2L["7e"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+G2L["7f"] = Instance.new("LocalScript", G2L["7d"]);
+G2L["7f"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+G2L["80"] = Instance.new("LocalScript", G2L["7d"]);
+G2L["80"]["Name"] = [[CameraSpinToggle]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIStroke
+G2L["81"] = Instance.new("UIStroke", G2L["7c"]);
+G2L["81"]["Transparency"] = 0.9;
+G2L["81"]["Thickness"] = 1.05;
+G2L["81"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient
+G2L["82"] = Instance.new("UIGradient", G2L["7c"]);
+G2L["82"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["83"] = Instance.new("LocalScript", G2L["82"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn
+G2L["84"] = Instance.new("Frame", G2L["6a"]);
+G2L["84"]["BorderSizePixel"] = 0;
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["84"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Name"] = [[btn]];
+G2L["84"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton
+G2L["85"] = Instance.new("TextButton", G2L["84"]);
+G2L["85"]["TextWrapped"] = true;
+G2L["85"]["BorderSizePixel"] = 0;
+G2L["85"]["TextSize"] = 14;
+G2L["85"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["TextScaled"] = true;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["85"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["85"]["BackgroundTransparency"] = 1;
+G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["85"]["Text"] = [[FLING CAMERA   : OFF]];
+G2L["85"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+G2L["86"] = Instance.new("LocalScript", G2L["85"]);
+G2L["86"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+G2L["87"] = Instance.new("LocalScript", G2L["85"]);
+G2L["87"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+G2L["88"] = Instance.new("LocalScript", G2L["85"]);
+G2L["88"]["Name"] = [[CameraSpinToggle]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIStroke
+G2L["89"] = Instance.new("UIStroke", G2L["84"]);
+G2L["89"]["Transparency"] = 0.9;
+G2L["89"]["Thickness"] = 1.05;
+G2L["89"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient
+G2L["8a"] = Instance.new("UIGradient", G2L["84"]);
+G2L["8a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["8b"] = Instance.new("LocalScript", G2L["8a"]);
+
+
+
+-- StarterGui.modmenu.menu.TextLabel
+G2L["8c"] = Instance.new("TextLabel", G2L["c"]);
+G2L["8c"]["TextWrapped"] = true;
+G2L["8c"]["BorderSizePixel"] = 0;
+G2L["8c"]["TextScaled"] = true;
+G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["TextSize"] = 14;
+G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8c"]["BackgroundTransparency"] = 1;
+G2L["8c"]["Size"] = UDim2.new(0.39809, 0, 1, 0);
+G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8c"]["Text"] = [[ILDK MENU]];
+G2L["8c"]["Position"] = UDim2.new(0.01433, 0, 0, 0);
+
+
+-- StarterGui.modmenu.ic.UIStroke.UIGradient.LocalScript
+local function C_7()
+local script = G2L["7"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_7);
+-- StarterGui.modmenu.ic.nove
+local function C_8()
+local script = G2L["8"];
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end;
+task.spawn(C_8);
+-- StarterGui.modmenu.ic.togg
+local function C_9()
+local script = G2L["9"];
+	local clik = script.Parent
+	local tgui = script.Parent.Parent.menu
+	local stui = true
+	
+	local ons = script.Parent.ron
+	local onss = script.Parent.roof
+	
+	
+	
+	clik.MouseButton1Click:Connect(function()
+		if stui == true then
+			stui = false
+			tgui:TweenPosition(UDim2.new(0.136, 0, 2, 0), "Out", "Sine", 0.1, true)
+			wait(0.1)
+			tgui.Visible = stui
+			ons:Play()
+		else
+			stui = true
+			tgui:TweenPosition(UDim2.new(0.136, 0, 0.139, 0), "In", "Sine", 0.1, true)
+			tgui.Visible = stui
+			onss:Play()
 		end
 	end)
-	spawn(function() --Source for Script8
-		local script = Script8
-		script.Parent.Active = true
-		script.Parent.Draggable = true
+end;
+task.spawn(C_9);
+-- StarterGui.modmenu.menu.UIStroke.UIGradient.LocalScript
+local function C_10()
+local script = G2L["10"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_10);
+-- StarterGui.modmenu.menu.fi.UIStroke.UIGradient.LocalScript
+local function C_15()
+local script = G2L["15"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_15);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+local function C_1a()
+local script = G2L["1a"];
+	local cik = script.Parent
+	local tabaim = script.Parent.Parent.Parent.Parent.tab
+	local sdef = script.Parent.Parent.Parent.click
+	
+	cik.MouseButton1Click:Connect(function()
+		sdef:Play()
+		tabaim:TweenPosition(UDim2.new(0.5, 0, -0.003, 0), "Out", "Sine", 0, true)
+		wait()
+		tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
 	end)
-	spawn(function() --Source for Script9
-		local script = Script9
-		local clik = script.Parent
-		local tgui = script.Parent.Parent.menu
-		local stui = true
-		
-		local ons = script.Parent.ron
-		local onss = script.Parent.roof
-		
-		
-		
-		clik.MouseButton1Click:Connect(function()
-			if stui == true then
-				stui = false
-				tgui:TweenPosition(UDim2.new(0.136, 0, 2, 0), "Out", "Sine", 0.1, true)
-				wait(0.1)
-				tgui.Visible = stui
-				ons:Play()
-			else
-				stui = true
-				tgui:TweenPosition(UDim2.new(0.136, 0, 0.139, 0), "In", "Sine", 0.1, true)
-				tgui.Visible = stui
-				onss:Play()
-			end
-		end)
+end;
+task.spawn(C_1a);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+local function C_1b()
+local script = G2L["1b"];
+	local cik = script.Parent
+	local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
+	local tab2 = script.Parent.Parent.Parent.Parent.tab.showtab.tab2
+	local tab3 = script.Parent.Parent.Parent.Parent.tab.showtab.tab3
+	
+	local o = true
+	local f = false
+	
+	cik.MouseButton1Click:Connect(function()
+		tab1.Visible = o
+		tab2.Visible = f
+		tab3.Visible = f
 	end)
-	spawn(function() --Source for Script16
-		local script = Script16
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
+end;
+task.spawn(C_1b);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+local function C_1e()
+local script = G2L["1e"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_1e);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+local function C_22()
+local script = G2L["22"];
+	local cik = script.Parent
+	local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
+	local tab2 = script.Parent.Parent.Parent.Parent.tab.showtab.tab2
+	local tab3 = script.Parent.Parent.Parent.Parent.tab.showtab.tab3
+	
+	local o = true
+	local f = false
+	
+	cik.MouseButton1Click:Connect(function()
+		tab1.Visible = f
+		tab2.Visible = o
+		tab3.Visible = f
+	end)
+end;
+task.spawn(C_22);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+local function C_23()
+local script = G2L["23"];
+	local cik = script.Parent
+	local tabaim = script.Parent.Parent.Parent.Parent.tab
+	local sdef = script.Parent.Parent.Parent.click
+	
+	cik.MouseButton1Click:Connect(function()
+		sdef:Play()
+		tabaim:TweenPosition(UDim2.new(0.5, 0, -0.003, 0), "Out", "Sine", 0, true)
+		wait()
+		tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
+	end)
+end;
+task.spawn(C_23);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+local function C_26()
+local script = G2L["26"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_26);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+local function C_29()
+local script = G2L["29"];
+	local cik = script.Parent
+	local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
+	local tab2 = script.Parent.Parent.Parent.Parent.tab.showtab.tab2
+	local tab3 = script.Parent.Parent.Parent.Parent.tab.showtab.tab3
+	
+	local o = true
+	local f = false
+	
+	cik.MouseButton1Click:Connect(function()
+		tab1.Visible = f
+		tab2.Visible = f
+		tab3.Visible = o
+	end)
+end;
+task.spawn(C_29);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+local function C_2a()
+local script = G2L["2a"];
+	local cik = script.Parent
+	local tabaim = script.Parent.Parent.Parent.Parent.tab
+	local sdef = script.Parent.Parent.Parent.click
+	
+	cik.MouseButton1Click:Connect(function()
+		sdef:Play()
+		tabaim:TweenPosition(UDim2.new(0.5, 0, -0.003, 0), "Out", "Sine", 0, true)
+		wait()
+		tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
+	end)
+end;
+task.spawn(C_2a);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_2d);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.FlyJumpToggle
+local function C_3a()
+local script = G2L["3a"];
+	local UserInputService = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	local flyJumpEnabled = false
+	
+	local function onButtonClicked()
+	    flyJumpEnabled = not flyJumpEnabled
+	end
+	
+	local function onJumpRequest()
+	    if flyJumpEnabled then
+	        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	        humanoid:Move(Vector3.new(0, 50, 0), true)
+	    end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onButtonClicked)
+	UserInputService.JumpRequest:Connect(onJumpRequest)
+	
+	
+end;
+task.spawn(C_3a);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+local function C_3b()
+local script = G2L["3b"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "FLY JUMP : ON"
+	    else
+	        button.Text = "FLY JUMP : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_3b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+local function C_3c()
+local script = G2L["3c"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
 		end
-	end)
-	spawn(function() --Source for Script21
-		local script = Script21
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script26
-		local script = Script26
-		local cik = script.Parent
-		local tabaim = script.Parent.Parent.Parent.Parent.tab
-		local sdef = script.Parent.Parent.Parent.click
-		
-		cik.MouseButton1Click:Connect(function()
-			sdef:Play()
-			tabaim:TweenPosition(UDim2.new(0.5, 0, -0.003, 0), "Out", "Sine", 0, true)
-			wait()
-			tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
-		end)
-	end)
-	spawn(function() --Source for Script27
-		local script = Script27
-		local cik = script.Parent
-		local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
-		local tab2 = script.Parent.Parent.Parent.Parent.tab.showtab.tab2
-		local tab3 = script.Parent.Parent.Parent.Parent.tab.showtab.tab3
-		
-		local o = true
-		local f = false
-		
-		cik.MouseButton1Click:Connect(function()
-			tab1.Visible = o
-			tab2.Visible = f
-			tab3.Visible = f
-		end)
-	end)
-	spawn(function() --Source for Script30
-		local script = Script30
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script34
-		local script = Script34
-		local cik = script.Parent
-		local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
-		local tab2 = script.Parent.Parent.Parent.Parent.tab.showtab.tab2
-		local tab3 = script.Parent.Parent.Parent.Parent.tab.showtab.tab3
-		
-		local o = true
-		local f = false
-		
-		cik.MouseButton1Click:Connect(function()
-			tab1.Visible = f
-			tab2.Visible = o
-			tab3.Visible = f
-		end)
-	end)
-	spawn(function() --Source for Script35
-		local script = Script35
-		local cik = script.Parent
-		local tabaim = script.Parent.Parent.Parent.Parent.tab
-		local sdef = script.Parent.Parent.Parent.click
-		
-		cik.MouseButton1Click:Connect(function()
-			sdef:Play()
-			tabaim:TweenPosition(UDim2.new(0.5, 0, -0.003, 0), "Out", "Sine", 0, true)
-			wait()
-			tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
-		end)
-	end)
-	spawn(function() --Source for Script38
-		local script = Script38
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script41
-		local script = Script41
-		local cik = script.Parent
-		local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
-		local tab2 = script.Parent.Parent.Parent.Parent.tab.showtab.tab2
-		local tab3 = script.Parent.Parent.Parent.Parent.tab.showtab.tab3
-		
-		local o = true
-		local f = false
-		
-		cik.MouseButton1Click:Connect(function()
-			tab1.Visible = f
-			tab2.Visible = f
-			tab3.Visible = o
-		end)
-	end)
-	spawn(function() --Source for Script42
-		local script = Script42
-		local cik = script.Parent
-		local tabaim = script.Parent.Parent.Parent.Parent.tab
-		local sdef = script.Parent.Parent.Parent.click
-		
-		cik.MouseButton1Click:Connect(function()
-			sdef:Play()
-			tabaim:TweenPosition(UDim2.new(0.5, 0, -0.003, 0), "Out", "Sine", 0, true)
-			wait()
-			tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
-		end)
-	end)
-	spawn(function() --Source for Script45
-		local script = Script45
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script58
-		local script = Script58
-		local UserInputService = game:GetService("UserInputService")
-		local Players = game:GetService("Players")
-		
-		local player = Players.LocalPlayer
-		local character = player.Character or player.CharacterAdded:Wait()
-		local humanoid = character:WaitForChild("Humanoid")
-		
-		local flyJumpEnabled = false
-		
-		local function onButtonClicked()
-		    flyJumpEnabled = not flyJumpEnabled
-		end
-		
-		local function onJumpRequest()
-		    if flyJumpEnabled then
-		        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-		        humanoid:Move(Vector3.new(0, 50, 0), true)
-		    end
-		end
-		
-		script.Parent.MouseButton1Click:Connect(onButtonClicked)
-		UserInputService.JumpRequest:Connect(onJumpRequest)
-		
 		
 	end)
-	spawn(function() --Source for Script59
-		local script = Script59
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "FLY JUMP : ON"
-		    else
-		        button.Text = "FLY JUMP : OFF"
-		    end
-		end)
-		
-		
+end;
+task.spawn(C_3c);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_3f()
+local script = G2L["3f"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_3f);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+local function C_43()
+local script = G2L["43"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "WALKSPEED : ON"
+	    else
+	        button.Text = "WALKSPEED : OFF"
+	    end
 	end)
-	spawn(function() --Source for Script60
-		local script = Script60
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script63
-		local script = Script63
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script67
-		local script = Script67
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "WALKSPEED : ON"
-		    else
-		        button.Text = "WALKSPEED : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script68
-		local script = Script68
-		local Players = game:GetService("Players")
-		local LocalPlayer = Players.LocalPlayer
-		
-		local button = script.Parent
-		local tgt = true
-		
-		local normal = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
-		
-		button.MouseButton1Click:Connect(function()
-			if tgt == true then
-				tgt = false
-				local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-				local humanoid = character:FindFirstChildOfClass("Humanoid")
-				if humanoid then
-					
-					humanoid.WalkSpeed = 300
-					
-				end
-			
-			else
+	
+	
+end;
+task.spawn(C_43);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.SetPlayerSpeedOnClick
+local function C_44()
+local script = G2L["44"];
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	local button = script.Parent
+	local tgt = true
+	
+	local normal = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+	
+	button.MouseButton1Click:Connect(function()
+		if tgt == true then
+			tgt = false
+			local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
 				
-				tgt = true
-				local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-				local humanoid = character:FindFirstChildOfClass("Humanoid")
-				if humanoid then
-		
-					humanoid.WalkSpeed = normal
-		
-				end		
-				
+				humanoid.WalkSpeed = 300
 				
 			end
-		    
-		    
-		    
-		    
-		end)
 		
-		
-	end)
-	spawn(function() --Source for Script69
-		local script = Script69
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
+		else
 			
-		end)
-	end)
-	spawn(function() --Source for Script72
-		local script = Script72
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script75
-		local script = Script75
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "NOCLIP LEG : ON"
-		    else
-		        button.Text = "NOCLIP LEG : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script76
-		local script = Script76
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
+			tgt = true
+			local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+	
+				humanoid.WalkSpeed = normal
+	
+			end		
 			
-		end)
-	end)
-	spawn(function() --Source for Script77
-		local script = Script77
-		local Players = game:GetService("Players")
-		local UserInputService = game:GetService("UserInputService")
-		
-		local button = script.Parent
-		local defaultHipHeight = 2 -- Assuming default HipHeight is 2, adjust if necessary
-		local isLowHipHeight = false
-		
-		button.MouseButton1Click:Connect(function()
-		    local player = Players.LocalPlayer
-		    local character = player.Character or player.CharacterAdded:Wait()
-		    local humanoid = character:FindFirstChildOfClass("Humanoid")
-		    
-		    if humanoid then
-		        if isLowHipHeight then
-		            humanoid.HipHeight = defaultHipHeight
-		        else
-		            humanoid.HipHeight = 0.01
-		        end
-		        isLowHipHeight = not isLowHipHeight
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script80
-		local script = Script80
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script83
-		local script = Script83
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "FLOAT WALK : ON"
-		    else
-		        button.Text = "FLOAT WALK : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script84
-		local script = Script84
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
 			
-		end)
-	end)
-	spawn(function() --Source for Script85
-		local script = Script85
-		local Players = game:GetService("Players")
-		local UserInputService = game:GetService("UserInputService")
-		
-		local button = script.Parent
-		local defaultHipHeight = 2 -- Assuming default HipHeight is 2, adjust if necessary
-		local isLowHipHeight = false
-		
-		button.MouseButton1Click:Connect(function()
-		    local player = Players.LocalPlayer
-		    local character = player.Character or player.CharacterAdded:Wait()
-		    local humanoid = character:FindFirstChildOfClass("Humanoid")
-		    
-		    if humanoid then
-		        if isLowHipHeight then
-		            humanoid.HipHeight = defaultHipHeight
-		        else
-		            humanoid.HipHeight = 35
-		        end
-		        isLowHipHeight = not isLowHipHeight
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script88
-		local script = Script88
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
 		end
+	    
+	    
+	    
+	    
 	end)
-	spawn(function() --Source for Script91
-		local script = Script91
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "SLIDE : ON"
-		    else
-		        button.Text = "SLIDE : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script92
-		local script = Script92
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script93
-		local script = Script93
-		local Players = game:GetService("Players")
-		local UserInputService = game:GetService("UserInputService")
-		
-		local button = script.Parent
-		local defaultHipHeight = 2 -- Assuming default HipHeight is 2, adjust if necessary
-		local isLowHipHeight = false
-		
-		button.MouseButton1Click:Connect(function()
-		    local player = Players.LocalPlayer
-		    local character = player.Character or player.CharacterAdded:Wait()
-		    local humanoid = character:FindFirstChildOfClass("Humanoid")
-		    
-		    if humanoid then
-		        if isLowHipHeight then
-		            humanoid.HipHeight = defaultHipHeight
-		        else
-					humanoid.HipHeight = -1
-					
-		        end
-		        isLowHipHeight = not isLowHipHeight
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script96
-		local script = Script96
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script104
-		local script = Script104
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-				button.Text = "ESP ALL PLAYER : ON"
-		    else
-				button.Text = "ESP ALL PLAYER : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script105
-		local script = Script105
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script106
-		local script = Script106
-		local Players = game:GetService("Players")
-		local TweenService = game:GetService("TweenService")
-		
-		
-		local tdg = false
-		
-		
-		local espEnabled = false
-		
-		local function createRainbowTween(highlight)
-			local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true)
-			local goal = {OutlineColor = Color3.fromRGB(0, 255, 255)}
-			local tween = TweenService:Create(highlight, tweenInfo, goal)
-			tween.Completed:Connect(function()
-				goal.OutlineColor = Color3.fromRGB(64, 0, 255)
-				tween:Play()
-			end)
-			tween.Completed:Connect(function()
-				goal.OutlineColor = Color3.fromRGB(0, 166, 255)
-				tween:Play()
-			end)
-			tween.Completed:Connect(function()
-				goal.OutlineColor = Color3.fromRGB(0, 255, 0)
-				tween:Play()
-			end)
-			tween.Completed:Connect(function()
-				goal.OutlineColor = Color3.fromRGB(255, 234, 0)
-				tween:Play()
-			end)
-			tween.Completed:Connect(function()
-				goal.OutlineColor = Color3.fromRGB(255, 183, 0)
-				tween:Play()
-			end)
-			tween.Completed:Connect(function()
-				goal.OutlineColor = Color3.fromRGB(255, 0, 0)
-				tween:Play()
-			end)
-			return tween
+	
+	
+end;
+task.spawn(C_44);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+local function C_45()
+local script = G2L["45"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
 		end
 		
-		local function toggleESP()
-			espEnabled = not espEnabled
-			for _, player in Players:GetPlayers() do
-				if player.Character then
-					local highlight = player.Character:FindFirstChild("Highlight")
-					if espEnabled then
-						if not highlight then
-							highlight = Instance.new("Highlight")
-							highlight.Parent = player.Character
-						end
-		
-						highlight.Enabled = true
-		
-		
-						highlight.FillColor = Color3.new(0, 0, 0)
-						highlight.FillTransparency = 1
-						local tween = createRainbowTween(highlight)
-						tween:Play()
-			
-					else
-						if highlight then
-							
-							highlight.Enabled = false
-						end
-					end
-				end
-			end
+	end)
+end;
+task.spawn(C_45);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_48()
+local script = G2L["48"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_48);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+local function C_4b()
+local script = G2L["4b"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "NOCLIP LEG : ON"
+	    else
+	        button.Text = "NOCLIP LEG : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_4b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+local function C_4c()
+local script = G2L["4c"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
 		end
 		
-		Players.PlayerRemoving:Connect(function(player)
-			if player.Character then
-				local highlight = player.Character:FindFirstChild("Highlight")
-				if highlight then
-					highlight:Destroy()
-				end
-			end
-		end)
-		
-		Players.PlayerAdded:Connect(function(player)
-			if player.Character then
-				local highlight = player.Character:FindFirstChild("Highlight")
-				if not highlight then
-					highlight = Instance.new("Highlight")
-					highlight.Parent = player.Character
-				end
-				if espEnabled then
-					highlight.Enabled = true
-					highlight.FillColor = Color3.new(0, 0, 0)
-					highlight.FillTransparency = 1
-					local tween = createRainbowTween(highlight)
-					tween:Play()
-				end
-			end
-		end)
-		
-		local button = script.Parent
-		button.MouseButton1Click:Connect(toggleESP)
-		
-		
-		
-		
 	end)
-	spawn(function() --Source for Script109
-		local script = Script109
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
+end;
+task.spawn(C_4c);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.ToggleHipHeight
+local function C_4d()
+local script = G2L["4d"];
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	
+	local button = script.Parent
+	local defaultHipHeight = 2 -- Assuming default HipHeight is 2, adjust if necessary
+	local isLowHipHeight = false
+	
+	button.MouseButton1Click:Connect(function()
+	    local player = Players.LocalPlayer
+	    local character = player.Character or player.CharacterAdded:Wait()
+	    local humanoid = character:FindFirstChildOfClass("Humanoid")
+	    
+	    if humanoid then
+	        if isLowHipHeight then
+	            humanoid.HipHeight = defaultHipHeight
+	        else
+	            humanoid.HipHeight = 0.01
+	        end
+	        isLowHipHeight = not isLowHipHeight
+	    end
 	end)
-	spawn(function() --Source for Script112
-		local script = Script112
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "TIME SET : NIGHT"
-		    else
-		        button.Text = "TIME SET : DAY"
-		    end
-		end)
-		
-		
+	
+	
+end;
+task.spawn(C_4d);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_50()
+local script = G2L["50"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_50);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+local function C_53()
+local script = G2L["53"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "FLOAT WALK : ON"
+	    else
+	        button.Text = "FLOAT WALK : OFF"
+	    end
 	end)
-	spawn(function() --Source for Script113
-		local script = Script113
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script114
-		local script = Script114
-		local button = script.Parent
-		local isDay = true
-		
-		local function setDay()
-		    local lighting = game:GetService("Lighting")
-		    lighting.TimeOfDay = "14:00:00" -- Set time to day
-		    lighting.GlobalShadows = false -- Remove shadows
+	
+	
+end;
+task.spawn(C_53);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+local function C_54()
+local script = G2L["54"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
 		end
 		
-		local function setNight()
-		    local lighting = game:GetService("Lighting")
-		    lighting.TimeOfDay = "00:00:00" -- Set time to night
-		    lighting.GlobalShadows = true -- Enable shadows
+	end)
+end;
+task.spawn(C_54);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.ToggleHipHeight
+local function C_55()
+local script = G2L["55"];
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	
+	local button = script.Parent
+	local defaultHipHeight = 2 -- Assuming default HipHeight is 2, adjust if necessary
+	local isLowHipHeight = false
+	
+	button.MouseButton1Click:Connect(function()
+	    local player = Players.LocalPlayer
+	    local character = player.Character or player.CharacterAdded:Wait()
+	    local humanoid = character:FindFirstChildOfClass("Humanoid")
+	    
+	    if humanoid then
+	        if isLowHipHeight then
+	            humanoid.HipHeight = defaultHipHeight
+	        else
+	            humanoid.HipHeight = 35
+	        end
+	        isLowHipHeight = not isLowHipHeight
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_55);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_58()
+local script = G2L["58"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_58);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+local function C_5b()
+local script = G2L["5b"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "SLIDE : ON"
+	    else
+	        button.Text = "SLIDE : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_5b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+local function C_5c()
+local script = G2L["5c"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
 		end
 		
-		local function toggleDayNight()
-		    if isDay then
-		        setNight()
-		    else
-		        setDay()
-		    end
-		    isDay = not isDay
-		end
-		
-		button.MouseButton1Click:Connect(function()
-		    toggleDayNight()
-		end)
-		
-		-- Initial setup
-		setDay()
-		
-		
-		
 	end)
-	spawn(function() --Source for Script117
-		local script = Script117
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script120
-		local script = Script120
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "SOME TEXTURE : ON"
-		    else
-		        button.Text = "SOME TEXTURE : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script121
-		local script = Script121
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script122
-		local script = Script122
-		local button = script.Parent
-		local textureId = "rbxassetid://118116050473564"
-		local isTextured = false
-		
-		local function toggleTexture()
-		    isTextured = not isTextured
-		    for _, instance in game.Workspace:GetChildren() do
-		        if instance:IsA("Part") then
-		            for _, face in Enum.NormalId:GetEnumItems() do
-		                if isTextured then
-		                    local texture = Instance.new("Texture")
-		                    texture.Texture = textureId
-		                    texture.Face = face
-		                    texture.Parent = instance
-		                else
-		                    for _, texture in instance:GetChildren() do
-		                        if texture:IsA("Texture") and texture.Texture == textureId then
-		                            texture:Destroy()
-		                        end
-		                    end
-		                end
-		            end
-		        end
-		    end
-		end
-		
-		button.MouseButton1Click:Connect(toggleTexture)
-		
-		
-	end)
-	spawn(function() --Source for Script123
-		local script = Script123
-		local button = script.Parent
-		local isToggled = false
-		local originalTextures = {}
-		
-		local function toggleTextures()
-		    isToggled = not isToggled
-		    for _, instance in game:GetDescendants() do
-		        if instance:IsA("Texture") or instance:IsA("Decal") then
-		            if isToggled then
-		                originalTextures[instance] = instance.Texture
-		                instance.Texture = "rbxassetid://118116050473564"
-		            else
-		                instance.Texture = originalTextures[instance] or instance.Texture
-		            end
-		        end
-		    end
-		end
-		
-		button.MouseButton1Click:Connect(toggleTextures)
-		
-		
-	end)
-	spawn(function() --Source for Script126
-		local script = Script126
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script130
-		local script = Script130
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "WHITE WIREFRAME : ON"
-		    else
-		        button.Text = "WHITE WIREFRAME : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script131
-		local script = Script131
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script132
-		local script = Script132
-		local button = script.Parent
-		local outlineVisible = false
-		
-		local function toggleOutline()
-			outlineVisible = not outlineVisible
-			-- Toggle outline for all parts in the Workspace
-			for _, instance in game.Workspace:GetChildren() do
-				if instance:IsA("BasePart") then
-					local selectionBox = instance:FindFirstChild("SelectionBox")
-					if not selectionBox then
-						selectionBox = Instance.new("SelectionBox")
-						selectionBox.Adornee = instance
-						selectionBox.Parent = instance
-					end
-					selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
-					selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-					instance.Transparency = outlineVisible and 1 or 0
-					selectionBox.Visible = outlineVisible
-				elseif instance:IsA("Model") then
-					for _, part in instance:GetDescendants() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
-							selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		
-			-- Toggle outline for all players' characters
-			local Players = game:GetService("Players")
-			for _, player in Players:GetPlayers() do
-				local character = player.Character
-				if character then
-					for _, part in character:GetChildren() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
-							selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		end
-		
-		button.MouseButton1Click:Connect(toggleOutline)
-		
-	end)
-	spawn(function() --Source for Script135
-		local script = Script135
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script138
-		local script = Script138
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "BLUE WIREFRAME : ON"
-		    else
-		        button.Text = "BLUE WIREFRAME : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script139
-		local script = Script139
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script140
-		local script = Script140
-		local button = script.Parent
-		local outlineVisible = false
-		
-		local function toggleOutline()
-			outlineVisible = not outlineVisible
-			-- Toggle outline for all parts in the Workspace
-			for _, instance in game.Workspace:GetChildren() do
-				if instance:IsA("BasePart") then
-					local selectionBox = instance:FindFirstChild("SelectionBox")
-					if not selectionBox then
-						selectionBox = Instance.new("SelectionBox")
-						selectionBox.Adornee = instance
-						selectionBox.Parent = instance
-					end
-					selectionBox.Color3 = Color3.new(0, 0.94902, 1) -- Set outline color to white
-					selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-					instance.Transparency = outlineVisible and 1 or 0
-					selectionBox.Visible = outlineVisible
-				elseif instance:IsA("Model") then
-					for _, part in instance:GetDescendants() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(0, 1, 0.968627) -- Set outline color to white
-							selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		
-			-- Toggle outline for all players' characters
-			local Players = game:GetService("Players")
-			for _, player in Players:GetPlayers() do
-				local character = player.Character
-				if character then
-					for _, part in character:GetChildren() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(0, 1, 0.968627) -- Set outline color to white
-							selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		end
-		
-		button.MouseButton1Click:Connect(toggleOutline)
-		
-	end)
-	spawn(function() --Source for Script143
-		local script = Script143
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script146
-		local script = Script146
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "RED WIREFRAME : ON"
-		    else
-		        button.Text = "RED WIREFRAME : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script147
-		local script = Script147
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script148
-		local script = Script148
-		local button = script.Parent
-		local outlineVisible = false
-		
-		local function toggleOutline()
-			outlineVisible = not outlineVisible
-			-- Toggle outline for all parts in the Workspace
-			for _, instance in game.Workspace:GetChildren() do
-				if instance:IsA("BasePart") then
-					local selectionBox = instance:FindFirstChild("SelectionBox")
-					if not selectionBox then
-						selectionBox = Instance.new("SelectionBox")
-						selectionBox.Adornee = instance
-						selectionBox.Parent = instance
-					end
-					selectionBox.Color3 = Color3.new(1, 0, 0.0156863) -- Set outline color to white
-					selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-					instance.Transparency = outlineVisible and 1 or 0
-					selectionBox.Visible = outlineVisible
-				elseif instance:IsA("Model") then
-					for _, part in instance:GetDescendants() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(1, 0, 0.0156863) -- Set outline color to white
-							selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		
-			-- Toggle outline for all players' characters
-			local Players = game:GetService("Players")
-			for _, player in Players:GetPlayers() do
-				local character = player.Character
-				if character then
-					for _, part in character:GetChildren() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(1, 0, 0.0156863) -- Set outline color to white
-							selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		end
-		
-		button.MouseButton1Click:Connect(toggleOutline)
-		
-	end)
-	spawn(function() --Source for Script151
-		local script = Script151
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script154
-		local script = Script154
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "GROP WIREFRAME : ON"
-		    else
-		        button.Text = "GROP WIREFRAME : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script155
-		local script = Script155
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script156
-		local script = Script156
-		local button = script.Parent
-		local outlineVisible = false
-		
-		local function toggleOutline()
-			outlineVisible = not outlineVisible
-			-- Toggle outline for all parts in the Workspace
-			for _, instance in game.Workspace:GetChildren() do
-				if instance:IsA("BasePart") then
-					local selectionBox = instance:FindFirstChild("SelectionBox")
-					if not selectionBox then
-						selectionBox = Instance.new("SelectionBox")
-						selectionBox.Adornee = instance
-						selectionBox.Parent = instance
-					end
-					selectionBox.Color3 = Color3.new(0, 0.0509804, 1) -- Set outline color to white
-					selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-					instance.Transparency = outlineVisible and 1 or 0
-					selectionBox.Visible = outlineVisible
-				elseif instance:IsA("Model") then
-					for _, part in instance:GetDescendants() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(1, 0, 0.0156863) -- Set outline color to white
-							selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		
-			-- Toggle outline for all players' characters
-			local Players = game:GetService("Players")
-			for _, player in Players:GetPlayers() do
-				local character = player.Character
-				if character then
-					for _, part in character:GetChildren() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(0.133333, 1, 0) -- Set outline color to white
-							selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		end
-		
-		button.MouseButton1Click:Connect(toggleOutline)
-		
-	end)
-	spawn(function() --Source for Script159
-		local script = Script159
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script162
-		local script = Script162
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "SMALL WIREFRAME : ON"
-		    else
-		        button.Text = "SMALL WIREFRAME : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script163
-		local script = Script163
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script164
-		local script = Script164
-		local button = script.Parent
-		local outlineVisible = false
-		
-		local function toggleOutline()
-			outlineVisible = not outlineVisible
-			-- Toggle outline for all parts in the Workspace
-			for _, instance in game.Workspace:GetChildren() do
-				if instance:IsA("BasePart") then
-					local selectionBox = instance:FindFirstChild("SelectionBox")
-					if not selectionBox then
-						selectionBox = Instance.new("SelectionBox")
-						selectionBox.Adornee = instance
-						selectionBox.Parent = instance
-					end
-					selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
-					selectionBox.LineThickness = 0.0005 -- Set outline thickness to 0.5
-					instance.Transparency = outlineVisible and 1 or 0
-					selectionBox.Visible = outlineVisible
-				elseif instance:IsA("Model") then
-					for _, part in instance:GetDescendants() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
-							selectionBox.LineThickness = 0.0005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		
-			-- Toggle outline for all players' characters
-			local Players = game:GetService("Players")
-			for _, player in Players:GetPlayers() do
-				local character = player.Character
-				if character then
-					for _, part in character:GetChildren() do
-						if part:IsA("BasePart") then
-							local selectionBox = part:FindFirstChild("SelectionBox")
-							if not selectionBox then
-								selectionBox = Instance.new("SelectionBox")
-								selectionBox.Adornee = part
-								selectionBox.Parent = part
-							end
-							selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
-							selectionBox.LineThickness = 0.0005 -- Set outline thickness to 0.5
-							part.Transparency = outlineVisible and 1 or 0
-							selectionBox.Visible = outlineVisible
-						end
-					end
-				end
-			end
-		end
-		
-		button.MouseButton1Click:Connect(toggleOutline)
-		
-	end)
-	spawn(function() --Source for Script167
-		local script = Script167
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script175
-		local script = Script175
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "PLACE CAMERA : ON"
-		    else
-		        button.Text = "PLACE CAMERA : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script176
-		local script = Script176
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
-	end)
-	spawn(function() --Source for Script177
-		local script = Script177
-		local Players = game:GetService("Players")
-		local UserInputService = game:GetService("UserInputService")
-		local RunService = game:GetService("RunService")
-		
-		local button = script.Parent
-		local camera = workspace.CurrentCamera
-		local isFreecam = true
-		local originalCameraType = camera.CameraType
-		
-		local function toggleFreecam()
-		    if isFreecam then
-				camera.CameraType = Enum.CameraType.Scriptable
+end;
+task.spawn(C_5c);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.ToggleHipHeight
+local function C_5d()
+local script = G2L["5d"];
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	
+	local button = script.Parent
+	local defaultHipHeight = 2 -- Assuming default HipHeight is 2, adjust if necessary
+	local isLowHipHeight = false
+	
+	button.MouseButton1Click:Connect(function()
+	    local player = Players.LocalPlayer
+	    local character = player.Character or player.CharacterAdded:Wait()
+	    local humanoid = character:FindFirstChildOfClass("Humanoid")
+	    
+	    if humanoid then
+	        if isLowHipHeight then
+	            humanoid.HipHeight = defaultHipHeight
+	        else
+				humanoid.HipHeight = -1
 				
-		    else
-				
-				camera.CameraType = originalCameraType
-		    end
-		    isFreecam = not isFreecam
+	        end
+	        isLowHipHeight = not isLowHipHeight
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_5d);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_60()
+local script = G2L["60"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_60);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+local function C_6e()
+local script = G2L["6e"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "PLACE CAMERA : ON"
+	    else
+	        button.Text = "PLACE CAMERA : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_6e);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+local function C_6f()
+local script = G2L["6f"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
 		end
 		
-		local function onInputBegan(input, gameProcessed)
-		    if gameProcessed then return end
-		    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-		        toggleFreecam()
-		    end
-		end
-		
-		button.MouseButton1Click:Connect(toggleFreecam)
-		--UserInputService.InputBegan:Connect(onInputBegan)
-		
-		
 	end)
-	spawn(function() --Source for Script180
-		local script = Script180
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script183
-		local script = Script183
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "SPIN CAMERA : ON"
-		    else
-		        button.Text = "SPIN CAMERA : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script184
-		local script = Script184
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
+end;
+task.spawn(C_6f);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.ToggleFreecam
+local function C_70()
+local script = G2L["70"];
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	local button = script.Parent
+	local camera = workspace.CurrentCamera
+	local isFreecam = true
+	local originalCameraType = camera.CameraType
+	
+	local function toggleFreecam()
+	    if isFreecam then
+			camera.CameraType = Enum.CameraType.Scriptable
 			
-		end)
-	end)
-	spawn(function() --Source for Script185
-		local script = Script185
-		local player = game.Players.LocalPlayer
-		local camera = workspace.CurrentCamera
-		local button = script.Parent
-		local spinning = false
-		
-		button.MouseButton1Click:Connect(function()
-		    spinning = not spinning
-		end)
-		
-		game:GetService("RunService").RenderStepped:Connect(function()
-		    if spinning then
-		        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(1), 0)
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script188
-		local script = Script188
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
-		end
-	end)
-	spawn(function() --Source for Script191
-		local script = Script191
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "SPIN CAMERA V2 : ON"
-		    else
-		        button.Text = "SPIN CAMERA V2 : OFF"
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script192
-		local script = Script192
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
+	    else
 			
-		end)
+			camera.CameraType = originalCameraType
+	    end
+	    isFreecam = not isFreecam
+	end
+	
+	local function onInputBegan(input, gameProcessed)
+	    if gameProcessed then return end
+	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+	        toggleFreecam()
+	    end
+	end
+	
+	button.MouseButton1Click:Connect(toggleFreecam)
+	--UserInputService.InputBegan:Connect(onInputBegan)
+	
+	
+end;
+task.spawn(C_70);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_73()
+local script = G2L["73"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_73);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+local function C_76()
+local script = G2L["76"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "SPIN CAMERA : ON"
+	    else
+	        button.Text = "SPIN CAMERA : OFF"
+	    end
 	end)
-	spawn(function() --Source for Script193
-		local script = Script193
-		local player = game.Players.LocalPlayer
-		local camera = workspace.CurrentCamera
-		local button = script.Parent
-		local spinning = false
-		
-		button.MouseButton1Click:Connect(function()
-		    spinning = not spinning
-		end)
-		
-		game:GetService("RunService").RenderStepped:Connect(function()
-		    if spinning then
-		        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(5), 0)
-		    end
-		end)
-		
-		
-	end)
-	spawn(function() --Source for Script196
-		local script = Script196
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
+	
+	
+end;
+task.spawn(C_76);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+local function C_77()
+local script = G2L["77"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
 		end
-	end)
-	spawn(function() --Source for Script199
-		local script = Script199
-		local button = script.Parent
-		local isFlyJumpOn = false
-		
-		button.MouseButton1Click:Connect(function()
-		    isFlyJumpOn = not isFlyJumpOn
-		    if isFlyJumpOn then
-		        button.Text = "FLING CAMERA : ON"
-		    else
-		        button.Text = "FLING CAMERA : OFF"
-		    end
-		end)
-		
 		
 	end)
-	spawn(function() --Source for Script200
-		local script = Script200
-		local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
-		local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
-		
-		local scplay = script.Parent
-		
-		local tgtg = true
-		
-		scplay.MouseButton1Click:Connect(function()
-			if tgtg == true then
-				tgtg = false
-				sound:Play()
-			else
-				tgtg = true
-				sound2:Play()
-			end
-			
-		end)
+end;
+task.spawn(C_77);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+local function C_78()
+local script = G2L["78"];
+	local player = game.Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	local button = script.Parent
+	local spinning = false
+	
+	button.MouseButton1Click:Connect(function()
+	    spinning = not spinning
 	end)
-	spawn(function() --Source for Script201
-		local script = Script201
-		local player = game.Players.LocalPlayer
-		local camera = workspace.CurrentCamera
-		local button = script.Parent
-		local spinning = false
-		
-		button.MouseButton1Click:Connect(function()
-		    spinning = not spinning
-		end)
-		
-		game:GetService("RunService").RenderStepped:Connect(function()
-		    if spinning then
-		        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(10000000000000000), 0)
-		    end
-		end)
-		
-		
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+	    if spinning then
+	        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(1), 0)
+	    end
 	end)
-	spawn(function() --Source for Script204
-		local script = Script204
-		while true do 
-			wait()
-			script.Parent.Rotation += 2
+	
+	
+end;
+task.spawn(C_78);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_7b()
+local script = G2L["7b"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_7b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+local function C_7e()
+local script = G2L["7e"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "SPIN CAMERA V2 : ON"
+	    else
+	        button.Text = "SPIN CAMERA V2 : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_7e);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+local function C_7f()
+local script = G2L["7f"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
 		end
+		
 	end)
-end
-createGui(game.CoreGui) --coregui by default you should but change it
+end;
+task.spawn(C_7f);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+local function C_80()
+local script = G2L["80"];
+	local player = game.Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	local button = script.Parent
+	local spinning = false
+	
+	button.MouseButton1Click:Connect(function()
+	    spinning = not spinning
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+	    if spinning then
+	        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(5), 0)
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_80);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_83()
+local script = G2L["83"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_83);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.text
+local function C_86()
+local script = G2L["86"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "FLING CAMERA : ON"
+	    else
+	        button.Text = "FLING CAMERA : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_86);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.sound
+local function C_87()
+local script = G2L["87"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_87);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.TextButton.CameraSpinToggle
+local function C_88()
+local script = G2L["88"];
+	local player = game.Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	local button = script.Parent
+	local spinning = false
+	
+	button.MouseButton1Click:Connect(function()
+	    spinning = not spinning
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+	    if spinning then
+	        camera.CFrame = camera.CFrame * CFrame.Angles(0, math.rad(10000000000000000), 0)
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_88);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_8b()
+local script = G2L["8b"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_8b);
+
+return G2L["1"], require;
